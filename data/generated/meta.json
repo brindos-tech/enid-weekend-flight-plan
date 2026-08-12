@@ -1,11 +1,11 @@
 {
-  "buildId": "build-1786504110436",
-  "buildAt": "2026-08-12T03:08:30.436Z",
-  "eventCount": 5002,
+  "buildId": "build-1786528092864",
+  "buildAt": "2026-08-12T09:48:12.864Z",
+  "eventCount": 5018,
   "sources": {
     "ticketmaster": {
       "status": "ok",
-      "lastSuccess": "2026-08-12T03:08:30.436Z",
+      "lastSuccess": "2026-08-12T09:48:12.864Z",
       "droppedForUnknownPlace": 430
     },
     "spotify": {
@@ -15,7 +15,7 @@
     },
     "recurring": {
       "status": "ok",
-      "lastSuccess": "2026-08-12T03:08:30.436Z"
+      "lastSuccess": "2026-08-12T09:48:12.864Z"
     }
   },
   "dedupe": [
@@ -385,11 +385,6 @@
       "placeId": "tulsa-ok"
     },
     {
-      "kept": "Tulsa Drillers vs. Arkansas Travelers",
-      "mergedFrom": "Tulsa Drillers vs. Arkansas Travelers",
-      "placeId": "tulsa-ok"
-    },
-    {
       "kept": "Tulsa Drillers vs. Wichita Wind Surge",
       "mergedFrom": "Tulsa Drillers vs. Wichita Wind Surge",
       "placeId": "tulsa-ok"
@@ -450,13 +445,13 @@
       "placeId": "oklahoma-city-ok"
     },
     {
-      "kept": "Mania: The ABBA Tribute",
-      "mergedFrom": "Mania: The ABBA Tribute",
+      "kept": "Juanes North America Tour 2026",
+      "mergedFrom": "Juanes North America Tour 2026",
       "placeId": "wichita-ks"
     },
     {
-      "kept": "Juanes North America Tour 2026",
-      "mergedFrom": "Juanes North America Tour 2026",
+      "kept": "Mania: The ABBA Tribute",
+      "mergedFrom": "Mania: The ABBA Tribute",
       "placeId": "wichita-ks"
     },
     {
@@ -845,14 +840,14 @@
       "placeId": "san-antonio-tx"
     },
     {
-      "kept": "LUCKI",
-      "mergedFrom": "LUCKI",
-      "placeId": "san-antonio-tx"
-    },
-    {
       "kept": "Sara Bareilles: The Good Grief Tour",
       "mergedFrom": "Sara Bareilles: The Good Grief Tour",
       "placeId": "houston-tx"
+    },
+    {
+      "kept": "LUCKI",
+      "mergedFrom": "LUCKI",
+      "placeId": "san-antonio-tx"
     },
     {
       "kept": "THE CHICKS - TAKING THE LONG WAY",
@@ -1365,14 +1360,14 @@
       "placeId": "amarillo-tx"
     },
     {
-      "kept": "San Antonio Missions vs. Midland RockHounds",
-      "mergedFrom": "San Antonio Missions vs. Midland RockHounds",
-      "placeId": "san-antonio-tx"
-    },
-    {
       "kept": "Stockyards Championship Rodeo",
       "mergedFrom": "Stockyards Championship Rodeo",
       "placeId": "fort-worth-tx"
+    },
+    {
+      "kept": "San Antonio Missions vs. Midland RockHounds",
+      "mergedFrom": "San Antonio Missions vs. Midland RockHounds",
+      "placeId": "san-antonio-tx"
     },
     {
       "kept": "MotoAmerica",
@@ -1920,6 +1915,11 @@
       "placeId": "denver-co"
     },
     {
+      "kept": "Bowling for Soup",
+      "mergedFrom": "Bowling for Soup",
+      "placeId": "estes-park-co"
+    },
+    {
       "kept": "Dermot Kennedy: The Weight of the Woods Tour",
       "mergedFrom": "Dermot Kennedy: The Weight of the Woods Tour",
       "placeId": "denver-co"
@@ -1927,11 +1927,6 @@
     {
       "kept": "Dermot Kennedy: The Weight of the Woods Tour",
       "mergedFrom": "Dermot Kennedy: The Weight of the Woods Tour",
-      "placeId": "estes-park-co"
-    },
-    {
-      "kept": "Bowling for Soup",
-      "mergedFrom": "Bowling for Soup",
       "placeId": "estes-park-co"
     },
     {
@@ -1947,11 +1942,6 @@
     {
       "kept": "Angine de Poitrine",
       "mergedFrom": "Angine de Poitrine",
-      "placeId": "denver-co"
-    },
-    {
-      "kept": "Malcolm Todd (16 and Over)",
-      "mergedFrom": "Malcolm Todd (16 and Over)",
       "placeId": "denver-co"
     },
     {
@@ -2560,6 +2550,11 @@
       "placeId": "st-louis-mo"
     },
     {
+      "kept": "Caamp",
+      "mergedFrom": "Caamp",
+      "placeId": "kansas-city-mo"
+    },
+    {
       "kept": "GRINDERS KC FEST DAY 2",
       "mergedFrom": "GRINDERS KC FEST DAY 1",
       "placeId": "kansas-city-mo"
@@ -2567,11 +2562,6 @@
     {
       "kept": "GRINDERS KC FEST DAY 2",
       "mergedFrom": "GRINDERS KC FEST 2-DAY PASS",
-      "placeId": "kansas-city-mo"
-    },
-    {
-      "kept": "Caamp",
-      "mergedFrom": "Caamp",
       "placeId": "kansas-city-mo"
     },
     {
@@ -3075,13 +3065,13 @@
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "Basement (18 and Over with Valid Government ID)",
-      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
+      "kept": "They Might Be Giants",
+      "mergedFrom": "They Might Be Giants",
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "They Might Be Giants",
-      "mergedFrom": "They Might Be Giants",
+      "kept": "Basement (18 and Over with Valid Government ID)",
+      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
       "placeId": "minneapolis-mn"
     },
     {
@@ -4905,13 +4895,13 @@
       "placeId": "phoenix-az"
     },
     {
-      "kept": "Zeds Dead",
-      "mergedFrom": "Zeds Dead",
+      "kept": "Lauren Sanderson",
+      "mergedFrom": "Lauren Sanderson",
       "placeId": "phoenix-az"
     },
     {
-      "kept": "Lauren Sanderson",
-      "mergedFrom": "Lauren Sanderson",
+      "kept": "Zeds Dead",
+      "mergedFrom": "Zeds Dead",
       "placeId": "phoenix-az"
     },
     {
@@ -5077,6 +5067,16 @@
     {
       "kept": "British Invasion",
       "mergedFrom": "British Invasion",
+      "placeId": "phoenix-az"
+    },
+    {
+      "kept": "130 CLUB: HIP HOP + R&B w/ DJ J3",
+      "mergedFrom": "130 CLUB: HIP HOP + R&B w/ DJ J3",
+      "placeId": "phoenix-az"
+    },
+    {
+      "kept": "130 CLUB: HIP HOP + R&B w/ DJ JAVIN",
+      "mergedFrom": "130 CLUB: HIP HOP + R&B w/ DJ RECO",
       "placeId": "phoenix-az"
     },
     {
