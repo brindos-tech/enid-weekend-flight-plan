@@ -1,0 +1,392 @@
+[
+  {
+    "id": "santa-fe-indian-market",
+    "title": "Santa Fe Indian Market",
+    "placeId": "santa-fe-nm",
+    "category": "art",
+    "scale": "flagship",
+    "attendance": 150000,
+    "description": "104th year — the largest and most prestigious Native art market in the world.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 8,
+      "weekday": 6,
+      "nth": 3,
+      "durationDays": 2
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-08-15",
+        "end": "2026-08-16"
+      }
+    }
+  },
+  {
+    "id": "santa-fe-zozobra",
+    "title": "Zozobra (burning of Old Man Gloom)",
+    "placeId": "santa-fe-nm",
+    "category": "festival",
+    "scale": "major",
+    "attendance": null,
+    "description": "Tens of thousands attend the burning of Old Man Gloom, kicking off Fiesta de Santa Fe.",
+    "url": "",
+    "rule": {
+      "type": "fixed-month-day",
+      "month": 9,
+      "day": 4,
+      "durationDays": 1
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-09-04",
+        "end": "2026-09-04"
+      }
+    }
+  },
+  {
+    "id": "santa-fe-fiesta",
+    "title": "Fiesta de Santa Fe",
+    "placeId": "santa-fe-nm",
+    "category": "festival",
+    "scale": "flagship",
+    "attendance": null,
+    "description": "300+ year tradition, citywide.",
+    "url": "",
+    "rule": {
+      "type": "month-span",
+      "startMonth": 9,
+      "startWeek": 1,
+      "endMonth": 9,
+      "endWeek": 2
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-09-05",
+        "end": "2026-09-13"
+      }
+    }
+  },
+  {
+    "id": "gillespie-county-fair",
+    "title": "Gillespie County Fair",
+    "placeId": "fredericksburg-tx",
+    "category": "fair",
+    "scale": "notable",
+    "attendance": null,
+    "description": "Oldest continuously running county fair in Texas, plus Hill Country wine tastings.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 8,
+      "weekday": 4,
+      "nth": -1,
+      "durationDays": 4
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-08-27",
+        "end": "2026-08-30"
+      }
+    }
+  },
+  {
+    "id": "bikes-blues-bbq",
+    "title": "Bikes, Blues & BBQ",
+    "placeId": "fayetteville-ar",
+    "category": "festival",
+    "scale": "flagship",
+    "attendance": 300000,
+    "description": "World's largest charity motorcycle rally.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 9,
+      "weekday": 3,
+      "nth": -1,
+      "durationDays": 4
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-09-30",
+        "end": "2026-10-03"
+      }
+    }
+  },
+  {
+    "id": "acl-festival-wk1",
+    "title": "Austin City Limits Festival — Weekend One",
+    "placeId": "austin-tx",
+    "category": "concert",
+    "scale": "flagship",
+    "attendance": 225000,
+    "description": "25th anniversary in 2026 — two-weekend festival, ~450K total attendance.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 5,
+      "nth": 1,
+      "durationDays": 3
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-02",
+        "end": "2026-10-04"
+      }
+    }
+  },
+  {
+    "id": "acl-festival-wk2",
+    "title": "Austin City Limits Festival — Weekend Two",
+    "placeId": "austin-tx",
+    "category": "concert",
+    "scale": "flagship",
+    "attendance": 225000,
+    "description": "25th anniversary in 2026 — two-weekend festival, ~450K total attendance.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 5,
+      "nth": 2,
+      "durationDays": 3
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-09",
+        "end": "2026-10-11"
+      }
+    }
+  },
+  {
+    "id": "balloon-fiesta",
+    "title": "Albuquerque International Balloon Fiesta",
+    "placeId": "albuquerque-nm",
+    "category": "festival",
+    "scale": "flagship",
+    "attendance": 800000,
+    "description": "~800K attendance, 500+ balloons — the single most photogenic event in the footprint.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 6,
+      "nth": 1,
+      "durationDays": 9
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-03",
+        "end": "2026-10-11"
+      }
+    }
+  },
+  {
+    "id": "tulsa-oktoberfest",
+    "title": "Tulsa Oktoberfest",
+    "placeId": "tulsa-ok",
+    "category": "festival",
+    "scale": "flagship",
+    "attendance": 400000,
+    "description": "Voted #1 in the USA, one of the largest outside Munich.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 4,
+      "nth": 4,
+      "durationDays": 4
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-22",
+        "end": "2026-10-25"
+      }
+    }
+  },
+  {
+    "id": "rhema-christmas-lights",
+    "title": "Rhema Christmas Lights",
+    "placeId": "tulsa-ok",
+    "category": "holiday",
+    "scale": "major",
+    "attendance": 500000,
+    "description": "~500K visitors, free, one of the biggest displays in the state.",
+    "url": "",
+    "rule": {
+      "type": "month-span",
+      "startMonth": 11,
+      "startWeek": 4,
+      "endMonth": 1,
+      "endWeek": 1
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-11-25",
+        "end": "2027-01-01"
+      }
+    }
+  },
+  {
+    "id": "terlingua-chili-cookoff",
+    "title": "International Chili Cookoff",
+    "placeId": "terlingua-tx",
+    "category": "food",
+    "scale": "notable",
+    "attendance": null,
+    "description": "59th year in 2026 — iconic one-off, far West Texas ghost town comes alive.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 11,
+      "weekday": 3,
+      "nth": 1,
+      "durationDays": 4
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-11-04",
+        "end": "2026-11-07"
+      }
+    }
+  },
+  {
+    "id": "sedona-arts-festival",
+    "title": "Sedona Arts Festival",
+    "placeId": "sedona-az",
+    "category": "art",
+    "scale": "notable",
+    "attendance": null,
+    "description": "One of the most scenic arts festivals anywhere.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 6,
+      "nth": 2,
+      "durationDays": 2
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-10",
+        "end": "2026-10-11"
+      }
+    }
+  },
+  {
+    "id": "emma-crawford-coffin-races",
+    "title": "Emma Crawford Coffin Races & Festival",
+    "placeId": "manitou-springs-co",
+    "category": "festival",
+    "scale": "local",
+    "attendance": null,
+    "description": "32nd year in 2026 — genuinely bizarre Halloween tradition.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 6,
+      "nth": 4,
+      "durationDays": 1
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-24",
+        "end": "2026-10-24"
+      }
+    }
+  },
+  {
+    "id": "great-american-beer-festival",
+    "title": "Great American Beer Festival",
+    "placeId": "denver-co",
+    "category": "food",
+    "scale": "major",
+    "attendance": null,
+    "description": "44th year in 2026 — thousands attend.",
+    "url": "",
+    "rule": {
+      "type": "nth-weekday-of-month",
+      "month": 10,
+      "weekday": 6,
+      "nth": 2,
+      "durationDays": 2
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-10-10",
+        "end": "2026-10-11"
+      }
+    }
+  },
+  {
+    "id": "winter-wonderland-tilles-park",
+    "title": "Winter Wonderland at Tilles Park",
+    "placeId": "st-louis-mo",
+    "category": "holiday",
+    "scale": "major",
+    "attendance": null,
+    "description": "1M+ lights, drive-through holiday display.",
+    "url": "",
+    "rule": {
+      "type": "month-span",
+      "startMonth": 11,
+      "startWeek": 4,
+      "endMonth": 1,
+      "endWeek": 1
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-11-26",
+        "end": "2027-01-03"
+      }
+    }
+  },
+  {
+    "id": "holiday-lights-riverwalk",
+    "title": "Holiday Lights on the River Walk",
+    "placeId": "san-antonio-tx",
+    "category": "holiday",
+    "scale": "notable",
+    "attendance": null,
+    "description": "200K lights, nightly parade season.",
+    "url": "",
+    "rule": {
+      "type": "month-span",
+      "startMonth": 11,
+      "startWeek": 4,
+      "endMonth": 1,
+      "endWeek": 2
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-11-27",
+        "end": "2027-01-15"
+      }
+    }
+  },
+  {
+    "id": "glendale-glitters",
+    "title": "Glendale Glitters",
+    "placeId": "phoenix-az",
+    "category": "holiday",
+    "scale": "notable",
+    "attendance": null,
+    "description": "33rd year in 2026 — citywide holiday lights.",
+    "url": "",
+    "rule": {
+      "type": "month-span",
+      "startMonth": 11,
+      "startWeek": 4,
+      "endMonth": 1,
+      "endWeek": 1
+    },
+    "confirmed": {
+      "2026": {
+        "start": "2026-11-27",
+        "end": "2027-01-01"
+      }
+    }
+  }
+]

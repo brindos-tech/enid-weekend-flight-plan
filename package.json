@@ -1,0 +1,22 @@
+{
+  "name": "enid-weekend-flight-plan",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Rolling situational-awareness engine for weekend flight planning out of Enid, OK. Static site (index.html + ES modules); Node scripts here only run in CI to regenerate data/generated/*.json.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "expand-recurring": "node scripts/expand-recurring.js",
+    "fetch-ticketmaster": "node scripts/fetch-ticketmaster.js",
+    "fetch-weather": "node scripts/fetch-weather.js",
+    "fetch-spotify": "node scripts/fetch-spotify.js",
+    "spotify-auth": "node scripts/spotify-auth.js",
+    "resolve-attractions": "node scripts/resolve-attractions.js",
+    "check-links": "node scripts/check-links.js",
+    "merge": "node scripts/merge.js",
+    "validate": "node scripts/validate.js",
+    "refresh": "npm run fetch-ticketmaster && npm run fetch-weather && npm run expand-recurring && npm run merge && npm run validate"
+  }
+}

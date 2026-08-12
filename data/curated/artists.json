@@ -1,0 +1,688 @@
+[
+  {
+    "id": "zach-bryan",
+    "name": "Zach Bryan",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 1,
+    "source": "spotify-top",
+    "genres": [
+      "red dirt",
+      "americana"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "turnpike-troubadours",
+    "name": "Turnpike Troubadours",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 2,
+    "source": "spotify-top",
+    "genres": [
+      "red dirt",
+      "americana"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "tyler-childers",
+    "name": "Tyler Childers",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 3,
+    "source": "spotify-top",
+    "genres": [
+      "country",
+      "americana"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "the-highwaymen",
+    "name": "The Highwaymen",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 4,
+    "source": "spotify-top",
+    "genres": [
+      "outlaw country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "hozier",
+    "name": "Hozier",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 5,
+    "source": "spotify-recent",
+    "genres": [
+      "folk rock",
+      "soul"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "neil-young",
+    "name": "Neil Young",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 6,
+    "source": "spotify-recent",
+    "genres": [
+      "folk rock",
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "sam-barber",
+    "name": "Sam Barber",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 7,
+    "source": "spotify-similar",
+    "genres": [
+      "country",
+      "americana"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "the-war-and-treaty",
+    "name": "The War and Treaty",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 8,
+    "source": "spotify-similar",
+    "genres": [
+      "soul",
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "dylan-gossett",
+    "name": "Dylan Gossett",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 9,
+    "source": "spotify-similar",
+    "genres": [
+      "country",
+      "folk"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "evan-honer",
+    "name": "Evan Honer",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 10,
+    "source": "spotify-similar",
+    "genres": [
+      "country",
+      "folk"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "mt-joy",
+    "name": "Mt. Joy",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 11,
+    "source": "spotify-top",
+    "genres": [
+      "indie folk"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "flatland-cavalry",
+    "name": "Flatland Cavalry",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 12,
+    "source": "spotify-top",
+    "genres": [
+      "red dirt",
+      "americana"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "palace",
+    "name": "Palace",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 13,
+    "source": "spotify-top",
+    "genres": [
+      "indie rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "john-summit",
+    "name": "John Summit",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 14,
+    "source": "spotify-top",
+    "genres": [
+      "house",
+      "electronic"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "miranda-lambert",
+    "name": "Miranda Lambert",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 15,
+    "source": "spotify-top",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "zac-brown-band",
+    "name": "Zac Brown Band",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 16,
+    "source": "spotify-top",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "taylor-swift",
+    "name": "Taylor Swift",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 17,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "glass-animals",
+    "name": "Glass Animals",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 18,
+    "source": "manual",
+    "genres": [
+      "indie pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "lana-del-rey",
+    "name": "Lana Del Rey",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 19,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "morgan-wallen",
+    "name": "Morgan Wallen",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 20,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "john-denver",
+    "name": "John Denver",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 21,
+    "source": "manual",
+    "genres": [
+      "country folk"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "marty-robbins",
+    "name": "Marty Robbins",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 22,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "johnny-cash",
+    "name": "Johnny Cash",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 23,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "lorde",
+    "name": "Lorde",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 24,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "luke-combs",
+    "name": "Luke Combs",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 25,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "kanye-west",
+    "name": "Kanye West",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 26,
+    "source": "manual",
+    "genres": [
+      "hip hop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "dos-gringos",
+    "name": "Dos Gringos",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 27,
+    "source": "manual",
+    "genres": [
+      "comedy"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "eagles",
+    "name": "Eagles",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 28,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "chance-the-rapper",
+    "name": "Chance the Rapper",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 29,
+    "source": "manual",
+    "genres": [
+      "hip hop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "lake-street-dive",
+    "name": "Lake Street Dive",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 30,
+    "source": "manual",
+    "genres": [
+      "soul",
+      "jazz pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "flyte",
+    "name": "Flyte",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 31,
+    "source": "manual",
+    "genres": [
+      "indie folk"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "fleetwood-mac",
+    "name": "Fleetwood Mac",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 32,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "kenny-chesney",
+    "name": "Kenny Chesney",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 33,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "kid-cudi",
+    "name": "Kid Cudi",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 34,
+    "source": "manual",
+    "genres": [
+      "hip hop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "green-day",
+    "name": "Green Day",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 35,
+    "source": "manual",
+    "genres": [
+      "punk rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "post-malone",
+    "name": "Post Malone",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 36,
+    "source": "manual",
+    "genres": [
+      "hip hop",
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "khalid",
+    "name": "Khalid",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 37,
+    "source": "manual",
+    "genres": [
+      "r&b"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "red-hot-chili-peppers",
+    "name": "Red Hot Chili Peppers",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 38,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "billy-joel",
+    "name": "Billy Joel",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 39,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "hall-and-oates",
+    "name": "Daryl Hall & John Oates",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 40,
+    "source": "manual",
+    "genres": [
+      "rock",
+      "soul"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "george-strait",
+    "name": "George Strait",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 41,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "katy-perry",
+    "name": "Katy Perry",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 42,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "toby-keith",
+    "name": "Toby Keith",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 43,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "hippo-campus",
+    "name": "Hippo Campus",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 44,
+    "source": "manual",
+    "genres": [
+      "indie rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "luke-bryan",
+    "name": "Luke Bryan",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 45,
+    "source": "manual",
+    "genres": [
+      "country"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "florence-and-the-machine",
+    "name": "Florence + The Machine",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 46,
+    "source": "manual",
+    "genres": [
+      "indie rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "giant-rooks",
+    "name": "Giant Rooks",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 47,
+    "source": "manual",
+    "genres": [
+      "indie rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "the-lumineers",
+    "name": "The Lumineers",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 48,
+    "source": "manual",
+    "genres": [
+      "folk rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "steely-dan",
+    "name": "Steely Dan",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 49,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "the-rolling-stones",
+    "name": "The Rolling Stones",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 50,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "one-direction",
+    "name": "One Direction",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 51,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "tabernacle-choir",
+    "name": "The Tabernacle Choir at Temple Square",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 52,
+    "source": "manual",
+    "genres": [
+      "choral"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "maroon-5",
+    "name": "Maroon 5",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 53,
+    "source": "manual",
+    "genres": [
+      "pop rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "lady-gaga",
+    "name": "Lady Gaga",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 54,
+    "source": "manual",
+    "genres": [
+      "pop"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "the-beatles",
+    "name": "The Beatles",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 55,
+    "source": "manual",
+    "genres": [
+      "rock"
+    ],
+    "lastSyncedAt": null
+  },
+  {
+    "id": "caamp",
+    "name": "Caamp",
+    "spotifyId": null,
+    "ticketmasterAttractionId": null,
+    "rank": 56,
+    "source": "manual",
+    "genres": [
+      "folk"
+    ],
+    "lastSyncedAt": null
+  }
+]

@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+a { color: var(--accent2); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.badge.confirmed { background: rgba(61,220,151,0.15); color: var(--accent2); border: 1px solid var(--accent2); }
+.badge.estimate { background: rgba(232,193,94,0.15); color: var(--gold); border: 1px solid var(--gold); }
+.badge.favorite { background: rgba(61,220,151,0.15); color: var(--accent2); border: 1px solid var(--accent2); }
+.badge.manual { background: rgba(255,138,61,0.15); color: var(--accent); border: 1px solid var(--accent); }
+
+.scale-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.scale-dot.flagship { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+.scale-dot.major { background: var(--accent3); }
+.scale-dot.notable { background: var(--muted); }
+.scale-dot.local { background: var(--border); }

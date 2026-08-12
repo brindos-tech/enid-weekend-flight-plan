@@ -1,0 +1,126 @@
+import { formatFlightTime, formatDateRange, decodeEntities, weatherCodeLabel, dowShort } from "../format.js";
+
+// Advisory only — not a substitute for a real briefing. Flags a day as a
+// possible icing setup when the low is at/near freezing and precip odds are
+// meaningful; this is a coarse heuristic, not a forecast product.
+const ICING_TEMP_F = 34;
+const ICING_PRECIP_PCT = 40;
+
+function buildWeatherSection(weather) {
+  if (!weather || !weather.dates || weather.dates.length === 0) return "";
+
+  const days = weather.dates.slice(0, 6).map((date, i) => ({
+    date,
+    hi: Math.round(weather.tempMax[i]),
+    lo: Math.round(weather.tempMin[i]),
+    precip: weather.precipProbability[i],
+    label: weatherCodeLabel(weather.weatherCode[i]),
+    icing: weather.tempMin[i] <= ICING_TEMP_F && weather.precipProbability[i] >= ICING_PRECIP_PCT,
+  }));
+
+  const icingDay = days.find((d) => d.icing);
+  const icingBanner = icingDay
+    ? `<div class="dp-icing-warn">Possible icing setup ${dowShort(icingDay.date)} (low ${icingDay.lo}°F, ${icingDay.precip}% precip) — verify current conditions before filing.</div>`
+    : "";
+
+  const daysHtml = days
+    .map(
+      (d) => `<div class="dp-wx-day">
+        <div class="dp-wx-dow">${dowShort(d.date)}</div>
+        <div class="dp-wx-temp">${d.hi}°<span>/${d.lo}°</span></div>
+        <div class="dp-wx-precip">${d.precip}%</div>
+        <div class="dp-wx-label">${d.label}</div>
+      </div>`
+    )
+    .join("");
+
+  return `
+    <h5>16-Day Outlook</h5>
+    ${icingBanner}
+    <div class="dp-wx-strip">${daysHtml}</div>
+    <div class="dp-wx-note">Advisory only — not a substitute for a real weather briefing.</div>
+  `;
+}
+
+export function createDetailPanel({ store }) {
+  const panel = document.getElementById("detailPanel");
+  const content = document.getElementById("detailContent");
+  const closeBtn = document.getElementById("detailClose");
+  // Every view (including the map's pins) fully redraws its DOM on each
+  // state change, so a raw element reference goes stale the instant
+  // store.setState below triggers that redraw — .focus() on it would fire
+  // just before the element is destroyed. main.js captures *what* was
+  // focused (its place id) before that redraw happens and passes it into
+  // render() below; re-resolve a live element with the same id after the
+  // redraw completes (deferred via setTimeout, not rAF — same reasoning as
+  // url-state.js: rAF can be suspended in a backgrounded tab), falling back
+  // to the active tab if that place no longer has a visible element.
+  let lastFocusedPlaceId = null;
+
+  function closePanel() {
+    panel.classList.remove("open");
+    store.setState({ selectedPlaceId: null, selectedEventId: null });
+    const placeId = lastFocusedPlaceId;
+    setTimeout(() => {
+      const revived = placeId && document.querySelector(`[data-place="${placeId}"]`);
+      if (revived) {
+        revived.focus();
+      } else {
+        document.querySelector(".tab-bar button.active")?.focus();
+      }
+    }, 0);
+  }
+
+  closeBtn.addEventListener("click", closePanel);
+
+  panel.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closePanel();
+  });
+
+  function render(place, eventsForPlace, weather, focusOriginPlaceId) {
+    if (!place) {
+      panel.classList.remove("open");
+      return;
+    }
+    const isNewlyOpening = !panel.classList.contains("open");
+    if (isNewlyOpening) lastFocusedPlaceId = focusOriginPlaceId ?? null;
+    const airportsHtml = place.airports
+      .map(
+        (a) =>
+          `<div class="dp-airport">${a.icao} ${a.name}${a.military ? " — military, PPR" : ""}${a.driveMiles ? ` · ${a.driveMiles}mi / ${a.driveMinutes}min drive` : ""}</div>`
+      )
+      .join("");
+
+    const eventsHtml = eventsForPlace.length
+      ? eventsForPlace
+          .map((ev) => {
+            const badge = ev.confidence !== "confirmed" ? `<span class="badge estimate">est.</span>` : "";
+            const fav = ev.isFavoriteArtist ? `<span class="badge favorite">★</span>` : "";
+            return `<div class="dp-event-row"><b>${formatDateRange(ev.start, ev.end)}</b> — ${decodeEntities(ev.title)} ${fav}${badge}</div>`;
+          })
+          .join("")
+      : `<div class="dp-event-row" style="color:var(--muted)">No events in the current window.</div>`;
+
+    content.innerHTML = `
+      <h3>${place.name}${place.state ? `, ${place.state}` : ""}</h3>
+      <div class="dp-dist">${formatFlightTime(place.flightMinutes)} · ${Math.round(place.distanceNm)} nm${place.route && !place.route.feasible ? " · no feasible fuel stop found" : place.legs > 1 ? ` · ${place.legs} legs` : ""}</div>
+      <div class="dp-blurb">${decodeEntities(place.blurb)}</div>
+      ${airportsHtml}
+      <div class="dp-events">
+        <h5>Events in window</h5>
+        ${eventsHtml}
+      </div>
+      <div class="dp-weather">
+        ${buildWeatherSection(weather)}
+      </div>
+    `;
+    panel.classList.add("open");
+    if (isNewlyOpening) {
+      // move focus into the panel so keyboard/screen-reader users land
+      // somewhere sensible, matching the standard dialog-open pattern.
+      closeBtn.focus();
+    }
+  }
+
+  return { render, close: closePanel };
+}

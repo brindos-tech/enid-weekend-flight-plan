@@ -1,0 +1,74 @@
+name: Refresh daily
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC (~01:00 CT)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Ticketmaster events
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: node scripts/fetch-ticketmaster.js
+
+      - name: Fetch weather
+        run: node scripts/fetch-weather.js
+
+      - name: Expand recurring events
+        run: node scripts/expand-recurring.js
+
+      - name: Merge into data/generated
+        run: node scripts/merge.js
+
+      - name: Validate
+        id: validate
+        run: node scripts/validate.js
+
+      # meta.json is written unconditionally by merge.js above (even on a
+      # no-op day) so this step always has something to commit — that keeps
+      # GitHub from auto-disabling this schedule after 60 days of inactivity.
+      - name: Commit if changed
+        if: success()
+        run: |
+          git config user.name "enid-runway-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/generated/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh generated data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git push
+          fi
+
+      - name: Open issue on validation failure
+        if: failure() && steps.validate.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Daily data refresh failed validation";
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", labels: ["data-refresh"],
+            });
+            const already = existing.find((i) => i.title === title);
+            const body = `The scheduled data refresh failed validation and last-good data/generated/*.json was left untouched.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (already) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: already.number, body });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: ["data-refresh"] });
+            }

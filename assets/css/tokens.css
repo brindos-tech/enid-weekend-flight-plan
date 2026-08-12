@@ -1,0 +1,57 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --panel2: #1e222b;
+  --border: #2a2f3a;
+  --text: #eef0f4;
+  --muted: #9aa3b2;
+  --accent: #ff8a3d;
+  --accent2: #3ddc97;
+  --accent3: #5b8def;
+  --gold: #e8c15e;
+  --danger: #e65a5a;
+
+  /* category colors — tuned for visibility on both dark tiles and satellite imagery */
+  --cat-concert: #5b8def;
+  --cat-festival: #ff8a3d;
+  --cat-rodeo: #c9713f;
+  --cat-fair: #e8c15e;
+  --cat-sports: #e65a5a;
+  --cat-art: #b98af0;
+  --cat-food: #3ddc97;
+  --cat-outdoors: #4fc3d9;
+  --cat-holiday: #f06fa8;
+  --cat-misc: #9aa3b2;
+
+  --kind-city: #ff8a3d;
+  --kind-boutique: #5b8def;
+  --kind-fun: #3ddc97;
+  --kind-luxury: #e8c15e;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
+
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --rail-width: 280px;
+  --detail-width: 340px;
+  --scrubber-height: 88px;
+  --header-height: 60px;
+  --tabbar-height: 52px;
+}
+
+/* Both schemes share the same dark palette by design — the map/data reads
+   best against dark tiles regardless of OS theme. Reserved for future
+   light-mode support without restructuring selectors. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+  }
+}

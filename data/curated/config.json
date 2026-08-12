@@ -1,0 +1,87 @@
+{
+  "origin": {
+    "icao": "KWDG",
+    "name": "Enid Woodring Regional",
+    "lat": 36.3792,
+    "lon": -97.7906
+  },
+  "aircraft": {
+    "type": "T-6",
+    "cruiseKts": 300,
+    "legRangeNm": 400,
+    "reserveNm": 50
+  },
+  "defaults": {
+    "rangeNm": 800,
+    "westOfMississippiOnly": true,
+    "horizonDays": 45,
+    "minScale": "notable"
+  },
+  "rangeSlider": {
+    "min": 50,
+    "max": 1200,
+    "step": 10,
+    "marks": [
+      150,
+      300,
+      400,
+      600,
+      800,
+      1000
+    ]
+  },
+  "scoring": {
+    "scaleWeight": {
+      "flagship": 10,
+      "major": 6,
+      "notable": 3,
+      "local": 1
+    },
+    "favoriteArtistMultiplier": 2.5,
+    "proximityHalfLifeNm": 450,
+    "confidencePenalty": {
+      "confirmed": 1.0,
+      "annual-estimate": 0.75,
+      "unconfirmed": 0.5
+    },
+    "rarityBoost": {
+      "annual": 1.4,
+      "seasonal": 1.1,
+      "recurring": 1.0
+    }
+  },
+  "mississippi": [
+    [
+      47.24,
+      -95.22
+    ],
+    [
+      44.95,
+      -93.09
+    ],
+    [
+      41.5,
+      -90.4
+    ],
+    [
+      38.63,
+      -90.2
+    ],
+    [
+      35.15,
+      -90.05
+    ],
+    [
+      33.5,
+      -91.1
+    ],
+    [
+      32.3,
+      -90.9
+    ],
+    [
+      29.95,
+      -90.07
+    ]
+  ]
+}

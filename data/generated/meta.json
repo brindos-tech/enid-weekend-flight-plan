@@ -1,0 +1,25 @@
+{
+  "buildId": "bootstrap-1",
+  "buildAt": "2026-08-10T00:00:00Z",
+  "eventCount": 100,
+  "sources": {
+    "ticketmaster": {
+      "status": "not_yet_run",
+      "lastSuccess": null
+    },
+    "spotify": {
+      "status": "not_yet_run",
+      "lastSuccess": null
+    },
+    "weather": {
+      "status": "ok",
+      "lastSuccess": "2026-08-11T00:00:00Z"
+    },
+    "recurring": {
+      "status": "ok",
+      "lastSuccess": "2026-08-10T00:00:00Z"
+    }
+  },
+  "dedupe": [],
+  "linkHealth": {}
+}

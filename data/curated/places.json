@@ -1,0 +1,1620 @@
+[
+  {
+    "id": "santa-fe-nm",
+    "name": "Santa Fe",
+    "state": "NM",
+    "lat": 35.687,
+    "lon": -105.938,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 5,
+      "food": 5,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 2
+    },
+    "blurb": "Adobe galleries, Canyon Road, world-class Southwestern food, and the single biggest Native art market on the planet every August. Old-money art-collector scene, Ten Thousand Waves spa, Inn of the Five Graces.",
+    "airports": [
+      {
+        "icao": "KSAF",
+        "name": "Santa Fe Municipal",
+        "lat": 35.617,
+        "lon": -106.089,
+        "driveMiles": 9,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "austin-tx",
+    "name": "Austin",
+    "state": "TX",
+    "lat": 30.267,
+    "lon": -97.743,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 4,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 2,
+      "weird": 3
+    },
+    "blurb": "Live-music capital energy, food trailers, Barton Springs, and 6th Street on Halloween weekend. Westlake Hills & Lake Austin carry tech/finance money, Barton Creek Resort, and the Miraval wellness retreat.",
+    "airports": [
+      {
+        "icao": "KAUS",
+        "name": "Austin-Bergstrom Intl",
+        "lat": 30.1975,
+        "lon": -97.6664,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "denver-co",
+    "name": "Denver",
+    "state": "CO",
+    "lat": 39.739,
+    "lon": -104.99,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 4,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Breweries, RiNo street art, Red Rocks shows, and a genuinely great museum and food scene at mile-high altitude. Centennial Airport is Denver's busiest GA field — ten minutes from Cherry Hills Village and close to Cherry Creek North.",
+    "airports": [
+      {
+        "icao": "KAPA",
+        "name": "Centennial Airport",
+        "lat": 39.57,
+        "lon": -104.849,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "kansas-city-mo",
+    "name": "Kansas City",
+    "state": "MO",
+    "lat": 39.099,
+    "lon": -94.578,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 4,
+      "food": 5,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "World-class BBQ, the Nelson-Atkins Museum, jazz history in the 18th & Vine district, and an underrated nightlife scene.",
+    "airports": [
+      {
+        "icao": "KIXD",
+        "name": "New Century AirCenter",
+        "lat": 39.0836,
+        "lon": -94.8908,
+        "driveMiles": 21,
+        "driveMinutes": 30,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "dallas-tx",
+    "name": "Dallas",
+    "state": "TX",
+    "lat": 32.777,
+    "lon": -96.797,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 5,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Deep Ellum nightlife, one of the largest arts districts in the country, and the Cotton Bowl hosting the biggest rivalry game in college football.",
+    "airports": [
+      {
+        "icao": "KAFW",
+        "name": "Fort Worth Alliance",
+        "lat": 32.9878,
+        "lon": -97.3187,
+        "driveMiles": 25,
+        "driveMinutes": 35,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "serves the DFW metro"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "fayetteville-ar",
+    "name": "Fayetteville",
+    "state": "AR",
+    "lat": 36.062,
+    "lon": -94.157,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 2,
+      "nightlife": 4,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "College-town energy on Dickson Street, plus the doorstep to Bentonville's art scene and Eureka Springs' Ozark charm.",
+    "airports": [
+      {
+        "icao": "KXNA",
+        "name": "Northwest Arkansas Regional",
+        "lat": 36.2818,
+        "lon": -94.3068,
+        "driveMiles": 15,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "st-louis-mo",
+    "name": "St. Louis",
+    "state": "MO",
+    "lat": 38.627,
+    "lon": -90.199,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 5,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 4,
+      "weird": 2
+    },
+    "blurb": "Free-admission Saint Louis Art Museum, the wild City Museum, Forest Park, and a classic Midwest food-and-beer culture.",
+    "airports": [
+      {
+        "icao": "KSUS",
+        "name": "Spirit of St. Louis",
+        "lat": 38.6626,
+        "lon": -90.652,
+        "driveMiles": 20,
+        "driveMinutes": 30,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "fort-worth-tx",
+    "name": "Fort Worth",
+    "state": "TX",
+    "lat": 32.755,
+    "lon": -97.33,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 5,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Cowtown culture at the Stockyards, plus a genuinely elite museum cluster (Kimbell, Modern Art Museum) minutes away. Southlake & Westlake carry some of the highest household incomes in the DFW metro.",
+    "airports": [
+      {
+        "icao": "KFTW",
+        "name": "Fort Worth Meacham Intl",
+        "lat": 32.8198,
+        "lon": -97.3623,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      },
+      {
+        "icao": "KAFW",
+        "name": "Fort Worth Alliance",
+        "lat": 32.9878,
+        "lon": -97.3187,
+        "driveMiles": 14,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "quieter alternative when Meacham is busy"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "san-antonio-tx",
+    "name": "San Antonio",
+    "state": "TX",
+    "lat": 29.424,
+    "lon": -98.494,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 5,
+      "nightlife": 4,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "River Walk nightlife, Tex-Mex everything, and a holiday-lights spectacle that's one of the best in Texas.",
+    "airports": [
+      {
+        "icao": "KSAT",
+        "name": "San Antonio Intl",
+        "lat": 29.5337,
+        "lon": -98.4698,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "right at the edge of comfortable range"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "houston-tx",
+    "name": "Houston",
+    "state": "TX",
+    "lat": 29.76,
+    "lon": -95.37,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 5,
+      "food": 5,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Museum District density, a huge international food scene, and the Texas Renaissance Festival just outside town. River Oaks is the single most prestigious residential neighborhood in Texas — old oil money, the River Oaks Country Club.",
+    "airports": [
+      {
+        "icao": "KDWH",
+        "name": "David Wayne Hooks Memorial",
+        "lat": 30.0619,
+        "lon": -95.5533,
+        "driveMiles": 25,
+        "driveMinutes": 35,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "fuel available 24/7, no FBO service agreement complications"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "albuquerque-nm",
+    "name": "Albuquerque",
+    "state": "NM",
+    "lat": 35.084,
+    "lon": -106.651,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 4,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 3
+    },
+    "blurb": "Old Town culture and Sandia views, home to the single most photogenic event in this whole list every October.",
+    "airports": [
+      {
+        "icao": "KABQ",
+        "name": "Albuquerque Intl Sunport / Kirtland AFB",
+        "lat": 35.0402,
+        "lon": -106.6091,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "right at the edge of comfortable range"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "tulsa-ok",
+    "name": "Tulsa",
+    "state": "OK",
+    "lat": 36.154,
+    "lon": -95.993,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 4,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Art Deco district, Philbrook Museum, and one of the largest Oktoberfests in the country — plus a Christmas lights display that draws half a million people.",
+    "airports": [
+      {
+        "icao": "KTUL",
+        "name": "Tulsa Intl",
+        "lat": 36.1984,
+        "lon": -95.8881,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "minneapolis-mn",
+    "name": "Minneapolis",
+    "state": "MN",
+    "lat": 44.978,
+    "lon": -93.265,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 5,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Walker Art Center, lakes, a serious food and brewery scene, and a legit concert calendar.",
+    "airports": [
+      {
+        "icao": "KMSP",
+        "name": "Minneapolis-St Paul Intl",
+        "lat": 44.8848,
+        "lon": -93.2223,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Lincoln, NE (KLNK) required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "omaha-ne",
+    "name": "Omaha",
+    "state": "NE",
+    "lat": 41.257,
+    "lon": -95.995,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Rising food and arts scene in the Old Market district, with a concert calendar that's been landing your Spotify favorites.",
+    "airports": [
+      {
+        "icao": "KOFF",
+        "name": "Offutt AFB",
+        "lat": 41.1183,
+        "lon": -95.9128,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": true,
+        "pprRequired": true,
+        "notes": "military field, no civilian FBO"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "des-moines-ia",
+    "name": "Des Moines",
+    "state": "IA",
+    "lat": 41.586,
+    "lon": -93.625,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Underrated food-and-brewery town with an easygoing pace — the low-key weekend in the rotation.",
+    "airports": [
+      {
+        "icao": "KDSM",
+        "name": "Des Moines Intl",
+        "lat": 41.534,
+        "lon": -93.6631,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "colorado-springs-co",
+    "name": "Colorado Springs",
+    "state": "CO",
+    "lat": 38.833,
+    "lon": -104.821,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Garden of the Gods, Pikes Peak, and a quieter mountain-town pace when the crew needs a breather weekend. The Broadmoor has held Forbes Five-Star status longer than any hotel in the world, dating to 1918.",
+    "airports": [
+      {
+        "icao": "KCOS",
+        "name": "Colorado Springs Municipal",
+        "lat": 38.8058,
+        "lon": -104.7008,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "phoenix-az",
+    "name": "Phoenix / Scottsdale",
+    "state": "AZ",
+    "lat": 33.448,
+    "lon": -112.074,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 3,
+      "nightlife": 4,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Desert nightlife, Canal Convergence public art, and a warm-weather escape once everyone else is freezing. The Phoenician, Four Seasons Troon North, and the Fairmont Scottsdale Princess anchor peak-season five-star rates of $1,000+/night.",
+    "airports": [
+      {
+        "icao": "KPHX",
+        "name": "Phoenix Sky Harbor Intl",
+        "lat": 33.4343,
+        "lon": -112.0116,
+        "driveMiles": 3,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Roswell, NM required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "little-rock-ar",
+    "name": "Little Rock",
+    "state": "AR",
+    "lat": 34.746,
+    "lon": -92.289,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "River Market district nightlife and a solid fall festival calendar — an easy, underrated weekend.",
+    "airports": [
+      {
+        "icao": "KLIT",
+        "name": "Clinton National",
+        "lat": 34.7294,
+        "lon": -92.2243,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "wichita-ks",
+    "name": "Wichita",
+    "state": "KS",
+    "lat": 37.688,
+    "lon": -97.336,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Old Town district and a growing arts scene — the closest real \"getaway\" on the list.",
+    "airports": [
+      {
+        "icao": "KICT",
+        "name": "Wichita Dwight D. Eisenhower National",
+        "lat": 37.6499,
+        "lon": -97.4331,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "springfield-mo",
+    "name": "Springfield",
+    "state": "MO",
+    "lat": 37.209,
+    "lon": -93.292,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 2
+    },
+    "blurb": "Route 66 roots, Bass Pro's flagship store, and the gateway to the Ozarks — a flexible bonus swap for any weekend.",
+    "airports": [
+      {
+        "icao": "KSGF",
+        "name": "Springfield-Branson National",
+        "lat": 37.2457,
+        "lon": -93.3886,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "guthrie-ok",
+    "name": "Guthrie",
+    "state": "OK",
+    "lat": 35.878,
+    "lon": -97.425,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Victorian-era downtown, the closest boutique option on the whole list.",
+    "airports": [
+      {
+        "icao": "KGOK",
+        "name": "Guthrie-Edmond Regional",
+        "lat": 35.8763,
+        "lon": -97.3298,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "waco-tx",
+    "name": "Waco",
+    "state": "TX",
+    "lat": 31.549,
+    "lon": -97.147,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Magnolia Market energy plus a serious rodeo pedigree.",
+    "airports": [
+      {
+        "icao": "KACT",
+        "name": "Waco Regional",
+        "lat": 31.6112,
+        "lon": -97.2305,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "bentonville-ar",
+    "name": "Bentonville",
+    "state": "AR",
+    "lat": 36.373,
+    "lon": -94.209,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 5,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Crystal Bridges Museum of American Art anchors a genuinely great little art town.",
+    "airports": [
+      {
+        "icao": "KXNA",
+        "name": "Northwest Arkansas Regional",
+        "lat": 36.2818,
+        "lon": -94.3068,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "eureka-springs-ar",
+    "name": "Eureka Springs",
+    "state": "AR",
+    "lat": 36.401,
+    "lon": -93.738,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 4,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 3,
+      "weird": 4
+    },
+    "blurb": "Victorian mountain town, winding streets, a legitimately weird and wonderful Ozarks arts scene.",
+    "airports": [
+      {
+        "icao": "KXNA",
+        "name": "Northwest Arkansas Regional",
+        "lat": 36.2818,
+        "lon": -94.3068,
+        "driveMiles": 35,
+        "driveMinutes": 45,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "hot-springs-ar",
+    "name": "Hot Springs",
+    "state": "AR",
+    "lat": 34.505,
+    "lon": -93.055,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 3,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 3,
+      "weird": 2
+    },
+    "blurb": "Historic bathhouse row plus the longest-running documentary film festival in North America.",
+    "airports": [
+      {
+        "icao": "KLIT",
+        "name": "Clinton National, Little Rock",
+        "lat": 34.7294,
+        "lon": -92.2243,
+        "driveMiles": 55,
+        "driveMinutes": 65,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "fredericksburg-tx",
+    "name": "Fredericksburg",
+    "state": "TX",
+    "lat": 30.275,
+    "lon": -98.872,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Texas Hill Country wine town, one of the closest genuine boutique escapes on the list.",
+    "airports": [
+      {
+        "icao": "KAUS",
+        "name": "Austin-Bergstrom Intl",
+        "lat": 30.1975,
+        "lon": -97.6664,
+        "driveMiles": 78,
+        "driveMinutes": 90,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "taos-nm",
+    "name": "Taos",
+    "state": "NM",
+    "lat": 36.408,
+    "lon": -105.573,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 5,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 3
+    },
+    "blurb": "400 years of art colony history in the shadow of the Sangre de Cristos.",
+    "airports": [
+      {
+        "icao": "KSAF",
+        "name": "Santa Fe Municipal",
+        "lat": 35.617,
+        "lon": -106.089,
+        "driveMiles": 70,
+        "driveMinutes": 80,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "manitou-springs-co",
+    "name": "Manitou Springs",
+    "state": "CO",
+    "lat": 38.859,
+    "lon": -104.917,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 3,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 4
+    },
+    "blurb": "Artsy little town at the base of Pikes Peak with a genuinely bizarre Halloween tradition.",
+    "airports": [
+      {
+        "icao": "KCOS",
+        "name": "Colorado Springs Municipal",
+        "lat": 38.8058,
+        "lon": -104.7008,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "bandera-tx",
+    "name": "Bandera",
+    "state": "TX",
+    "lat": 29.727,
+    "lon": -99.072,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 3
+    },
+    "blurb": "\"Cowboy Capital of the World\" — dude ranches, gunfighter shows, and small-town Texas charm.",
+    "airports": [
+      {
+        "icao": "KSAT",
+        "name": "San Antonio Intl",
+        "lat": 29.5337,
+        "lon": -98.4698,
+        "driveMiles": 50,
+        "driveMinutes": 60,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "salida-co",
+    "name": "Salida",
+    "state": "CO",
+    "lat": 38.534,
+    "lon": -105.999,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 3,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Riverside mountain arts town in the Collegiate Peaks.",
+    "airports": [
+      {
+        "icao": "KPUB",
+        "name": "Pueblo Memorial",
+        "lat": 38.2891,
+        "lon": -104.4973,
+        "driveMiles": 90,
+        "driveMinutes": 110,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "estes-park-co",
+    "name": "Estes Park",
+    "state": "CO",
+    "lat": 40.377,
+    "lon": -105.525,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Gateway to Rocky Mountain National Park, best visited during elk mating season.",
+    "airports": [
+      {
+        "icao": "KAPA",
+        "name": "Centennial Airport",
+        "lat": 39.57,
+        "lon": -104.849,
+        "driveMiles": 65,
+        "driveMinutes": 80,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "marfa-tx",
+    "name": "Marfa",
+    "state": "TX",
+    "lat": 30.31,
+    "lon": -104.024,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 5,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 5
+    },
+    "blurb": "High-desert art town, minimalist installations, genuinely nowhere else like it.",
+    "airports": [
+      {
+        "icao": "KMAF",
+        "name": "Midland Intl",
+        "lat": 31.9425,
+        "lon": -102.2019,
+        "driveMiles": 195,
+        "driveMinutes": 210,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "durango-co",
+    "name": "Durango",
+    "state": "CO",
+    "lat": 37.275,
+    "lon": -107.88,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Historic narrow-gauge railroad town with real Western-heritage cred.",
+    "airports": [
+      {
+        "icao": "KGJT",
+        "name": "Grand Junction Regional",
+        "lat": 39.1224,
+        "lon": -108.5267,
+        "driveMiles": 170,
+        "driveMinutes": 190,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Pueblo required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "terlingua-tx",
+    "name": "Terlingua",
+    "state": "TX",
+    "lat": 29.317,
+    "lon": -103.605,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 3,
+      "weird": 5
+    },
+    "blurb": "Far West Texas ghost town that comes alive once a year for one very specific reason.",
+    "airports": [
+      {
+        "icao": "KMAF",
+        "name": "Midland Intl",
+        "lat": 31.9425,
+        "lon": -102.2019,
+        "driveMiles": 200,
+        "driveMinutes": 220,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "sedona-az",
+    "name": "Sedona",
+    "state": "AZ",
+    "lat": 34.869,
+    "lon": -111.761,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 4,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 3
+    },
+    "blurb": "Red rocks, galleries, and one of the most scenic arts festivals anywhere.",
+    "airports": [
+      {
+        "icao": "KPRC",
+        "name": "Prescott Regional / Ernest Love Field",
+        "lat": 34.6546,
+        "lon": -112.4196,
+        "driveMiles": 50,
+        "driveMinutes": 60,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Santa Fe required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "roswell-nm",
+    "name": "Roswell",
+    "state": "NM",
+    "lat": 33.397,
+    "lon": -104.529,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 5
+    },
+    "blurb": "UFO Museum, campy alien-themed Americana. Straightforward direct leg, no fuel stop needed.",
+    "airports": [
+      {
+        "icao": "KROW",
+        "name": "Roswell Air Center",
+        "lat": 33.3016,
+        "lon": -104.5306,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "amarillo-tx",
+    "name": "Amarillo",
+    "state": "TX",
+    "lat": 35.219,
+    "lon": -101.706,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 3,
+      "weird": 4
+    },
+    "blurb": "Cadillac Ranch, Palo Duro Canyon (the \"Grand Canyon of Texas\"), and the 72oz steak challenge at the Big Texan. Closest real getaway on this list.",
+    "airports": [
+      {
+        "icao": "KAMA",
+        "name": "Rick Husband Amarillo Intl",
+        "lat": 35.2194,
+        "lon": -101.7059,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "lubbock-tx",
+    "name": "Lubbock",
+    "state": "TX",
+    "lat": 33.564,
+    "lon": -101.822,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Buddy Holly Center, Texas Tech energy, and the Llano Estacado wine region right outside town.",
+    "airports": [
+      {
+        "icao": "KLBB",
+        "name": "Lubbock Preston Smith Intl",
+        "lat": 33.6636,
+        "lon": -101.8228,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "cheyenne-wy",
+    "name": "Cheyenne",
+    "state": "WY",
+    "lat": 41.152,
+    "lon": -104.802,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Curt Gowdy State Park, the Vedauwoo rock formations, and the Frontier Days grounds when the crowds aren't there.",
+    "airports": [
+      {
+        "icao": "KCYS",
+        "name": "Cheyenne Regional",
+        "lat": 41.1557,
+        "lon": -104.8119,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "just over comfortable single-leg range"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "el-paso-tx",
+    "name": "El Paso",
+    "state": "TX",
+    "lat": 31.807,
+    "lon": -106.378,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Franklin Mountains State Park, Hueco Tanks climbing, and genuinely great border-town food.",
+    "airports": [
+      {
+        "icao": "KELP",
+        "name": "El Paso Intl",
+        "lat": 31.8072,
+        "lon": -106.3781,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Midland or Roswell required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "rapid-city-sd",
+    "name": "Rapid City",
+    "state": "SD",
+    "lat": 44.045,
+    "lon": -103.057,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Mount Rushmore, Crazy Horse Memorial, and Badlands National Park all within about an hour of the field.",
+    "airports": [
+      {
+        "icao": "KRAP",
+        "name": "Rapid City Regional",
+        "lat": 44.0453,
+        "lon": -103.0574,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Colorado Springs or Centennial required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "grand-junction-co",
+    "name": "Grand Junction",
+    "state": "CO",
+    "lat": 39.062,
+    "lon": -108.527,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Palisade wine country, Colorado National Monument, and the Riverfront Trail along the Colorado River.",
+    "airports": [
+      {
+        "icao": "KGJT",
+        "name": "Grand Junction Regional",
+        "lat": 39.1224,
+        "lon": -108.5267,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Pueblo or Colorado Springs required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "tucson-az",
+    "name": "Tucson",
+    "state": "AZ",
+    "lat": 32.116,
+    "lon": -110.941,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Saguaro National Park, the Sonoran Desert Museum, and the Titan Missile Museum for a Cold War detour.",
+    "airports": [
+      {
+        "icao": "KTUS",
+        "name": "Tucson Intl / KDMA Davis-Monthan",
+        "lat": 32.1161,
+        "lon": -110.941,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Roswell required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "salt-lake-city-ut",
+    "name": "Salt Lake City",
+    "state": "UT",
+    "lat": 40.788,
+    "lon": -111.978,
+    "kinds": [
+      "fun",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Downtown SLC, the Great Salt Lake, and Park City / Deer Valley about 40 minutes from the airport once ski season opens — St. Regis Deer Valley, Stein Eriksen Lodge, Montage Deer Valley.",
+    "airports": [
+      {
+        "icao": "KSLC",
+        "name": "Salt Lake City Intl",
+        "lat": 40.7884,
+        "lon": -111.9778,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Colorado Springs required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "phoenix-prescott-az",
+    "name": "Prescott",
+    "state": "AZ",
+    "lat": 34.651,
+    "lon": -112.42,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Whiskey Row, Watson Lake and the Granite Dells, and the closest approved field to the Grand Canyon (2.5hr drive to the South Rim). Grand Canyon airspace is a Special Flight Rules Area — check current charts and get squadron sign-off before routing near it.",
+    "airports": [
+      {
+        "icao": "KPRC",
+        "name": "Prescott Regional",
+        "lat": 34.6546,
+        "lon": -112.4196,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Santa Fe required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "vail-beaver-creek-co",
+    "name": "Vail / Beaver Creek",
+    "state": "CO",
+    "lat": 39.64,
+    "lon": -106.375,
+    "kinds": [
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "The headline luxury pick. Four Seasons Vail, Ritz-Carlton Bachelor Gulch, and the family-run Sonnenalp all sit within the resort villages. Mountain typically opens for ski season mid-November; summer alternative is hiking, fly-fishing, and whitewater rafting.",
+    "airports": [
+      {
+        "icao": "KEGE",
+        "name": "Eagle County Regional",
+        "lat": 39.643,
+        "lon": -106.918,
+        "driveMiles": 10,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "1 stop via Centennial required"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "oklahoma-city-ok",
+    "name": "Oklahoma City (Nichols Hills)",
+    "state": "OK",
+    "lat": 35.5333,
+    "lon": -97.6478,
+    "kinds": [
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "The closest genuine old-money enclave in the whole footprint. Nichols Hills is Oklahoma's wealthiest zip code — oil-and-cattle fortunes going back a century, the Oklahoma City Golf & Country Club, tree-lined streets.",
+    "airports": [
+      {
+        "icao": "KPWA",
+        "name": "Wiley Post Airport",
+        "lat": 35.5333,
+        "lon": -97.6478,
+        "driveMiles": 2,
+        "driveMinutes": 5,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "Approved Vance field, Atlantic Aviation FBO"
+      }
+    ],
+    "links": {}
+  }
+]
