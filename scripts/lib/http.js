@@ -21,6 +21,31 @@ export function createRateLimiter(maxPerSecond) {
 }
 
 /**
+ * Run `fn` over `items` with up to `concurrency` in flight at once, instead
+ * of a plain `for...of` loop that awaits each call in turn. A sequential
+ * loop is bounded by (rate-limit delay + full round-trip latency) per item;
+ * for a few dozen items that's fine, but it scales linearly and becomes
+ * minutes-long once the item count reaches into the thousands (e.g.
+ * link-health checks across a full live event dataset). Order of results
+ * matches the order of `items`.
+ */
+export async function mapConcurrent(items, concurrency, fn) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < items.length) {
+      const i = nextIndex++;
+      results[i] = await fn(items[i], i);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, worker);
+  await Promise.all(workers);
+  return results;
+}
+
+/**
  * Fetch JSON with retry + exponential backoff on 429/5xx. Throws on
  * exhausted retries or non-retryable errors (4xx other than 429).
  */
