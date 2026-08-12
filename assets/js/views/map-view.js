@@ -1,4 +1,4 @@
-import { formatFlightTime, decodeEntities } from "../format.js";
+import { formatFlightTime, formatDateRange, decodeEntities } from "../format.js";
 
 const CATEGORY_COLORS = {
   concert: "var(--cat-concert)", festival: "var(--cat-festival)", rodeo: "var(--cat-rodeo)",
@@ -92,11 +92,17 @@ export function createMapView({ config }) {
         opacity: inRule ? 1 : 0.35,
       });
 
-      const topEventHtml = place.topEvent
-        ? `<br><span style="color:var(--gold)">${decodeEntities(place.topEvent.title)}</span>`
-        : "";
+      // Up to 3 events, best-first (place.rankedEvents is sorted by
+      // eventScore in filters.js — non-highlight events score 0, so a
+      // favorite-artist show or pro/SEC game always leads when one exists)
+      // — not just the single top pick, so a quick hover shows a spread of
+      // what's actually happening there across a few dates.
+      const topEvents = place.rankedEvents ? place.rankedEvents.slice(0, 3) : [];
+      const eventLinesHtml = topEvents
+        .map((e) => `<br><span style="color:var(--gold)">${formatDateRange(e.start, e.end)} — ${decodeEntities(e.title)}</span>`)
+        .join("");
       marker.bindTooltip(
-        `<b>${place.name}</b> — ${formatFlightTime(place.flightMinutes)}${count ? ` · ${count} event${count === 1 ? "" : "s"}` : ""}${topEventHtml}`,
+        `<b>${place.name}</b> — ${formatFlightTime(place.flightMinutes)}${count ? ` · ${count} event${count === 1 ? "" : "s"}` : ""}${eventLinesHtml}`,
         { className: "map-tooltip", direction: "top", offset: [0, -6] }
       );
       marker.on("click", () => onPinClick(place.id));

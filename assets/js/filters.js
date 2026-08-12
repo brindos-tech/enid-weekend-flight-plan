@@ -2,6 +2,7 @@
 // let a view filter independently, or views will drift out of sync.
 import { parseDate } from "./format.js";
 import { eventScore } from "./score.js";
+import { isHighlightEvent, passesVisibilityGate } from "./importance.js";
 
 function eventOverlapsRange(event, rangeStart, rangeEnd) {
   const evStart = parseDate(event.start);
@@ -33,12 +34,20 @@ export function applyFilters(places, events, state, config) {
   const scaleOrder = { local: 0, notable: 1, major: 2, flagship: 3 };
   const minScaleRank = state.minScale ? scaleOrder[state.minScale] : -1;
 
+  // The wider the selected window, the more curation it needs: inside ~2
+  // weeks everything else already allowed stays visible for browsing
+  // (smaller college games, non-favorite concerts); beyond that only
+  // highlight events (favorite artist / pro-or-SEC game) stay visible at
+  // all — see importance.js.
+  const spanDays = Math.round((state.dateRange.end - state.dateRange.start) / 86400000);
+
   let visibleEvents = events.filter((ev) => {
     if (!visiblePlaceIds.has(ev.placeId)) return false;
     if (!eventOverlapsRange(ev, state.dateRange.start, state.dateRange.end)) return false;
     if (state.categories.size > 0 && !state.categories.has(ev.category)) return false;
     if (minScaleRank >= 0 && scaleOrder[ev.scale] < minScaleRank) return false;
     if (state.favoritesOnly && !ev.isFavoriteArtist) return false;
+    if (!passesVisibilityGate(ev, spanDays)) return false;
     return true;
   });
 
@@ -74,11 +83,13 @@ export function applyFilters(places, events, state, config) {
   for (const place of visiblePlaces) {
     const evs = eventsByPlace.get(place.id) || [];
     place.eventCount = evs.length;
-    place.topEvent = evs.length
-      ? evs.reduce((best, e) =>
-          eventScore(e, place, config.scoring) > eventScore(best, place, config.scoring) ? e : best
-        )
-      : null;
+    // best-scoring first; a non-highlight event always scores 0 (see
+    // score.js) so it only ever leads this list when nothing else at the
+    // place qualifies as a highlight.
+    place.rankedEvents = evs
+      .slice()
+      .sort((a, b) => eventScore(b, place, config.scoring) - eventScore(a, place, config.scoring));
+    place.topEvent = place.rankedEvents[0] || null;
   }
 
   const counts = {

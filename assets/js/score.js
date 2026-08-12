@@ -1,6 +1,12 @@
 // Relevance scoring — pure functions, all weights read from config.scoring.
+import { isHighlightEvent } from "./importance.js";
 
+// A non-favorite concert or a non-pro/non-SEC sports game contributes
+// nothing to a place or weekend's ranking — see importance.js. They can
+// still be browsed (subject to filters.js's horizon-based visibility gate)
+// but they can never win a "suggested city" slot.
 export function eventScore(event, place, scoring) {
+  if (!isHighlightEvent(event)) return 0;
   const scaleW = scoring.scaleWeight[event.scale] ?? 1;
   const favMult = event.isFavoriteArtist ? scoring.favoriteArtistMultiplier : 1;
   const distanceNm = place ? place.distanceNm : 0;
@@ -45,7 +51,10 @@ export function rankPlacesByActivity(places, eventsByPlace, activityKey, scoring
     for (const ev of events) {
       const s = eventScore(ev, place, scoring);
       eventBonus += s * 0.15; // stacking bonus, diminishing weight
-      if (s > topEventScore) {
+      // only a highlight event (favorite artist / pro-or-SEC game) can be
+      // shown as the "why" for a place — a non-favorite concert scores 0
+      // and must never win this even by default when it's the only event.
+      if (isHighlightEvent(ev) && s > topEventScore) {
         topEventScore = s;
         topEvent = ev;
       }
@@ -83,7 +92,18 @@ export function rankWeekendCandidates(friday, weekendEvents, places, scoring, ov
     if (entry.events.length > 1) entry.score += s * 0.1; // small stacking bonus
   }
 
-  let candidates = Array.from(byPlace.values()).sort((a, b) => b.score - a.score);
+  // best-scoring event first within each place, so the "topEvents" summary
+  // shown in the UI always leads with a highlight event (favorite artist /
+  // pro-or-SEC game) when one exists, rather than whatever was pushed first.
+  for (const entry of byPlace.values()) {
+    entry.events.sort((a, b) => eventScore(b, entry.place, scoring) - eventScore(a, entry.place, scoring));
+  }
+
+  // a place with zero highlight events this weekend scores 0 — drop it
+  // rather than surface it as a "Best Match" with nothing to justify the pick.
+  let candidates = Array.from(byPlace.values())
+    .filter((c) => c.score > 0)
+    .sort((a, b) => b.score - a.score);
 
   if (override) {
     const overridePlace = placesById.get(override.placeId);

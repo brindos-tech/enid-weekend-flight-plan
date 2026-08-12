@@ -1,4 +1,11 @@
-import { formatFlightTime, formatDateRange, decodeEntities, weatherCodeLabel, dowShort } from "../format.js";
+import { formatFlightTime, formatDateRange, decodeEntities, weatherCodeLabel, dowShort, parseDate } from "../format.js";
+import { eventScore } from "../score.js";
+
+// The panel is a quick-glance summary, not the full agenda — cap it to the
+// best few events (see importance.js for what "best" means) and point
+// anything past that at the Feed instead, rather than dumping every event
+// in the window at a busy place.
+const HIGHLIGHT_CAP = 5;
 
 // Advisory only — not a substitute for a real briefing. Flags a day as a
 // possible icing setup when the low is at/near freezing and precip odds are
@@ -42,7 +49,7 @@ function buildWeatherSection(weather) {
   `;
 }
 
-export function createDetailPanel({ store, meta }) {
+export function createDetailPanel({ store, meta, config }) {
   const linkHealth = meta?.linkHealth ?? {};
   const panel = document.getElementById("detailPanel");
   const content = document.getElementById("detailContent");
@@ -92,8 +99,18 @@ export function createDetailPanel({ store, meta }) {
       )
       .join("");
 
-    const eventsHtml = eventsForPlace.length
-      ? eventsForPlace
+    // best-scoring first, then take the top N and put those back in
+    // chronological order — reads like a normal agenda, just trimmed to
+    // the highlights instead of every event at a busy place.
+    const highlights = eventsForPlace
+      .slice()
+      .sort((a, b) => eventScore(b, place, config.scoring) - eventScore(a, place, config.scoring))
+      .slice(0, HIGHLIGHT_CAP)
+      .sort((a, b) => parseDate(a.start) - parseDate(b.start));
+    const overflowCount = eventsForPlace.length - highlights.length;
+
+    const eventsHtml = highlights.length
+      ? highlights
           .map((ev) => {
             const badge = ev.confidence !== "confirmed" ? `<span class="badge estimate">est.</span>` : "";
             const fav = ev.isFavoriteArtist ? `<span class="badge favorite">★</span>` : "";
@@ -108,6 +125,10 @@ export function createDetailPanel({ store, meta }) {
           })
           .join("")
       : `<div class="dp-event-row" style="color:var(--muted)">No events in the current window.</div>`;
+    const moreNoteHtml =
+      overflowCount > 0
+        ? `<div class="dp-more-note">+${overflowCount} more in this window — showing top picks only.</div>`
+        : "";
 
     content.innerHTML = `
       <h3>${place.name}${place.state ? `, ${place.state}` : ""}</h3>
@@ -117,6 +138,7 @@ export function createDetailPanel({ store, meta }) {
       <div class="dp-events">
         <h5>Events in window</h5>
         ${eventsHtml}
+        ${moreNoteHtml}
       </div>
       <div class="dp-weather">
         ${buildWeatherSection(weather)}
