@@ -33,15 +33,22 @@ function classificationToCategory(classificationName) {
   return map[classificationName] || "misc";
 }
 
-function estimateScale(event) {
-  const capacity = event._embedded?.venues?.[0]?.capacity;
+// Ticketmaster's event search almost never inlines venue.capacity (it's
+// populated for well under 1% of results in this footprint) — relying on it
+// alone made nearly every event, including genuine stadium tours, fall
+// through to "local". venueCapacityMap is filled in by fetchVenueCapacities
+// below via the dedicated venue-detail endpoint, which has much better
+// capacity coverage, and is used as the fallback here.
+function estimateScale(event, venueCapacityMap) {
+  const venue = event._embedded?.venues?.[0];
+  const capacity = venue?.capacity ?? (venue?.id ? venueCapacityMap?.get(venue.id) : undefined);
   if (capacity >= 30000) return "flagship";
   if (capacity >= 8000) return "major";
   if (capacity >= 1000) return "notable";
   return "local";
 }
 
-function mapTicketmasterEvent(tmEvent, { placeId, attractionId } = {}) {
+function mapTicketmasterEvent(tmEvent, { placeId, attractionId, venueCapacityMap } = {}) {
   const venue = tmEvent._embedded?.venues?.[0];
   const dateInfo = tmEvent.dates?.start;
   return {
@@ -54,7 +61,7 @@ function mapTicketmasterEvent(tmEvent, { placeId, attractionId } = {}) {
     venue: venue ? { name: venue.name, lat: Number(venue.location?.latitude), lon: Number(venue.location?.longitude) } : null,
     category: classificationToCategory(tmEvent.classifications?.[0]?.segment?.name?.toLowerCase()),
     subcategory: tmEvent.classifications?.[0]?.genre?.name || null,
-    scale: estimateScale(tmEvent),
+    scale: estimateScale(tmEvent, venueCapacityMap),
     attendance: null,
     artistIds: attractionId ? [attractionId] : [],
     isFavoriteArtist: false,
@@ -67,6 +74,35 @@ function mapTicketmasterEvent(tmEvent, { placeId, attractionId } = {}) {
     fetchedAt: new Date().toISOString(),
     recurringId: null,
   };
+}
+
+// One request per venue that (a) didn't already carry a capacity in the
+// event embed and (b) hasn't been looked up yet. Runs after both passes so
+// duplicate venues (the same amphitheater hosting a dozen different events)
+// only cost a single request.
+async function fetchVenueCapacities(rawEntries) {
+  const venueCapacityMap = new Map();
+  const idsToFetch = new Set();
+  for (const { tmEvent } of rawEntries) {
+    const venue = tmEvent._embedded?.venues?.[0];
+    if (venue?.id && venue.capacity == null) idsToFetch.add(venue.id);
+  }
+
+  let fetched = 0;
+  for (const id of idsToFetch) {
+    await limiter();
+    try {
+      const venue = await fetchJsonWithRetry(`${API_BASE}/venues/${id}.json?apikey=${API_KEY}`);
+      if (venue.capacity != null) {
+        venueCapacityMap.set(id, Number(venue.capacity));
+        fetched++;
+      }
+    } catch (err) {
+      // missing/unavailable venue detail — leave uncapacitied, estimateScale falls back to "local"
+    }
+  }
+  console.log(`Venue capacity lookups: ${fetched}/${idsToFetch.size} venues resolved.`);
+  return venueCapacityMap;
 }
 
 async function findNearestPlace(lat, lon, places, maxNm = 40) {
@@ -90,15 +126,15 @@ async function fetchArtistEvents(artist, places) {
   try {
     const data = await fetchJsonWithRetry(url);
     const events = data._embedded?.events || [];
-    const mapped = [];
+    const raw = [];
     for (const ev of events) {
       const venue = ev._embedded?.venues?.[0];
       const lat = Number(venue?.location?.latitude);
       const lon = Number(venue?.location?.longitude);
       const place = Number.isFinite(lat) && Number.isFinite(lon) ? await findNearestPlace(lat, lon, places) : null;
-      mapped.push(mapTicketmasterEvent(ev, { placeId: place?.id, attractionId: artist.ticketmasterAttractionId }));
+      raw.push({ tmEvent: ev, placeId: place?.id, attractionId: artist.ticketmasterAttractionId });
     }
-    return mapped;
+    return raw;
   } catch (err) {
     console.warn(`Artist pass failed for ${artist.name}: ${err.message}`);
     return [];
@@ -106,7 +142,7 @@ async function fetchArtistEvents(artist, places) {
 }
 
 async function fetchStateEvents(stateCode, classificationName, places) {
-  const events = [];
+  const raw = [];
   let page = 0;
   const startDateTime = `${new Date().toISOString().split(".")[0]}Z`;
   const endDate = new Date();
@@ -128,7 +164,7 @@ async function fetchStateEvents(stateCode, classificationName, places) {
         const lat = Number(venue?.location?.latitude);
         const lon = Number(venue?.location?.longitude);
         const place = Number.isFinite(lat) && Number.isFinite(lon) ? await findNearestPlace(lat, lon, places) : null;
-        if (place) events.push(mapTicketmasterEvent(ev, { placeId: place.id }));
+        if (place) raw.push({ tmEvent: ev, placeId: place.id });
       }
       const totalPages = data.page?.totalPages ?? 1;
       page++;
@@ -138,7 +174,7 @@ async function fetchStateEvents(stateCode, classificationName, places) {
       break;
     }
   }
-  return events;
+  return raw;
 }
 
 async function main() {
@@ -153,24 +189,39 @@ async function main() {
   ]);
 
   const artistEventLists = await Promise.all(artists.map((a) => fetchArtistEvents(a, places)));
-  const artistEvents = artistEventLists.flat();
-  console.log(`Artist pass: ${artistEvents.length} events across ${artists.filter((a) => a.ticketmasterAttractionId).length} resolved artists.`);
+  const artistRaw = artistEventLists.flat();
+  console.log(`Artist pass: ${artistRaw.length} events across ${artists.filter((a) => a.ticketmasterAttractionId).length} resolved artists.`);
 
-  const geoEvents = [];
+  const geoRaw = [];
   for (const state of FOOTPRINT_STATES) {
     for (const classification of CLASSIFICATIONS) {
-      const events = await fetchStateEvents(state, classification, places);
-      geoEvents.push(...events);
+      const raw = await fetchStateEvents(state, classification, places);
+      geoRaw.push(...raw);
     }
   }
-  console.log(`Geographic pass: ${geoEvents.length} events across ${FOOTPRINT_STATES.length} states.`);
+  console.log(`Geographic pass: ${geoRaw.length} events across ${FOOTPRINT_STATES.length} states.`);
 
-  // dedupe by ticketmaster sourceId before caching (artist pass and geo pass overlap)
-  const bySourceId = new Map();
-  for (const ev of [...artistEvents, ...geoEvents]) {
-    if (!bySourceId.has(ev.sourceId)) bySourceId.set(ev.sourceId, ev);
+  // dedupe raw entries by sourceId before the (rate-limited) venue lookup,
+  // so a venue hosting several artist-pass + geo-pass duplicates of the same
+  // show only gets counted, and looked up, once.
+  const rawBySourceId = new Map();
+  for (const entry of [...artistRaw, ...geoRaw]) {
+    if (!rawBySourceId.has(entry.tmEvent.id)) rawBySourceId.set(entry.tmEvent.id, entry);
   }
-  const combined = Array.from(bySourceId.values());
+  const rawEntries = Array.from(rawBySourceId.values());
+
+  const venueCapacityMap = await fetchVenueCapacities(rawEntries);
+
+  const allEvents = rawEntries.map((entry) => mapTicketmasterEvent(entry.tmEvent, { ...entry, venueCapacityMap }));
+
+  // The geo sweep alone returns thousands of small local listings — keep
+  // only events with a real popularity signal: artist-pass hits (every
+  // artist here is one of the user's actual Spotify artists) plus anything
+  // that scored above "local" on venue capacity (notable venue and up).
+  // "local"-scale events found only via the geo sweep are the noise this
+  // filter exists to cut.
+  const combined = allEvents.filter((ev) => ev.artistIds.length > 0 || ev.scale !== "local");
+  console.log(`Filtered ${allEvents.length} candidate events down to ${combined.length} big-ticket/favorite-artist events.`);
 
   await mkdir(CACHE_DIR, { recursive: true });
   await writeFile(path.join(CACHE_DIR, "ticketmaster.json"), JSON.stringify(combined, null, 2));

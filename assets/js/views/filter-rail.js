@@ -30,7 +30,7 @@ export function createFilterRail({ store, config }) {
     .map((nm) => {
       const pct = ((nm - config.rangeSlider.min) / (config.rangeSlider.max - config.rangeSlider.min)) * 100;
       const isLeg = nm === config.aircraft.legRangeNm;
-      return `<span class="${isLeg ? "leg-boundary" : ""}" style="left:${pct}%">${nm}${isLeg ? " (fuel stop)" : ""}</span>`;
+      return `<span class="${isLeg ? "leg-boundary" : ""}" style="left:${pct}%">${nm}${isLeg ? `<br><small>fuel stop</small>` : ""}</span>`;
     })
     .join("");
   rangeMarks.innerHTML = marksHtml;

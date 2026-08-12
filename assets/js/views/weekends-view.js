@@ -50,14 +50,13 @@ export function renderWeekends(container, filtered, { places, config, overrides 
       }
 
       const [primary, ...backups] = candidates;
-      const manualBadge = primary.manual ? `<span class="badge manual">Locked</span>` : "";
       const topEvents = primary.events.slice(0, 2).map((e) => decodeEntities(e.title)).join(" + ");
 
       const backupsHtml = backups.length
         ? `<div class="wk-backups">${backups
             .map(
-              (b) =>
-                `<div class="wk-backup-row"><b>${b.place.name}</b> — ${b.events
+              (b, i) =>
+                `<div class="wk-backup-row"><span class="badge backup">Backup ${i + 1}</span> <b>${b.place.name}</b> — ${b.events
                   .slice(0, 1)
                   .map((e) => decodeEntities(e.title))
                   .join("")} · ${formatFlightTime(b.place.flightMinutes)}</div>`
@@ -70,7 +69,7 @@ export function renderWeekends(container, filtered, { places, config, overrides 
         <button type="button" class="weekend-card" data-place="${primary.place.id}" aria-label="${weekendLabel.replace(/"/g, "&quot;")}">
           <div class="wk-header">
             <span class="wk-date">${formatDateRange(toDateKey(friday), toDateKey(sunday))}</span>
-            ${manualBadge}
+            <span class="badge best-match">Best Match</span>
           </div>
           <div class="wk-primary">
             <span class="wk-city">${primary.place.name}</span>
@@ -84,7 +83,7 @@ export function renderWeekends(container, filtered, { places, config, overrides 
 
   container.innerHTML = `
     <h2>Weekends</h2>
-    <p class="view-sub">One primary pick and two backups, ranked automatically from events in view. Locked badges mark a manual override.</p>
+    <p class="view-sub">One best-match pick plus up to two backups, ranked automatically from events in view.</p>
     <div class="weekend-list">${cardsHtml}</div>
   `;
 

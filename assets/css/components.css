@@ -81,12 +81,13 @@ button.feed-row, button.place-card, button.weekend-card, button.show-row {
 }
 .range-marks {
   position: relative;
-  height: 16px;
+  height: 28px;
   font-size: 0.65em;
   color: var(--muted);
 }
-.range-marks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.range-marks span { position: absolute; transform: translateX(-50%); white-space: nowrap; text-align: center; }
 .range-marks .leg-boundary { color: var(--gold); font-weight: 700; }
+.range-marks .leg-boundary small { display: block; font-weight: 400; font-size: 0.85em; letter-spacing: 0.02em; }
 
 .toggle-row {
   display: flex;
@@ -234,8 +235,9 @@ button.feed-row, button.place-card, button.weekend-card, button.show-row {
 .weekend-card .wk-city { font-size: 1.2em; font-weight: 800; color: var(--accent); }
 .weekend-card .wk-event { color: #c7cbd4; font-size: 0.9em; }
 .weekend-card .wk-backups { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); display: flex; flex-direction: column; gap: 6px; }
-.weekend-card .wk-backup-row { font-size: 0.82em; color: var(--muted); }
+.weekend-card .wk-backup-row { font-size: 0.82em; color: var(--muted); display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
 .weekend-card .wk-backup-row b { color: var(--text); }
+.weekend-card .wk-backup-row .badge.backup { font-size: 0.85em; flex-shrink: 0; }
 
 /* -------- detail panel -------- */
 .detail-panel .dp-close { position: absolute; top: 12px; right: 12px; background: none; border: none; color: var(--muted); font-size: 1.4em; line-height: 1; padding: 4px; }
