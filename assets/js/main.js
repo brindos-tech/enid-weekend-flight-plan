@@ -67,7 +67,7 @@ async function boot() {
   const mapView = createMapView({ config });
   const filterRail = createFilterRail({ store, config });
   const scrubber = createScrubber({ store, config, allEvents: events });
-  const detailPanel = createDetailPanel({ store });
+  const detailPanel = createDetailPanel({ store, meta });
 
   // Captured *before* setState, because the very same render pass this
   // triggers also rebuilds the map's pins (and every list view redraws its

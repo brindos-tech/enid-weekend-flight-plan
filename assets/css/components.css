@@ -248,6 +248,8 @@ button.feed-row, button.place-card, button.weekend-card, button.show-row {
 .detail-panel .dp-events h5 { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 14px 0 8px; }
 .detail-panel .dp-event-row { font-size: 0.85em; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .detail-panel .dp-event-row:last-child { border-bottom: none; }
+.dp-event-link { font-size: 0.9em; white-space: nowrap; }
+.dp-event-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .detail-panel .dp-weather h5 { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 14px 0 8px; }
 .dp-icing-warn {
