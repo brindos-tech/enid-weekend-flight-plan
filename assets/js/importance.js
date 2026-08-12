@@ -86,13 +86,24 @@ export function isHighlightEvent(event) {
   return true; // art/food/outdoors/fair/rodeo/holiday: low volume, always fine
 }
 
-// Beyond this many days out, only highlight events stay visible at all.
-// Inside it, everything the other filters already allow stays visible
+// A non-favorite concert at a flagship/major-scale venue (the rare case
+// where Ticketmaster actually reports venue capacity — see
+// scripts/fetch-ticketmaster.js) is worth browsing even though it can't win
+// a ranking slot: this is what keeps something like RÜFÜS DU SOL visible
+// for the Artists view's "Notable Shows" list and elsewhere, without it
+// ever becoming a "suggested city" pick (that still requires a favorite
+// artist — see isHighlightEvent/eventScore).
+export function isNotableEvent(event) {
+  return event.category === "concert" && (event.scale === "flagship" || event.scale === "major");
+}
+
+// Beyond this many days out, only highlight/notable events stay visible at
+// all. Inside it, everything the other filters already allow stays visible
 // (smaller college games, non-favorite concerts) for browsing — they just
 // still can't win a ranking slot, per eventScore's use of isHighlightEvent.
 const VISIBILITY_HORIZON_DAYS = 14;
 
 export function passesVisibilityGate(event, spanDays) {
   if (spanDays <= VISIBILITY_HORIZON_DAYS) return true;
-  return isHighlightEvent(event);
+  return isHighlightEvent(event) || isNotableEvent(event);
 }

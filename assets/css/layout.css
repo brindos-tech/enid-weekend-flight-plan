@@ -106,13 +106,26 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  overflow-y: auto;
+  overflow: hidden;
   z-index: 1200;
   transform: translateX(calc(100% + 32px));
   transition: transform 0.2s ease;
-  padding: 18px;
 }
 .detail-panel.open { transform: translateX(0); }
+
+/* #detailContent (not .detail-panel) is the scrolling element, and
+   .dp-close is its sibling rather than a scroll participant — the close
+   button used to be position:absolute *inside* the scrolling panel, which
+   meant its offset was relative to the scrolled content and it scrolled
+   out of view with everything else. Splitting scroll (content) from
+   position (panel) keeps the close button pinned to the panel's corner
+   regardless of how far the content is scrolled. */
+.detail-panel #detailContent {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  padding: 18px;
+}
 
 /* -------- scrubber strip -------- */
 .scrubber-wrap {
@@ -173,7 +186,10 @@
   .detail-panel {
     top: auto; left: 0; right: 0; bottom: 0;
     width: auto;
-    max-height: 75vh;
+    /* a fixed height (not max-height) so #detailContent's inset:0 has a
+       real box to fill — see the #detailContent comment above for why it
+       needs to be the scrolling element instead of .detail-panel itself. */
+    height: 75vh;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     transform: translateY(110%);
   }

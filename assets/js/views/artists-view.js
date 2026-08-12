@@ -38,11 +38,23 @@ export function renderArtists(container, filtered, { artists, meta, places }, on
     ? withShows.map(artistCard).join("")
     : `<div class="empty-state">None of your favorites have shows in the current filters — try widening the date window.</div>`;
 
+  // Notable shows: flagship/major-scale concerts NOT tied to a favorite
+  // artist — browsable (e.g. RÜFÜS DU SOL), but this list never feeds
+  // rankings/suggestions, which stay favorite-artist-only (see score.js).
+  const notable = visibleEvents.filter(
+    (ev) => ev.category === "concert" && !ev.isFavoriteArtist && (ev.scale === "flagship" || ev.scale === "major")
+  );
+  const notableHtml = notable.length
+    ? notable.slice(0, 12).map(showRow).join("")
+    : `<div class="no-shows">Nothing notable outside your favorites in this window.</div>`;
+
   container.innerHTML = `
     <h2>Artists</h2>
-    <p class="view-sub">Your favorites, with anything upcoming in the footprint.</p>
+    <p class="view-sub">Your favorites first, with anything upcoming in the footprint. Notable Shows below catches high-scale concerts outside your list so nothing big gets missed.</p>
     ${reauthBanner}
     <div class="artist-grid">${withShowsHtml}</div>
+    <h3 style="font-size:0.95em;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;">Notable Shows</h3>
+    <div class="artist-card" style="max-width:640px;">${notableHtml}</div>
   `;
 
   container.querySelectorAll("[data-place]").forEach((row) => {
