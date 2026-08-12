@@ -2,72 +2,72 @@
   {
     "id": "zach-bryan",
     "name": "Zach Bryan",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "spotifyId": "40ZNYROS4zLfyyBSs2PGe2",
+    "ticketmasterAttractionId": "K8vZ917_NoV",
     "rank": 1,
     "source": "spotify-top",
     "genres": [
       "red dirt",
       "americana"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "turnpike-troubadours",
     "name": "Turnpike Troubadours",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "spotifyId": "1YSA4byX5AL1zoTsSTlB03",
+    "ticketmasterAttractionId": "K8vZ917uXLV",
     "rank": 2,
     "source": "spotify-top",
     "genres": [
       "red dirt",
       "americana"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "tyler-childers",
     "name": "Tyler Childers",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "spotifyId": "13ZEDW6vyBF12HYcZRr4EV",
+    "ticketmasterAttractionId": "K8vZ917pay7",
     "rank": 3,
     "source": "spotify-top",
     "genres": [
       "country",
       "americana"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "the-highwaymen",
     "name": "The Highwaymen",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 4,
+    "spotifyId": "6e7QpHYqEiyJGiM98IysLa",
+    "ticketmasterAttractionId": "K8vZ917_Pa0",
+    "rank": 11,
     "source": "spotify-top",
     "genres": [
       "outlaw country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "hozier",
     "name": "Hozier",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 5,
+    "spotifyId": "2FXC3k01G6Gw61bmprjgqS",
+    "ticketmasterAttractionId": "K8vZ917o-E7",
+    "rank": 19,
     "source": "spotify-recent",
     "genres": [
       "folk rock",
       "soul"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "neil-young",
     "name": "Neil Young",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ91712r0",
     "rank": 6,
     "source": "spotify-recent",
     "genres": [
@@ -80,7 +80,7 @@
     "id": "sam-barber",
     "name": "Sam Barber",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917hb00",
     "rank": 7,
     "source": "spotify-similar",
     "genres": [
@@ -93,7 +93,7 @@
     "id": "the-war-and-treaty",
     "name": "The War and Treaty",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917phs0",
     "rank": 8,
     "source": "spotify-similar",
     "genres": [
@@ -106,7 +106,7 @@
     "id": "dylan-gossett",
     "name": "Dylan Gossett",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917j68V",
     "rank": 9,
     "source": "spotify-similar",
     "genres": [
@@ -119,7 +119,7 @@
     "id": "evan-honer",
     "name": "Evan Honer",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917hr00",
     "rank": 10,
     "source": "spotify-similar",
     "genres": [
@@ -131,33 +131,33 @@
   {
     "id": "mt-joy",
     "name": "Mt. Joy",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 11,
+    "spotifyId": "69tiO1fG8VWduDl3ji2qhI",
+    "ticketmasterAttractionId": "K8vZ9174RDf",
+    "rank": 29,
     "source": "spotify-top",
     "genres": [
       "indie folk"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "flatland-cavalry",
     "name": "Flatland Cavalry",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 12,
+    "spotifyId": "4SfGzWmeoNPKIOmiyc7Pav",
+    "ticketmasterAttractionId": "K8vZ917bGK7",
+    "rank": 7,
     "source": "spotify-top",
     "genres": [
       "red dirt",
       "americana"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "palace",
     "name": "Palace",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917KbJV",
     "rank": 13,
     "source": "spotify-top",
     "genres": [
@@ -169,7 +169,7 @@
     "id": "john-summit",
     "name": "John Summit",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917_pO7",
     "rank": 14,
     "source": "spotify-top",
     "genres": [
@@ -181,116 +181,116 @@
   {
     "id": "miranda-lambert",
     "name": "Miranda Lambert",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 15,
+    "spotifyId": "66lH4jAE7pqPlOlzUKbwA0",
+    "ticketmasterAttractionId": "K8vZ9175iO0",
+    "rank": 5,
     "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "zac-brown-band",
     "name": "Zac Brown Band",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 16,
+    "spotifyId": "6yJCxee7QumYr820xdIsjo",
+    "ticketmasterAttractionId": "K8vZ9175zn0",
+    "rank": 18,
     "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "taylor-swift",
     "name": "Taylor Swift",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 17,
-    "source": "manual",
+    "spotifyId": "06HL4z0CvFAxyc27GXpf02",
+    "ticketmasterAttractionId": "K8vZ917jsH7",
+    "rank": 16,
+    "source": "spotify-top",
     "genres": [
       "pop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "glass-animals",
     "name": "Glass Animals",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 18,
-    "source": "manual",
+    "spotifyId": "4yvcSjfu4PC0CYQyLy4wSq",
+    "ticketmasterAttractionId": "K8vZ917omp7",
+    "rank": 12,
+    "source": "spotify-top",
     "genres": [
       "indie pop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "lana-del-rey",
     "name": "Lana Del Rey",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 19,
-    "source": "manual",
+    "spotifyId": "00FQb4jTyendYWaN8pK0wa",
+    "ticketmasterAttractionId": "K8vZ9172ZIV",
+    "rank": 25,
+    "source": "spotify-top",
     "genres": [
       "pop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "morgan-wallen",
     "name": "Morgan Wallen",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 20,
-    "source": "manual",
+    "spotifyId": "4oUHIQIBe0LHzYfvXNW4QM",
+    "ticketmasterAttractionId": "K8vZ9174qlV",
+    "rank": 13,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "john-denver",
     "name": "John Denver",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 21,
-    "source": "manual",
+    "spotifyId": "7EK1bQADBoqbYXnT4Cqv9w",
+    "ticketmasterAttractionId": "K8vZ9171GPV",
+    "rank": 35,
+    "source": "spotify-top",
     "genres": [
       "country folk"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "marty-robbins",
     "name": "Marty Robbins",
-    "spotifyId": null,
+    "spotifyId": "0Xi59sEw38vRvwleSAVqoo",
     "ticketmasterAttractionId": null,
-    "rank": 22,
-    "source": "manual",
+    "rank": 31,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "johnny-cash",
     "name": "Johnny Cash",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 23,
-    "source": "manual",
+    "spotifyId": "6kACVPfCOnqzgfEF5ryl0x",
+    "ticketmasterAttractionId": "K8vZ917OtL7",
+    "rank": 14,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "lorde",
     "name": "Lorde",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917o0Uf",
     "rank": 24,
     "source": "manual",
     "genres": [
@@ -301,68 +301,68 @@
   {
     "id": "luke-combs",
     "name": "Luke Combs",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 25,
-    "source": "manual",
+    "spotifyId": "718COspgdWOnwOFpJHRZHS",
+    "ticketmasterAttractionId": "K8vZ917KVr7",
+    "rank": 23,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "kanye-west",
     "name": "Kanye West",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 26,
-    "source": "manual",
+    "spotifyId": "5K4W6rqBFWDnAN6FQUkS6x",
+    "ticketmasterAttractionId": "K8vZ9175Oy7",
+    "rank": 6,
+    "source": "spotify-top",
     "genres": [
       "hip hop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "dos-gringos",
     "name": "Dos Gringos",
-    "spotifyId": null,
+    "spotifyId": "3OpMOjtZWC821Z213f2mg6",
     "ticketmasterAttractionId": null,
-    "rank": 27,
-    "source": "manual",
+    "rank": 10,
+    "source": "spotify-top",
     "genres": [
       "comedy"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "eagles",
     "name": "Eagles",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 28,
-    "source": "manual",
+    "spotifyId": "0ECwFtbIWEVNwjlrfc6xoL",
+    "ticketmasterAttractionId": "K8vZ9171ob7",
+    "rank": 37,
+    "source": "spotify-top",
     "genres": [
       "rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "chance-the-rapper",
     "name": "Chance the Rapper",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 29,
-    "source": "manual",
+    "spotifyId": "1anyVhU62p31KFi8MEzkbf",
+    "ticketmasterAttractionId": "K8vZ9172T9V",
+    "rank": 22,
+    "source": "spotify-top",
     "genres": [
       "hip hop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "lake-street-dive",
     "name": "Lake Street Dive",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917C4M7",
     "rank": 30,
     "source": "manual",
     "genres": [
@@ -375,7 +375,7 @@
     "id": "flyte",
     "name": "Flyte",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ91735O0",
     "rank": 31,
     "source": "manual",
     "genres": [
@@ -386,81 +386,81 @@
   {
     "id": "fleetwood-mac",
     "name": "Fleetwood Mac",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 32,
-    "source": "manual",
+    "spotifyId": "08GQAI4eElDnROBrJRGE0X",
+    "ticketmasterAttractionId": "K8vZ917bA4f",
+    "rank": 42,
+    "source": "spotify-top",
     "genres": [
       "rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "kenny-chesney",
     "name": "Kenny Chesney",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 33,
-    "source": "manual",
+    "spotifyId": "3grHWM9bx2E9vwJCdlRv9O",
+    "ticketmasterAttractionId": "K8vZ9171f30",
+    "rank": 38,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "kid-cudi",
     "name": "Kid Cudi",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 34,
-    "source": "manual",
+    "spotifyId": "0fA0VVWsXO9YnASrzqfmYu",
+    "ticketmasterAttractionId": "K8vZ917Gft7",
+    "rank": 36,
+    "source": "spotify-top",
     "genres": [
       "hip hop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "green-day",
     "name": "Green Day",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 35,
-    "source": "manual",
+    "spotifyId": "7oPftvlwr6VrsViSDV7fJY",
+    "ticketmasterAttractionId": "K8vZ9171o-f",
+    "rank": 15,
+    "source": "spotify-top",
     "genres": [
       "punk rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "post-malone",
     "name": "Post Malone",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 36,
-    "source": "manual",
+    "spotifyId": "246dkjvS1zLTtiykXe5h60",
+    "ticketmasterAttractionId": "K8vZ917KjPf",
+    "rank": 44,
+    "source": "spotify-top",
     "genres": [
       "hip hop",
       "pop"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "khalid",
     "name": "Khalid",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 37,
-    "source": "manual",
+    "spotifyId": "6LuN9FCkKOj5PcnpouEgny",
+    "ticketmasterAttractionId": "K8vZ9174tq7",
+    "rank": 32,
+    "source": "spotify-top",
     "genres": [
       "r&b"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "red-hot-chili-peppers",
     "name": "Red Hot Chili Peppers",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ9171FkV",
     "rank": 38,
     "source": "manual",
     "genres": [
@@ -471,20 +471,20 @@
   {
     "id": "billy-joel",
     "name": "Billy Joel",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 39,
-    "source": "manual",
+    "spotifyId": "6zFYqv1mOsgBRQbae3JJ9e",
+    "ticketmasterAttractionId": "K8vZ917Lxg0",
+    "rank": 47,
+    "source": "spotify-top",
     "genres": [
       "rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "hall-and-oates",
     "name": "Daryl Hall & John Oates",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ9171G-0",
     "rank": 40,
     "source": "manual",
     "genres": [
@@ -496,20 +496,20 @@
   {
     "id": "george-strait",
     "name": "George Strait",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 41,
-    "source": "manual",
+    "spotifyId": "5vngPClqofybhPERIqQMYd",
+    "ticketmasterAttractionId": "K8vZ9171Fo7",
+    "rank": 8,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "katy-perry",
     "name": "Katy Perry",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917GC17",
     "rank": 42,
     "source": "manual",
     "genres": [
@@ -520,20 +520,20 @@
   {
     "id": "toby-keith",
     "name": "Toby Keith",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 43,
-    "source": "manual",
+    "spotifyId": "2bA6fzP0lMAQ4kz6CF61w8",
+    "ticketmasterAttractionId": "K8vZ91714rf",
+    "rank": 39,
+    "source": "spotify-top",
     "genres": [
       "country"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "hippo-campus",
     "name": "Hippo Campus",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ9173cIV",
     "rank": 44,
     "source": "manual",
     "genres": [
@@ -545,7 +545,7 @@
     "id": "luke-bryan",
     "name": "Luke Bryan",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917G4u0",
     "rank": 45,
     "source": "manual",
     "genres": [
@@ -557,7 +557,7 @@
     "id": "florence-and-the-machine",
     "name": "Florence + The Machine",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917GCvf",
     "rank": 46,
     "source": "manual",
     "genres": [
@@ -569,7 +569,7 @@
     "id": "giant-rooks",
     "name": "Giant Rooks",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917pj27",
     "rank": 47,
     "source": "manual",
     "genres": [
@@ -580,20 +580,20 @@
   {
     "id": "the-lumineers",
     "name": "The Lumineers",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 48,
-    "source": "manual",
+    "spotifyId": "16oZKvXb6WkQlVAjwo2Wbg",
+    "ticketmasterAttractionId": "K8vZ917u1F7",
+    "rank": 27,
+    "source": "spotify-top",
     "genres": [
       "folk rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "steely-dan",
     "name": "Steely Dan",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ91712Y0",
     "rank": 49,
     "source": "manual",
     "genres": [
@@ -605,7 +605,7 @@
     "id": "the-rolling-stones",
     "name": "The Rolling Stones",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917184f",
     "rank": 50,
     "source": "manual",
     "genres": [
@@ -617,7 +617,7 @@
     "id": "one-direction",
     "name": "One Direction",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917CTtf",
     "rank": 51,
     "source": "manual",
     "genres": [
@@ -641,7 +641,7 @@
     "id": "maroon-5",
     "name": "Maroon 5",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917544V",
     "rank": 53,
     "source": "manual",
     "genres": [
@@ -653,7 +653,7 @@
     "id": "lady-gaga",
     "name": "Lady Gaga",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ917Go7V",
     "rank": 54,
     "source": "manual",
     "genres": [
@@ -664,25 +664,205 @@
   {
     "id": "the-beatles",
     "name": "The Beatles",
-    "spotifyId": null,
-    "ticketmasterAttractionId": null,
-    "rank": 55,
-    "source": "manual",
+    "spotifyId": "3WrFJ7ztbogyGnTHbHJFl2",
+    "ticketmasterAttractionId": "K8vZ9175mcV",
+    "rank": 30,
+    "source": "spotify-top",
     "genres": [
       "rock"
     ],
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   },
   {
     "id": "caamp",
     "name": "Caamp",
     "spotifyId": null,
-    "ticketmasterAttractionId": null,
+    "ticketmasterAttractionId": "K8vZ91741_V",
     "rank": 56,
     "source": "manual",
     "genres": [
       "folk"
     ],
     "lastSyncedAt": null
+  },
+  {
+    "id": "aaron-watson",
+    "name": "Aaron Watson",
+    "spotifyId": "5BKzvAPtNXnt0LwzGvKOH3",
+    "ticketmasterAttractionId": "K8vZ91750K7",
+    "rank": 4,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "willie-nelson",
+    "name": "Willie Nelson",
+    "spotifyId": "5W5bDNCqJ1jbCgTxDD0Cb3",
+    "ticketmasterAttractionId": "K8vZ9171aKV",
+    "rank": 9,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "peter-paul-and-mary",
+    "name": "Peter, Paul and Mary",
+    "spotifyId": "6yrBBtqX2gKCHCrZOYBDrB",
+    "ticketmasterAttractionId": "K8vZ9171o90",
+    "rank": 17,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "lainey-wilson",
+    "name": "Lainey Wilson",
+    "spotifyId": "6tPHARSq45lQ8BSALCfkFC",
+    "ticketmasterAttractionId": "K8vZ9179YD0",
+    "rank": 20,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "av-boyz",
+    "name": "AV Boyz",
+    "spotifyId": "746h0rB8nrDeLUpYmejS6p",
+    "ticketmasterAttractionId": null,
+    "rank": 21,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "queen",
+    "name": "Queen",
+    "spotifyId": "1dfeR4HaWDbWqFHLkxsg1d",
+    "ticketmasterAttractionId": "K8vZ9175zP7",
+    "rank": 24,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "carrie-underwood",
+    "name": "Carrie Underwood",
+    "spotifyId": "4xFUf1FHVy696Q1JQZMTRj",
+    "ticketmasterAttractionId": "K8vZ9175U20",
+    "rank": 26,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "drake",
+    "name": "Drake",
+    "spotifyId": "3TVXtAsR1Inumwj472S9r4",
+    "ticketmasterAttractionId": "K8vZ917Ckz7",
+    "rank": 28,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "ella-langley",
+    "name": "Ella Langley",
+    "spotifyId": "6BRxQ8cD3eqnrVj6WKDok8",
+    "ticketmasterAttractionId": "K8vZ917_mB0",
+    "rank": 33,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "waylon-jennings",
+    "name": "Waylon Jennings",
+    "spotifyId": "7wCjDgV6nqBsHguQXPAaIM",
+    "ticketmasterAttractionId": "K8vZ9171177",
+    "rank": 34,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "bruce-springsteen",
+    "name": "Bruce Springsteen",
+    "spotifyId": "3eqjTLE0HfPfh78zjh6TqT",
+    "ticketmasterAttractionId": "K8vZ9171ug7",
+    "rank": 40,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "ocp-session-choir",
+    "name": "OCP Session Choir",
+    "spotifyId": "5zQqaxZGKmZ8hDeVC9VSPT",
+    "ticketmasterAttractionId": null,
+    "rank": 41,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "eric-church",
+    "name": "Eric Church",
+    "spotifyId": "2IvkS5MXK0vPGnwyJsrEyV",
+    "ticketmasterAttractionId": "K8vZ917G5G0",
+    "rank": 43,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "a-ap-rocky",
+    "name": "A$AP Rocky",
+    "spotifyId": "13ubrt8QOOCPljQ2FL1Kca",
+    "ticketmasterAttractionId": "K8vZ917CHaf",
+    "rank": 45,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "parker-mccollum",
+    "name": "Parker McCollum",
+    "spotifyId": "0Z8XVUAOBPM4x12wKnFHEQ",
+    "ticketmasterAttractionId": "K8vZ9174n5V",
+    "rank": 46,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "dean-martin",
+    "name": "Dean Martin",
+    "spotifyId": "49e4v89VmlDcFCMyDv9wQ9",
+    "ticketmasterAttractionId": "K8vZ917jWF7",
+    "rank": 48,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "chappell-roan",
+    "name": "Chappell Roan",
+    "spotifyId": "7GlBOeep6PqTfFi59PTUUN",
+    "ticketmasterAttractionId": "K8vZ917p56f",
+    "rank": 49,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
+  },
+  {
+    "id": "the-longest-johns",
+    "name": "The Longest Johns",
+    "spotifyId": "5k979N1TnPncUyqlXlaRSv",
+    "ticketmasterAttractionId": "K8vZ917_6W0",
+    "rank": 50,
+    "source": "spotify-top",
+    "genres": [],
+    "lastSyncedAt": "2026-08-12T02:25:53.785Z"
   }
 ]

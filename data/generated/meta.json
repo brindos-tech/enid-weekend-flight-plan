@@ -1,20 +1,21 @@
 {
-  "buildId": "build-1786499660243",
-  "buildAt": "2026-08-12T01:54:20.243Z",
-  "eventCount": 5948,
+  "buildId": "build-1786501664300",
+  "buildAt": "2026-08-12T02:27:44.300Z",
+  "eventCount": 5971,
   "sources": {
     "ticketmaster": {
       "status": "ok",
-      "lastSuccess": "2026-08-12T01:54:20.243Z",
-      "droppedForUnknownPlace": 0
+      "lastSuccess": "2026-08-12T02:27:44.300Z",
+      "droppedForUnknownPlace": 428
     },
     "spotify": {
-      "status": "not_yet_run",
-      "lastSuccess": null
+      "status": "ok",
+      "lastSuccess": "2026-08-12T02:25:53.789Z",
+      "message": "Synced 50 top artists."
     },
     "recurring": {
       "status": "ok",
-      "lastSuccess": "2026-08-12T01:54:20.243Z"
+      "lastSuccess": "2026-08-12T02:27:44.300Z"
     }
   },
   "dedupe": [
@@ -107,6 +108,81 @@
       "kept": "The War and Treaty — Omaha",
       "mergedFrom": "THE WAR AND TREATY",
       "placeId": "omaha-ne"
+    },
+    {
+      "kept": "Zach Bryan - With Heaven On Tour",
+      "mergedFrom": "Zach Bryan - With Heaven On Tour",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Evan Honer: It's An Even Longer Road",
+      "mergedFrom": "Evan Honer: It's An Even Longer Road",
+      "placeId": "san-antonio-tx"
+    },
+    {
+      "kept": "Mt. Joy",
+      "mergedFrom": "Mt. Joy",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "mergedFrom": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "placeId": "fort-worth-tx"
+    },
+    {
+      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "mergedFrom": "Suites: John Summit: CTRL ESCAPE ARENA TOUR",
+      "placeId": "fort-worth-tx"
+    },
+    {
+      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "mergedFrom": "Suites: John Summit: CTRL ESCAPE ARENA TOUR",
+      "placeId": "fort-worth-tx"
+    },
+    {
+      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "mergedFrom": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "placeId": "houston-tx"
+    },
+    {
+      "kept": "PBR Thunder Days presented by DoorDash - Sat w/ Miranda Lambert",
+      "mergedFrom": "PBR Thunder Days presented by DoorDash - 3-Day Pass",
+      "placeId": "eureka-springs-ar"
+    },
+    {
+      "kept": "PBR Thunder Days presented by DoorDash - Sat w/ Miranda Lambert",
+      "mergedFrom": "PBR Thunder Days presented by DoorDash - Sunday Only",
+      "placeId": "eureka-springs-ar"
+    },
+    {
+      "kept": "Zac Brown Band w/ Grace Potter",
+      "mergedFrom": "Zac Brown Band w/ Grace Potter",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Jack Johnson w/ Lake Street Dive",
+      "mergedFrom": "Jack Johnson w/ Lake Street Dive",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "2026 Formula 1 MSC Cruises USGP - Friday Admission",
+      "mergedFrom": "2026 Formula 1 MSC Cruises USGP - Saturday Admission",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "2026 Formula 1 MSC Cruises USGP - Friday Admission",
+      "mergedFrom": "2026 Formula 1 MSC Cruises USGP - Sunday Admission",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Caamp",
+      "mergedFrom": "Caamp",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Ella Langley: The Dandelion Tour",
+      "mergedFrom": "Suites: Ella Langley: The Dandelion Tour",
+      "placeId": "fort-worth-tx"
     },
     {
       "kept": "THE KEHLANI WORLD TOUR: North America",
@@ -644,11 +720,6 @@
       "placeId": "austin-tx"
     },
     {
-      "kept": "Ella Langley: The Dandelion Tour",
-      "mergedFrom": "Suites: Ella Langley: The Dandelion Tour",
-      "placeId": "fort-worth-tx"
-    },
-    {
       "kept": "LIL WAYNE: 20 YEARS OF CARTER CLASSICS WITH 2 CHAINZ",
       "mergedFrom": "Suites: LIL WAYNE: 20 YEARS OF CARTER CLASSICS",
       "placeId": "fort-worth-tx"
@@ -666,21 +737,6 @@
     {
       "kept": "Brooks & Dunn: Neon Moon Tour 2026",
       "mergedFrom": "Suites: Brooks & Dunn: Neon Moon Tour 2026",
-      "placeId": "fort-worth-tx"
-    },
-    {
-      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "mergedFrom": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "placeId": "fort-worth-tx"
-    },
-    {
-      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "mergedFrom": "Suites: John Summit: CTRL ESCAPE ARENA TOUR",
-      "placeId": "fort-worth-tx"
-    },
-    {
-      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "mergedFrom": "Suites: John Summit: CTRL ESCAPE ARENA TOUR",
       "placeId": "fort-worth-tx"
     },
     {
@@ -757,11 +813,6 @@
       "kept": "KAROL G - VIAJANDO POR EL MUNDO TROPITOUR",
       "mergedFrom": "KAROL G - VIAJANDO POR EL MUNDO TROPITOUR",
       "placeId": "fort-worth-tx"
-    },
-    {
-      "kept": "2026 Formula 1 MSC Cruises USGP - Saturday Admission",
-      "mergedFrom": "2026 Formula 1 MSC Cruises USGP - Friday Admission",
-      "placeId": "austin-tx"
     },
     {
       "kept": "Frank Turner - Lost Evenings IX",
@@ -979,29 +1030,29 @@
       "placeId": "houston-tx"
     },
     {
+      "kept": "Bands Of America: San Antonio Super Regional Championship Finals",
+      "mergedFrom": "Bands Of America: San Antonio Super Regional Championship Prelims",
+      "placeId": "san-antonio-tx"
+    },
+    {
+      "kept": "Bands Of America: San Antonio Super Regional Championship Finals",
+      "mergedFrom": "Bands Of America: San Antonio Super Regional Championship Prelims",
+      "placeId": "san-antonio-tx"
+    },
+    {
       "kept": "ZZ Top",
       "mergedFrom": "ZZ Top",
       "placeId": "austin-tx"
     },
     {
-      "kept": "Bands Of America: San Antonio Super Regional Championship Finals",
-      "mergedFrom": "Bands Of America: San Antonio Super Regional Championship Prelims",
-      "placeId": "san-antonio-tx"
-    },
-    {
-      "kept": "Bands Of America: San Antonio Super Regional Championship Finals",
-      "mergedFrom": "Bands Of America: San Antonio Super Regional Championship Prelims",
-      "placeId": "san-antonio-tx"
-    },
-    {
-      "kept": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "mergedFrom": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
-      "placeId": "houston-tx"
-    },
-    {
       "kept": "Riley Green: Cowboy As It Gets Tour 2026",
       "mergedFrom": "Riley Green: Cowboy As It Gets Tour 2026",
       "placeId": "lubbock-tx"
+    },
+    {
+      "kept": "BTS WORLD TOUR",
+      "mergedFrom": "BTS WORLD TOUR",
+      "placeId": "fort-worth-tx"
     },
     {
       "kept": "TWO NIGHTS WITH THEY MIGHT BE GIANTS",
@@ -1012,11 +1063,6 @@
       "kept": "TWO NIGHTS WITH THEY MIGHT BE GIANTS",
       "mergedFrom": "Three Nights with They Might Be Giants",
       "placeId": "austin-tx"
-    },
-    {
-      "kept": "BTS WORLD TOUR",
-      "mergedFrom": "BTS WORLD TOUR",
-      "placeId": "fort-worth-tx"
     },
     {
       "kept": "MANA: VIVIR SIN AIRE TOUR",
@@ -2149,89 +2195,89 @@
       "placeId": "austin-tx"
     },
     {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
+      "kept": "Come from Away (Touring)",
+      "mergedFrom": "Come from Away (Touring)",
+      "placeId": "austin-tx"
+    },
+    {
       "kept": "I'm Ready Foundation Presents: Tommy Davidson Live & Uncut",
       "mergedFrom": "I'm Ready Foundation Presents: Tommy Davidson Live & Uncut",
       "placeId": "houston-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
-    },
-    {
-      "kept": "Come from Away (Touring)",
-      "mergedFrom": "Come from Away (Touring)",
-      "placeId": "austin-tx"
     },
     {
       "kept": "Come from Away (Touring)",
@@ -3654,6 +3700,11 @@
       "placeId": "houston-tx"
     },
     {
+      "kept": "Late Nite Catechism Las Vegas: Sister Rolls the Dice!",
+      "mergedFrom": "Late Nite Catechism Las Vegas: Sister Rolls the Dice!",
+      "placeId": "houston-tx"
+    },
+    {
       "kept": "Macbeth",
       "mergedFrom": "Macbeth",
       "placeId": "san-antonio-tx"
@@ -4784,11 +4835,6 @@
       "placeId": "albuquerque-nm"
     },
     {
-      "kept": "Zach Bryan - With Heaven On Tour",
-      "mergedFrom": "Zach Bryan - With Heaven On Tour",
-      "placeId": "denver-co"
-    },
-    {
       "kept": "Garth Brooks - Blame It All On My Roots Arena Tour",
       "mergedFrom": "Garth Brooks - Blame It All On My Roots Arena Tour",
       "placeId": "denver-co"
@@ -5199,11 +5245,6 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "Zac Brown Band w/ Grace Potter",
-      "mergedFrom": "Zac Brown Band w/ Grace Potter",
-      "placeId": "denver-co"
-    },
-    {
       "kept": "MANA: VIVIR SIN AIRE TOUR",
       "mergedFrom": "MANA: VIVIR SIN AIRE TOUR",
       "placeId": "denver-co"
@@ -5216,6 +5257,11 @@
     {
       "kept": "MANA: VIVIR SIN AIRE TOUR",
       "mergedFrom": "MANÁ: VIVIR SIN AIRE TOUR",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Five Finger Death Punch",
+      "mergedFrom": "Five Finger Death Punch",
       "placeId": "denver-co"
     },
     {
@@ -5239,18 +5285,8 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "Mt. Joy",
-      "mergedFrom": "Mt. Joy",
-      "placeId": "denver-co"
-    },
-    {
       "kept": "Goose",
       "mergedFrom": "Goose",
-      "placeId": "denver-co"
-    },
-    {
-      "kept": "Jack Johnson w/ Lake Street Dive",
-      "mergedFrom": "Jack Johnson w/ Lake Street Dive",
       "placeId": "denver-co"
     },
     {
@@ -5299,11 +5335,6 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "Caamp",
-      "mergedFrom": "Caamp",
-      "placeId": "denver-co"
-    },
-    {
       "kept": "Gregory Alan Isakov with the Colorado Symphony",
       "mergedFrom": "Gregory Alan Isakov with the Colorado Symphony",
       "placeId": "denver-co"
@@ -5349,6 +5380,11 @@
       "placeId": "denver-co"
     },
     {
+      "kept": "Bowling for Soup",
+      "mergedFrom": "Bowling for Soup",
+      "placeId": "estes-park-co"
+    },
+    {
       "kept": "Dermot Kennedy: The Weight of the Woods Tour",
       "mergedFrom": "Dermot Kennedy: The Weight of the Woods Tour",
       "placeId": "denver-co"
@@ -5359,13 +5395,13 @@
       "placeId": "estes-park-co"
     },
     {
-      "kept": "Bowling for Soup",
-      "mergedFrom": "Bowling for Soup",
-      "placeId": "estes-park-co"
-    },
-    {
       "kept": "Sara Bareilles: The Good Grief Tour",
       "mergedFrom": "Sara Bareilles: The Good Grief Tour",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Angine de Poitrine",
+      "mergedFrom": "Angine de Poitrine",
       "placeId": "denver-co"
     },
     {
@@ -5379,23 +5415,8 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "Angine de Poitrine",
-      "mergedFrom": "Angine de Poitrine",
-      "placeId": "denver-co"
-    },
-    {
       "kept": "Foster The People: Good Mourning Sunshine Tour",
       "mergedFrom": "Foster The People: Good Mourning Sunshine Tour",
-      "placeId": "denver-co"
-    },
-    {
-      "kept": "Sueco",
-      "mergedFrom": "Sueco",
-      "placeId": "denver-co"
-    },
-    {
-      "kept": "Deadmau5",
-      "mergedFrom": "Deadmau5",
       "placeId": "denver-co"
     },
     {
@@ -5404,8 +5425,18 @@
       "placeId": "denver-co"
     },
     {
+      "kept": "Sueco",
+      "mergedFrom": "Sueco",
+      "placeId": "denver-co"
+    },
+    {
       "kept": "LAUREN SANDERSON: COME SAY SUM TOUR",
       "mergedFrom": "LAUREN SANDERSON: COME SAY SUM TOUR",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Deadmau5",
+      "mergedFrom": "Deadmau5",
       "placeId": "denver-co"
     },
     {
@@ -6159,6 +6190,11 @@
       "placeId": "denver-co"
     },
     {
+      "kept": "The Firebird with Cleo Parker Robinson Dance & John Williams Horn Concerto",
+      "mergedFrom": "The Firebird with Cleo Parker Robinson Dance & John Williams Horn Concerto",
+      "placeId": "denver-co"
+    },
+    {
       "kept": "Dave Landau",
       "mergedFrom": "Dave Landau",
       "placeId": "denver-co"
@@ -6316,6 +6352,36 @@
     {
       "kept": "Colorado Symphony Orchestra presents Bernstein & Ravel with Vadim Gluzman & Andrew Litton",
       "mergedFrom": "Colorado Symphony Orchestra presents Bernstein & Ravel with Vadim Gluzman & Andrew Litton",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Colorado Symphony Orchestra presents Bernstein & Ravel with Vadim Gluzman & Andrew Litton",
+      "mergedFrom": "Colorado Symphony Orchestra presents Bernstein & Ravel with Vadim Gluzman & Andrew Litton",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "The Who's Tommy (Touring)",
+      "mergedFrom": "The Who's Tommy (Touring)",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "The Who's Tommy (Touring)",
+      "mergedFrom": "The Who's Tommy (Touring)",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "The Who's Tommy (Touring)",
+      "mergedFrom": "The Who's Tommy (Touring)",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "The Who's Tommy (Touring)",
+      "mergedFrom": "The Who's Tommy (Touring)",
+      "placeId": "denver-co"
+    },
+    {
+      "kept": "Orlando Jones",
+      "mergedFrom": "Orlando Jones",
       "placeId": "denver-co"
     },
     {
@@ -6566,16 +6632,6 @@
     {
       "kept": "Thank You For The Music",
       "mergedFrom": "Thank You For The Music",
-      "placeId": "eureka-springs-ar"
-    },
-    {
-      "kept": "PBR Thunder Days presented by DoorDash - 3-Day Pass",
-      "mergedFrom": "PBR Thunder Days presented by DoorDash - Sat w/ Miranda Lambert",
-      "placeId": "eureka-springs-ar"
-    },
-    {
-      "kept": "PBR Thunder Days presented by DoorDash - 3-Day Pass",
-      "mergedFrom": "PBR Thunder Days presented by DoorDash - Fri. w/ Chris Janson",
       "placeId": "eureka-springs-ar"
     },
     {
@@ -7614,11 +7670,6 @@
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "Basement (18 and Over with Valid Government ID)",
-      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
-      "placeId": "minneapolis-mn"
-    },
-    {
       "kept": "Carly Pearce w/ Belle Frantz",
       "mergedFrom": "Carly Pearce w/ Belle Frantz",
       "placeId": "minneapolis-mn"
@@ -7626,6 +7677,11 @@
     {
       "kept": "They Might Be Giants",
       "mergedFrom": "They Might Be Giants",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "Basement (18 and Over with Valid Government ID)",
+      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
       "placeId": "minneapolis-mn"
     },
     {
@@ -7749,356 +7805,6 @@
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "21+ RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
-      "kept": "21+ RESERVED LUXURY SEATING",
-      "mergedFrom": "RESERVED LUXURY SEATING",
-      "placeId": "minneapolis-mn"
-    },
-    {
       "kept": "CABANA SEATING",
       "mergedFrom": "CABANA SEATING",
       "placeId": "minneapolis-mn"
@@ -8261,6 +7967,346 @@
     {
       "kept": "SPLASH BASH BIRTHDAY PACKAGE",
       "mergedFrom": "SPLASH BASH BIRTHDAY PACKAGE",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "21+ RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
+      "placeId": "minneapolis-mn"
+    },
+    {
+      "kept": "21+ RESERVED LUXURY SEATING",
+      "mergedFrom": "RESERVED LUXURY SEATING",
       "placeId": "minneapolis-mn"
     },
     {
@@ -11344,13 +11390,13 @@
       "placeId": "phoenix-az"
     },
     {
-      "kept": "Zeds Dead",
-      "mergedFrom": "Zeds Dead",
+      "kept": "Lauren Sanderson",
+      "mergedFrom": "Lauren Sanderson",
       "placeId": "phoenix-az"
     },
     {
-      "kept": "Lauren Sanderson",
-      "mergedFrom": "Lauren Sanderson",
+      "kept": "Zeds Dead",
+      "mergedFrom": "Zeds Dead",
       "placeId": "phoenix-az"
     },
     {
@@ -12774,5 +12820,17 @@
       "placeId": "phoenix-az"
     }
   ],
-  "linkHealth": {}
+  "linkHealth": {
+    "https://selectaseat.com/blippi": {
+      "ok": false,
+      "status": null,
+      "error": "fetch failed",
+      "checkedAt": "2026-08-12T02:28:38.327Z"
+    },
+    "https://app.cubuffs.com/RUFUSDUSOL": {
+      "ok": false,
+      "status": 404,
+      "checkedAt": "2026-08-12T02:28:38.327Z"
+    }
+  }
 }
