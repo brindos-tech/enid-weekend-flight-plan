@@ -87,7 +87,7 @@
       "outdoors": 5,
       "weird": 2
     },
-    "blurb": "Breweries, RiNo street art, Red Rocks shows, and a genuinely great museum and food scene at mile-high altitude. Centennial Airport is Denver's busiest GA field — ten minutes from Cherry Hills Village and close to Cherry Creek North.",
+    "blurb": "Breweries, RiNo street art, Red Rocks shows, and a genuinely great museum and food scene at mile-high altitude. Centennial Airport is Denver's busiest GA field \u2014 ten minutes from Cherry Hills Village and close to Cherry Creek North.",
     "airports": [
       {
         "icao": "KAPA",
@@ -339,7 +339,7 @@
       "outdoors": 1,
       "weird": 2
     },
-    "blurb": "Museum District density, a huge international food scene, and the Texas Renaissance Festival just outside town. River Oaks is the single most prestigious residential neighborhood in Texas — old oil money, the River Oaks Country Club.",
+    "blurb": "Museum District density, a huge international food scene, and the Texas Renaissance Festival just outside town. River Oaks is the single most prestigious residential neighborhood in Texas \u2014 old oil money, the River Oaks Country Club.",
     "airports": [
       {
         "icao": "KDWH",
@@ -407,7 +407,7 @@
       "outdoors": 1,
       "weird": 1
     },
-    "blurb": "Art Deco district, Philbrook Museum, and one of the largest Oktoberfests in the country — plus a Christmas lights display that draws half a million people.",
+    "blurb": "Art Deco district, Philbrook Museum, and one of the largest Oktoberfests in the country \u2014 plus a Christmas lights display that draws half a million people.",
     "airports": [
       {
         "icao": "KTUL",
@@ -509,7 +509,7 @@
       "outdoors": 1,
       "weird": 2
     },
-    "blurb": "Underrated food-and-brewery town with an easygoing pace — the low-key weekend in the rotation.",
+    "blurb": "Underrated food-and-brewery town with an easygoing pace \u2014 the low-key weekend in the rotation.",
     "airports": [
       {
         "icao": "KDSM",
@@ -613,7 +613,7 @@
       "outdoors": 1,
       "weird": 1
     },
-    "blurb": "River Market district nightlife and a solid fall festival calendar — an easy, underrated weekend.",
+    "blurb": "River Market district nightlife and a solid fall festival calendar \u2014 an easy, underrated weekend.",
     "airports": [
       {
         "icao": "KLIT",
@@ -647,7 +647,7 @@
       "outdoors": 1,
       "weird": 1
     },
-    "blurb": "Old Town district and a growing arts scene — the closest real \"getaway\" on the list.",
+    "blurb": "Old Town district and a growing arts scene \u2014 the closest real \"getaway\" on the list.",
     "airports": [
       {
         "icao": "KICT",
@@ -681,7 +681,7 @@
       "outdoors": 4,
       "weird": 2
     },
-    "blurb": "Route 66 roots, Bass Pro's flagship store, and the gateway to the Ozarks — a flexible bonus swap for any weekend.",
+    "blurb": "Route 66 roots, Bass Pro's flagship store, and the gateway to the Ozarks \u2014 a flexible bonus swap for any weekend.",
     "airports": [
       {
         "icao": "KSGF",
@@ -987,7 +987,7 @@
       "outdoors": 3,
       "weird": 3
     },
-    "blurb": "\"Cowboy Capital of the World\" — dude ranches, gunfighter shows, and small-town Texas charm.",
+    "blurb": "\"Cowboy Capital of the World\" \u2014 dude ranches, gunfighter shows, and small-town Texas charm.",
     "airports": [
       {
         "icao": "KSAT",
@@ -1498,7 +1498,7 @@
       "outdoors": 5,
       "weird": 1
     },
-    "blurb": "Downtown SLC, the Great Salt Lake, and Park City / Deer Valley about 40 minutes from the airport once ski season opens — St. Regis Deer Valley, Stein Eriksen Lodge, Montage Deer Valley.",
+    "blurb": "Downtown SLC, the Great Salt Lake, and Park City / Deer Valley about 40 minutes from the airport once ski season opens \u2014 St. Regis Deer Valley, Stein Eriksen Lodge, Montage Deer Valley.",
     "airports": [
       {
         "icao": "KSLC",
@@ -1532,7 +1532,7 @@
       "outdoors": 3,
       "weird": 1
     },
-    "blurb": "Whiskey Row, Watson Lake and the Granite Dells, and the closest approved field to the Grand Canyon (2.5hr drive to the South Rim). Grand Canyon airspace is a Special Flight Rules Area — check current charts and get squadron sign-off before routing near it.",
+    "blurb": "Whiskey Row, Watson Lake and the Granite Dells, and the closest approved field to the Grand Canyon (2.5hr drive to the South Rim). Grand Canyon airspace is a Special Flight Rules Area \u2014 check current charts and get squadron sign-off before routing near it.",
     "airports": [
       {
         "icao": "KPRC",
@@ -1600,7 +1600,7 @@
       "outdoors": 1,
       "weird": 1
     },
-    "blurb": "The closest genuine old-money enclave in the whole footprint. Nichols Hills is Oklahoma's wealthiest zip code — oil-and-cattle fortunes going back a century, the Oklahoma City Golf & Country Club, tree-lined streets.",
+    "blurb": "The closest genuine old-money enclave in the whole footprint. Nichols Hills is Oklahoma's wealthiest zip code \u2014 oil-and-cattle fortunes going back a century, the Oklahoma City Golf & Country Club, tree-lined streets.",
     "airports": [
       {
         "icao": "KPWA",
@@ -1613,6 +1613,1395 @@
         "military": false,
         "pprRequired": false,
         "notes": "Approved Vance field, Atlantic Aviation FBO"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "las-vegas-nv",
+    "name": "Las Vegas",
+    "state": "NV",
+    "lat": 36.1699,
+    "lon": -115.1398,
+    "kinds": [
+      "city",
+      "luxury",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 2,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 2,
+      "weird": 4
+    },
+    "blurb": "The Strip, world-class residencies, and 24-hour everything. Henderson Executive is a quieter GA alternative to the Class B madness of Harry Reid.",
+    "airports": [
+      {
+        "icao": "KHND",
+        "name": "Henderson Executive",
+        "lat": 35.9728,
+        "lon": -115.1341,
+        "driveMiles": 20,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "los-angeles-ca",
+    "name": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 4,
+      "food": 5,
+      "nightlife": 5,
+      "outdoors": 3,
+      "weird": 3
+    },
+    "blurb": "Arenas, amphitheaters, and a food scene that never stops arguing with itself. Van Nuys is one of the busiest GA fields in the country \u2014 expect real Class D traffic.",
+    "airports": [
+      {
+        "icao": "KVNY",
+        "name": "Van Nuys",
+        "lat": 34.2098,
+        "lon": -118.4899,
+        "driveMiles": 18,
+        "driveMinutes": 30,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "very high GA traffic, expect sequencing delays"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "san-diego-ca",
+    "name": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lon": -117.1611,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 3,
+      "food": 4,
+      "nightlife": 4,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Perfect weather, a genuinely great craft beer scene, and Balboa Park's museum row. Montgomery Field keeps you clear of Lindbergh's Class C.",
+    "airports": [
+      {
+        "icao": "KMYF",
+        "name": "Montgomery Field",
+        "lat": 32.8157,
+        "lon": -117.14,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "san-francisco-ca",
+    "name": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 5,
+      "food": 5,
+      "nightlife": 4,
+      "outdoors": 4,
+      "weird": 4
+    },
+    "blurb": "Fog, hills, and one of the country's best gallery and food scenes packed into 7 square miles. Hayward Executive is the practical GA field for the East Bay side.",
+    "airports": [
+      {
+        "icao": "KHWD",
+        "name": "Hayward Executive",
+        "lat": 37.6592,
+        "lon": -122.1219,
+        "driveMiles": 20,
+        "driveMinutes": 30,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "seattle-wa",
+    "name": "Seattle",
+    "state": "WA",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 4,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 5,
+      "weird": 3
+    },
+    "blurb": "Grunge history, a serious coffee and food culture, and mountains and water in every direction. Boeing Field is the workhorse GA/cargo field just south of downtown.",
+    "airports": [
+      {
+        "icao": "KBFI",
+        "name": "King County Intl / Boeing Field",
+        "lat": 47.53,
+        "lon": -122.3019,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "portland-or",
+    "name": "Portland",
+    "state": "OR",
+    "lat": 45.5152,
+    "lon": -122.6784,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 4,
+      "food": 5,
+      "nightlife": 3,
+      "outdoors": 4,
+      "weird": 4
+    },
+    "blurb": "Food carts, breweries, and a genuinely weird streak that's part of the brand. Hillsboro is the quieter reliever field west of downtown.",
+    "airports": [
+      {
+        "icao": "KHIO",
+        "name": "Hillsboro",
+        "lat": 45.5404,
+        "lon": -122.9498,
+        "driveMiles": 17,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "boise-id",
+    "name": "Boise",
+    "state": "ID",
+    "lat": 43.615,
+    "lon": -116.2023,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "A small, walkable downtown with the Boise River greenbelt and the Sawtooths within reach. Boise Air Terminal shares a field with Gowen Field ANGB.",
+    "airports": [
+      {
+        "icao": "KBOI",
+        "name": "Boise Air Terminal / Gowen Field",
+        "lat": 43.5644,
+        "lon": -116.2228,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "shared with Air National Guard ops"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "bozeman-mt",
+    "name": "Bozeman",
+    "state": "MT",
+    "lat": 45.677,
+    "lon": -111.0429,
+    "kinds": [
+      "boutique",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Gateway to Yellowstone and the Bridger range, with a downtown that's outgrown its ranch-town roots. Bozeman Yellowstone Intl handles GA fine outside peak ski-season traffic.",
+    "airports": [
+      {
+        "icao": "KBZN",
+        "name": "Bozeman Yellowstone Intl",
+        "lat": 45.7772,
+        "lon": -111.153,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "spokane-wa",
+    "name": "Spokane",
+    "state": "WA",
+    "lat": 47.6588,
+    "lon": -117.426,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Riverfront Park, a compact downtown, and easy access to the Palouse and North Idaho lakes. Felts Field is the historic GA field east of downtown.",
+    "airports": [
+      {
+        "icao": "KSFF",
+        "name": "Felts Field",
+        "lat": 47.6828,
+        "lon": -117.3231,
+        "driveMiles": 7,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "jackson-hole-wy",
+    "name": "Jackson",
+    "state": "WY",
+    "lat": 43.4799,
+    "lon": -110.7624,
+    "kinds": [
+      "boutique",
+      "luxury",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 2
+    },
+    "blurb": "Grand Teton at your back door and a town square that still means it about the antler arches. The airport sits inside Grand Teton National Park \u2014 genuinely rare.",
+    "airports": [
+      {
+        "icao": "KJAC",
+        "name": "Jackson Hole",
+        "lat": 43.6073,
+        "lon": -110.7377,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "field is inside Grand Teton NP; noise-sensitive procedures"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "chicago-il",
+    "name": "Chicago",
+    "state": "IL",
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 4,
+      "food": 5,
+      "nightlife": 5,
+      "outdoors": 2,
+      "weird": 3
+    },
+    "blurb": "Deep-dish arguments aside, one of the best live-music and museum cities in the country. Chicago Executive avoids O'Hare's Class B entirely.",
+    "airports": [
+      {
+        "icao": "KPWK",
+        "name": "Chicago Executive",
+        "lat": 42.1142,
+        "lon": -87.9015,
+        "driveMiles": 25,
+        "driveMinutes": 35,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "milwaukee-wi",
+    "name": "Milwaukee",
+    "state": "WI",
+    "lat": 43.0389,
+    "lon": -87.9065,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Lakefront festivals, a serious beer-and-supper-club culture, and a lot less traffic than Chicago. Timmerman is the close-in GA field on the northwest side.",
+    "airports": [
+      {
+        "icao": "KMWC",
+        "name": "Lawrence J. Timmerman",
+        "lat": 43.1103,
+        "lon": -88.0349,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "detroit-mi",
+    "name": "Detroit",
+    "state": "MI",
+    "lat": 42.3314,
+    "lon": -83.0458,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 3,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Motown history, a genuine comeback downtown, and a music scene with real depth. Oakland County Intl is the practical GA field north of the city.",
+    "airports": [
+      {
+        "icao": "KPTK",
+        "name": "Oakland County Intl",
+        "lat": 42.6656,
+        "lon": -83.4199,
+        "driveMiles": 25,
+        "driveMinutes": 35,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "indianapolis-in",
+    "name": "Indianapolis",
+    "state": "IN",
+    "lat": 39.7684,
+    "lon": -86.1581,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Speedway history, a walkable downtown canal district, and easy access from the whole Midwest. Eagle Creek is the close-in GA field.",
+    "airports": [
+      {
+        "icao": "KEYE",
+        "name": "Indianapolis Eagle Creek",
+        "lat": 39.8267,
+        "lon": -86.2957,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "louisville-ky",
+    "name": "Louisville",
+    "state": "KY",
+    "lat": 38.2527,
+    "lon": -85.7585,
+    "kinds": [
+      "city",
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Bourbon, the Derby, and a food scene that punches well above its size. Bowman Field is one of the oldest continuously operated airports in the country.",
+    "airports": [
+      {
+        "icao": "KLOU",
+        "name": "Bowman Field",
+        "lat": 38.228,
+        "lon": -85.6641,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "nashville-tn",
+    "name": "Nashville",
+    "state": "TN",
+    "lat": 36.1627,
+    "lon": -86.7816,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 3,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Broadway honky-tonks, Music Row, and more live music per block than anywhere in the footprint. John C Tune keeps you off BNA's Class C.",
+    "airports": [
+      {
+        "icao": "KJWN",
+        "name": "John C Tune",
+        "lat": 36.1614,
+        "lon": -86.8781,
+        "driveMiles": 7,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "memphis-tn",
+    "name": "Memphis",
+    "state": "TN",
+    "lat": 35.1495,
+    "lon": -90.049,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 2,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 3
+    },
+    "blurb": "Beale Street, Stax and Sun Studio history, and barbecue worth the detour. Millington is a former naval air station now flying civilian GA.",
+    "airports": [
+      {
+        "icao": "KNQA",
+        "name": "Millington Regional Jetport",
+        "lat": 35.3595,
+        "lon": -89.8703,
+        "driveMiles": 15,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "former NAS Memphis"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "atlanta-ga",
+    "name": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lon": -84.388,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 3,
+      "food": 4,
+      "nightlife": 4,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "A genuine music and food capital of the South with a skyline to match. DeKalb-Peachtree is the primary GA reliever, well clear of Hartsfield's Class B.",
+    "airports": [
+      {
+        "icao": "KPDK",
+        "name": "DeKalb-Peachtree",
+        "lat": 33.8756,
+        "lon": -84.302,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "charlotte-nc",
+    "name": "Charlotte",
+    "state": "NC",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "A fast-growing banking-town skyline with a genuinely good food and brewery scene filling in around it. Concord-Padgett is the go-to GA field northeast of downtown.",
+    "airports": [
+      {
+        "icao": "KJQF",
+        "name": "Concord-Padgett Regional",
+        "lat": 35.3877,
+        "lon": -80.7091,
+        "driveMiles": 15,
+        "driveMinutes": 22,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "new-orleans-la",
+    "name": "New Orleans",
+    "state": "LA",
+    "lat": 29.9511,
+    "lon": -90.0715,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 4,
+      "food": 5,
+      "nightlife": 5,
+      "outdoors": 1,
+      "weird": 4
+    },
+    "blurb": "Second line brass bands, a food culture unlike anywhere else in the country, and a party that doesn't apologize for itself. Lakefront sits right on the lake, minutes from the French Quarter.",
+    "airports": [
+      {
+        "icao": "KNEW",
+        "name": "Lakefront",
+        "lat": 30.0426,
+        "lon": -90.0284,
+        "driveMiles": 7,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "birmingham-al",
+    "name": "Birmingham",
+    "state": "AL",
+    "lat": 33.5186,
+    "lon": -86.8104,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "A civil-rights-history downtown with a growing food and brewery scene in the old industrial core.",
+    "airports": [
+      {
+        "icao": "KBHM",
+        "name": "Birmingham-Shuttlesworth Intl",
+        "lat": 33.5629,
+        "lon": -86.7535,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "has GA services alongside airline traffic"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "jacksonville-fl",
+    "name": "Jacksonville",
+    "state": "FL",
+    "lat": 30.3322,
+    "lon": -81.6557,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Beaches, the St. Johns River, and a low-key Florida downtown without the theme-park crowds.",
+    "airports": [
+      {
+        "icao": "KCRG",
+        "name": "Craig Municipal",
+        "lat": 30.3362,
+        "lon": -81.5145,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "orlando-fl",
+    "name": "Orlando",
+    "state": "FL",
+    "lat": 28.5383,
+    "lon": -81.3792,
+    "kinds": [
+      "city",
+      "fun",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 3
+    },
+    "blurb": "Theme parks aside, a real downtown with a solid concert and food scene of its own. Orlando Executive is close-in and avoids MCO's airline traffic entirely.",
+    "airports": [
+      {
+        "icao": "KORL",
+        "name": "Orlando Executive",
+        "lat": 28.5455,
+        "lon": -81.3329,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "miami-fl",
+    "name": "Miami",
+    "state": "FL",
+    "lat": 25.7617,
+    "lon": -80.1918,
+    "kinds": [
+      "city",
+      "luxury",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 3,
+      "food": 4,
+      "nightlife": 5,
+      "outdoors": 2,
+      "weird": 3
+    },
+    "blurb": "South Beach, Wynwood's street art, and a nightlife scene that runs later than anywhere else in the footprint. Opa-locka is the practical GA field north of downtown.",
+    "airports": [
+      {
+        "icao": "KOPF",
+        "name": "Opa-locka Executive",
+        "lat": 25.907,
+        "lon": -80.2784,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "tampa-fl",
+    "name": "Tampa",
+    "state": "FL",
+    "lat": 27.9506,
+    "lon": -82.4572,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "A genuinely underrated food and brewery scene along the Riverwalk, with the beaches of St. Pete just across the bay.",
+    "airports": [
+      {
+        "icao": "KVDF",
+        "name": "Tampa Executive",
+        "lat": 28.0111,
+        "lon": -82.3479,
+        "driveMiles": 10,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "charleston-sc",
+    "name": "Charleston",
+    "state": "SC",
+    "lat": 32.7765,
+    "lon": -79.9311,
+    "kinds": [
+      "boutique",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 5,
+      "nightlife": 3,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Cobblestone streets, some of the best food in the South, and a genuinely elegant historic downtown. Executive Field is a quiet GA option south of the city.",
+    "airports": [
+      {
+        "icao": "KJZI",
+        "name": "Charleston Executive",
+        "lat": 32.7003,
+        "lon": -80.0074,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "savannah-ga",
+    "name": "Savannah",
+    "state": "GA",
+    "lat": 32.0809,
+    "lon": -81.0912,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Spanish moss, squares, and a walkable historic district with a food scene to match Charleston's.",
+    "airports": [
+      {
+        "icao": "KSAV",
+        "name": "Savannah/Hilton Head Intl",
+        "lat": 32.1276,
+        "lon": -81.202,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "has GA services alongside airline traffic"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "new-york-ny",
+    "name": "New York",
+    "state": "NY",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 5,
+      "art": 5,
+      "food": 5,
+      "nightlife": 5,
+      "outdoors": 1,
+      "weird": 4
+    },
+    "blurb": "Everything, all the time \u2014 Broadway, arenas, and a museum and food scene with no real rival. Teterboro is the classic GA field for Manhattan, but expect real jet traffic and slot coordination.",
+    "airports": [
+      {
+        "icao": "KTEB",
+        "name": "Teterboro",
+        "lat": 40.8501,
+        "lon": -74.0608,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "high-traffic corporate jet field; slot/PPR-adjacent coordination common"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "boston-ma",
+    "name": "Boston",
+    "state": "MA",
+    "lat": 42.3601,
+    "lon": -71.0589,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 4,
+      "art": 4,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Historic, walkable, and packed with music venues and museums. Hanscom Field is the well-known GA alternative to Logan's Class B.",
+    "airports": [
+      {
+        "icao": "KBED",
+        "name": "Laurence G. Hanscom Field",
+        "lat": 42.4699,
+        "lon": -71.289,
+        "driveMiles": 18,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "philadelphia-pa",
+    "name": "Philadelphia",
+    "state": "PA",
+    "lat": 39.9526,
+    "lon": -75.1652,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Deep American history downtown with a food and music scene that's come into its own. Northeast Philadelphia is the practical GA field.",
+    "airports": [
+      {
+        "icao": "KPNE",
+        "name": "Northeast Philadelphia",
+        "lat": 40.0819,
+        "lon": -75.0106,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "washington-dc",
+    "name": "Washington",
+    "state": "DC",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "kinds": [
+      "city",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 4,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "The Smithsonian alone is worth the trip, with a food and live-music scene that's grown well past the monuments. Airspace here is genuinely restrictive \u2014 expect SFRA/FRZ procedures.",
+    "airports": [
+      {
+        "icao": "KGAI",
+        "name": "Montgomery County Airpark",
+        "lat": 39.168,
+        "lon": -77.166,
+        "driveMiles": 18,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "inside the DC SFRA \u2014 TSA/FRZ procedures apply"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "pittsburgh-pa",
+    "name": "Pittsburgh",
+    "state": "PA",
+    "lat": 40.4406,
+    "lon": -79.9959,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Three rivers, a genuinely revitalized downtown, and a food scene built on steel-town bones.",
+    "airports": [
+      {
+        "icao": "KAGC",
+        "name": "Allegheny County",
+        "lat": 40.3544,
+        "lon": -79.9301,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "baltimore-md",
+    "name": "Baltimore",
+    "state": "MD",
+    "lat": 39.2904,
+    "lon": -76.6122,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Row-house neighborhoods, a working harbor, and a crab-and-seafood scene worth the trip.",
+    "airports": [
+      {
+        "icao": "KMTN",
+        "name": "Martin State",
+        "lat": 39.3257,
+        "lon": -76.4147,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "asheville-nc",
+    "name": "Asheville",
+    "state": "NC",
+    "lat": 35.5951,
+    "lon": -82.5515,
+    "kinds": [
+      "boutique",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 4,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 5,
+      "weird": 4
+    },
+    "blurb": "Blue Ridge mountain town with more breweries per capita than almost anywhere in the country, plus a genuinely serious art scene.",
+    "airports": [
+      {
+        "icao": "KAVL",
+        "name": "Asheville Regional",
+        "lat": 35.4362,
+        "lon": -82.5418,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "key-west-fl",
+    "name": "Key West",
+    "state": "FL",
+    "lat": 24.5551,
+    "lon": -81.78,
+    "kinds": [
+      "boutique",
+      "fun",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 4,
+      "nightlife": 4,
+      "outdoors": 3,
+      "weird": 4
+    },
+    "blurb": "End-of-the-road island energy, sunset celebrations on Mallory Square, and Duval Street nightlife. The airport is walkable to Old Town.",
+    "airports": [
+      {
+        "icao": "KEYW",
+        "name": "Key West Intl",
+        "lat": 24.5561,
+        "lon": -81.7596,
+        "driveMiles": 2,
+        "driveMinutes": 6,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "napa-ca",
+    "name": "Napa",
+    "state": "CA",
+    "lat": 38.2975,
+    "lon": -122.2869,
+    "kinds": [
+      "boutique",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 3,
+      "food": 5,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Wine country food and scenery without needing to be a wine person about it. Napa County Airport is a quiet GA field right in the valley.",
+    "airports": [
+      {
+        "icao": "KAPC",
+        "name": "Napa County",
+        "lat": 38.2131,
+        "lon": -122.2809,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "gatlinburg-tn",
+    "name": "Gatlinburg",
+    "state": "TN",
+    "lat": 35.7143,
+    "lon": -83.5102,
+    "kinds": [
+      "boutique",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 3
+    },
+    "blurb": "Smoky Mountains gateway with a genuinely touristy but fun strip and some of the best hiking in the East.",
+    "airports": [
+      {
+        "icao": "KGKT",
+        "name": "Gatlinburg-Pigeon Forge",
+        "lat": 35.8637,
+        "lon": -83.599,
+        "driveMiles": 13,
+        "driveMinutes": 22,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "door-county-wi",
+    "name": "Door County",
+    "state": "WI",
+    "lat": 44.8347,
+    "lon": -87.3773,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 3,
+      "food": 3,
+      "nightlife": 1,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Cherry orchards, fish boils, and a quiet Lake Michigan peninsula that feels a world away from Milwaukee.",
+    "airports": [
+      {
+        "icao": "KSUE",
+        "name": "Door County Cherryland",
+        "lat": 44.8479,
+        "lon": -87.4213,
+        "driveMiles": 4,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "traverse-city-mi",
+    "name": "Traverse City",
+    "state": "MI",
+    "lat": 44.7631,
+    "lon": -85.6206,
+    "kinds": [
+      "boutique",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 5,
+      "weird": 1
+    },
+    "blurb": "Cherry festivals, Lake Michigan beaches, and a genuinely good little food and wine scene up north.",
+    "airports": [
+      {
+        "icao": "KTVC",
+        "name": "Cherry Capital",
+        "lat": 44.7414,
+        "lon": -85.5822,
+        "driveMiles": 5,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "newport-ri",
+    "name": "Newport",
+    "state": "RI",
+    "lat": 41.4901,
+    "lon": -71.3128,
+    "kinds": [
+      "boutique",
+      "luxury"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Gilded Age mansions, the Cliff Walk, and a sailing-town harbor scene.",
+    "airports": [
+      {
+        "icao": "KUUU",
+        "name": "Newport State",
+        "lat": 41.5379,
+        "lon": -71.281,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
       }
     ],
     "links": {}

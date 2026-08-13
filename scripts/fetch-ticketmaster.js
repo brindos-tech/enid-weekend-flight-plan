@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 // Ticketmaster Discovery API fetch. Free tier: 5,000 req/day, throttled to
-// <=2 req/sec here — this script uses roughly 300. Two passes:
+// <=2 req/sec here. Two passes:
 //   A. Artist pass — upcoming events for each cached attraction id.
 //   B. Geographic pass — per-state, per-classification, rolling 90-day
-//      window, for every state inside the footprint. NOT a radius sweep:
+//      window, for every state in the country. NOT a radius sweep:
 //      Discovery API results cap at 1,000/query and the footprint is huge,
-//      so state-by-state is the only way to get full coverage.
+//      so state-by-state is the only way to get full coverage. Worst case
+//      (51 regions x 3 classifications x 5 pages) is ~765 requests, well
+//      inside the daily budget alongside the artist pass.
+//
+// Nationwide on purpose — the range slider goes up to ~2200nm (coast to
+// coast from Enid), and a place only ever shows events if it's within 40nm
+// of one of the curated entries in places.json, so widening this footprint
+// only matters together with adding curated destinations to match.
 //
 // Requires env var TICKETMASTER_API_KEY (repo secret, CI-only).
 
@@ -18,11 +25,11 @@ const CACHE_DIR = path.resolve(".cache");
 const API_BASE = "https://app.ticketmaster.com/discovery/v2";
 const API_KEY = process.env.TICKETMASTER_API_KEY;
 
-// States inside the 800nm-west-of-Mississippi footprint (config.rangeSlider
-// tops out at 1200nm, so this is deliberately a bit wider than the default
-// range to give the runtime slider headroom above 800).
 const FOOTPRINT_STATES = [
-  "OK", "KS", "TX", "NM", "CO", "AR", "MO", "NE", "IA", "MN", "SD", "ND", "WY", "UT", "AZ", "LA", "MT", "NV",
+  "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA",
+  "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM",
+  "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA",
+  "WV", "WI", "WY",
 ];
 const CLASSIFICATIONS = ["music", "sports", "arts&theatre"];
 
