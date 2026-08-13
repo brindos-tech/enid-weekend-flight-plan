@@ -7,7 +7,7 @@ const ACTIVITIES = [
   { key: "food", label: "Food" },
   { key: "nightlife", label: "Nightlife" },
   { key: "outdoors", label: "Outdoors" },
-  { key: "weird", label: "Weird" },
+  { key: "weird", label: "Boutique" },
 ];
 
 let activeActivity = "live-music";
@@ -34,7 +34,7 @@ export function renderPlaces(container, filtered, config, onSelect) {
       </button>`
         )
         .join("")
-    : `<div class="empty-state">No places score for ${activeActivity.replace("-", " ")} in the current range and window.</div>`;
+    : `<div class="empty-state">No places score for ${(ACTIVITIES.find((a) => a.key === activeActivity)?.label || activeActivity).toLowerCase()} in the current range and window.</div>`;
 
   container.innerHTML = `
     <h2>Places</h2>

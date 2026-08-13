@@ -5,7 +5,7 @@ const ACTIVITIES = [
   { key: "food", label: "Food" },
   { key: "nightlife", label: "Nightlife" },
   { key: "outdoors", label: "Outdoors" },
-  { key: "weird", label: "Weird" },
+  { key: "weird", label: "Boutique" },
 ];
 
 export function createFilterRail({ store, config }) {
