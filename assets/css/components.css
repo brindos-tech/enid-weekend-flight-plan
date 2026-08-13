@@ -87,7 +87,6 @@ button.feed-row, button.place-card, button.weekend-card, button.show-row {
 }
 .range-marks span { position: absolute; transform: translateX(-50%); white-space: nowrap; text-align: center; }
 .range-marks .leg-boundary { color: var(--gold); font-weight: 700; }
-.range-marks .leg-boundary small { display: block; font-weight: 400; font-size: 0.85em; letter-spacing: 0.02em; }
 
 .toggle-row {
   display: flex;

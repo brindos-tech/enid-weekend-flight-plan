@@ -28,11 +28,10 @@ export function createScrubber({ store, config, allEvents }) {
 
   const today = store.getState().today;
   const horizonStart = addDays(today, -14);
-  const horizonEnd = addDays(today, 365);
-  const totalDays = Math.round((horizonEnd - horizonStart) / 86400000);
 
-  // weekly density histogram over the full horizon
-  function computeWeeklyDensity() {
+  // weekly density histogram, starting from the widest horizon we'd ever
+  // consider (a year out)
+  function computeWeeklyDensity(totalDays) {
     const weeks = Math.ceil(totalDays / 7);
     const buckets = new Array(weeks).fill(0);
     for (const ev of allEvents) {
@@ -44,7 +43,26 @@ export function createScrubber({ store, config, allEvents }) {
     return buckets;
   }
 
-  const buckets = computeWeeklyDensity();
+  const rawTotalDays = Math.round((addDays(today, 365) - horizonStart) / 86400000);
+  const rawBuckets = computeWeeklyDensity(rawTotalDays);
+
+  // Fetched event data thins out hard once the source horizon is
+  // exhausted — past that point all that's left is the odd annual-estimate
+  // placeholder for next year's recurrence of a handful of festivals, not
+  // real browsable coverage. Cap what's scrubbable at the first point
+  // coverage goes empty for two weeks running, so the slider can't be
+  // dragged into a dead zone with nothing to show.
+  const todayWeek = Math.floor((today - horizonStart) / 86400000 / 7);
+  let coverageWeeks = rawBuckets.length;
+  for (let i = todayWeek; i < rawBuckets.length - 1; i++) {
+    if (rawBuckets[i] === 0 && rawBuckets[i + 1] === 0) {
+      coverageWeeks = i;
+      break;
+    }
+  }
+
+  const totalDays = coverageWeeks * 7;
+  const buckets = rawBuckets.slice(0, coverageWeeks);
   const maxBucket = Math.max(1, ...buckets);
 
   function drawDensity(rangeStart, rangeEnd) {
@@ -91,12 +109,12 @@ export function createScrubber({ store, config, allEvents }) {
     const preset = PRESETS[Number(btn.dataset.preset)];
     currentSpan = preset.days;
     const startOffset = Math.round((today - horizonStart) / 86400000);
-    scrubStart.max = String(totalDays - currentSpan);
+    scrubStart.max = String(Math.max(0, totalDays - currentSpan));
     scrubStart.value = String(startOffset);
     applyRange(startOffset, currentSpan);
   });
 
-  scrubStart.max = String(totalDays - currentSpan);
+  scrubStart.max = String(Math.max(0, totalDays - currentSpan));
   scrubStart.addEventListener("input", () => {
     presetRow.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
     presetRow.querySelector('[data-preset="custom"]').classList.add("active");
@@ -108,7 +126,7 @@ export function createScrubber({ store, config, allEvents }) {
   const initStartOffset = Math.round((today - horizonStart) / 86400000);
   currentSpan = 30;
   scrubStart.value = String(initStartOffset);
-  scrubStart.max = String(totalDays - currentSpan);
+  scrubStart.max = String(Math.max(0, totalDays - currentSpan));
   applyRange(initStartOffset, currentSpan);
 
   window.addEventListener("resize", () => {
