@@ -1,12 +1,12 @@
 {
-  "buildId": "build-1786583669822",
-  "buildAt": "2026-08-13T01:14:29.822Z",
-  "eventCount": 18193,
+  "buildId": "build-1786584673706",
+  "buildAt": "2026-08-13T01:31:13.706Z",
+  "eventCount": 18960,
   "sources": {
     "ticketmaster": {
       "status": "ok",
-      "lastSuccess": "2026-08-13T01:14:29.822Z",
-      "droppedForUnknownPlace": 220
+      "lastSuccess": "2026-08-13T01:31:13.706Z",
+      "droppedForUnknownPlace": 204
     },
     "spotify": {
       "status": "ok",
@@ -15,7 +15,7 @@
     },
     "recurring": {
       "status": "ok",
-      "lastSuccess": "2026-08-13T01:14:29.822Z"
+      "lastSuccess": "2026-08-13T01:31:13.706Z"
     }
   },
   "dedupe": [
@@ -412,6 +412,11 @@
     {
       "kept": "Black Country, New Road",
       "mergedFrom": "Black Country, New Road",
+      "placeId": "birmingham-al"
+    },
+    {
+      "kept": "Hulvey - \"Could Be Tonight\" Tour",
+      "mergedFrom": "Hulvey - \"Could Be Tonight\" Tour",
       "placeId": "birmingham-al"
     },
     {
@@ -1290,6 +1295,11 @@
       "placeId": "los-angeles-ca"
     },
     {
+      "kept": "Earth, Wind & Fire",
+      "mergedFrom": "Earth, Wind & Fire",
+      "placeId": "sacramento-ca"
+    },
+    {
       "kept": "ALVARO DIAZ - OMAKASE TOUR",
       "mergedFrom": "ALVARO DIAZ - OMAKASE TOUR",
       "placeId": "los-angeles-ca"
@@ -1305,13 +1315,13 @@
       "placeId": "los-angeles-ca"
     },
     {
-      "kept": "Kelela: new avatar live",
-      "mergedFrom": "Kelela: new avatar live",
+      "kept": "Dinosaur Jr. - Fall Tour 2026 with special guest Stef Chura",
+      "mergedFrom": "Dinosaur Jr.: Fall Tour 2026 with special guest Stef Chura",
       "placeId": "los-angeles-ca"
     },
     {
-      "kept": "Dinosaur Jr. - Fall Tour 2026 with special guest Stef Chura",
-      "mergedFrom": "Dinosaur Jr.: Fall Tour 2026 with special guest Stef Chura",
+      "kept": "Kelela: new avatar live",
+      "mergedFrom": "Kelela: new avatar live",
       "placeId": "los-angeles-ca"
     },
     {
@@ -1332,7 +1342,7 @@
     {
       "kept": "Aftershock",
       "mergedFrom": "Aftershock",
-      "placeId": "napa-ca"
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "THE CHICKS - TAKING THE LONG WAY",
@@ -1360,13 +1370,13 @@
       "placeId": "san-francisco-ca"
     },
     {
-      "kept": "Undertale:  The Determination Symphony",
-      "mergedFrom": "Undertale:  The Determination Symphony",
+      "kept": "Live 105 Presents: BECK: RIDE LONESOME TOUR",
+      "mergedFrom": "Live 105 Presents: BECK: RIDE LONESOME TOUR",
       "placeId": "san-francisco-ca"
     },
     {
-      "kept": "Live 105 Presents: BECK: RIDE LONESOME TOUR",
-      "mergedFrom": "Live 105 Presents: BECK: RIDE LONESOME TOUR",
+      "kept": "Undertale:  The Determination Symphony",
+      "mergedFrom": "Undertale:  The Determination Symphony",
       "placeId": "san-francisco-ca"
     },
     {
@@ -1385,6 +1395,16 @@
       "placeId": "los-angeles-ca"
     },
     {
+      "kept": "Sara Bareilles: The Good Grief Tour",
+      "mergedFrom": "Sara Bareilles: The Good Grief Tour",
+      "placeId": "los-angeles-ca"
+    },
+    {
+      "kept": "Sara Bareilles: The Good Grief Tour",
+      "mergedFrom": "Sara Bareilles: The Good Grief Tour",
+      "placeId": "los-angeles-ca"
+    },
+    {
       "kept": "2-Day Palm Tree Music Festival",
       "mergedFrom": "Palm Tree Music Festival - FRI 10/2",
       "placeId": "napa-ca"
@@ -1395,14 +1415,14 @@
       "placeId": "napa-ca"
     },
     {
-      "kept": "Sara Bareilles: The Good Grief Tour",
-      "mergedFrom": "Sara Bareilles: The Good Grief Tour",
-      "placeId": "los-angeles-ca"
+      "kept": "Anthony Hamilton",
+      "mergedFrom": "Anthony Hamilton",
+      "placeId": "sacramento-ca"
     },
     {
-      "kept": "Sara Bareilles: The Good Grief Tour",
-      "mergedFrom": "Sara Bareilles: The Good Grief Tour",
-      "placeId": "los-angeles-ca"
+      "kept": "My Morning Jacket",
+      "mergedFrom": "My Morning Jacket",
+      "placeId": "san-francisco-ca"
     },
     {
       "kept": "My Morning Jacket",
@@ -1420,13 +1440,13 @@
       "placeId": "los-angeles-ca"
     },
     {
-      "kept": "My Morning Jacket",
-      "mergedFrom": "My Morning Jacket",
-      "placeId": "san-francisco-ca"
-    },
-    {
       "kept": "Tomahawk",
       "mergedFrom": "Tomahawk",
+      "placeId": "los-angeles-ca"
+    },
+    {
+      "kept": "SYML: Solo in North America 2026",
+      "mergedFrom": "SYML - Solo in North America 2026",
       "placeId": "los-angeles-ca"
     },
     {
@@ -1435,11 +1455,6 @@
       "placeId": "san-diego-ca"
     },
     {
-      "kept": "SYML: Solo in North America 2026",
-      "mergedFrom": "SYML - Solo in North America 2026",
-      "placeId": "los-angeles-ca"
-    },
-    {
       "kept": "Niteharts Festival",
       "mergedFrom": "Niteharts Festival",
       "placeId": "san-diego-ca"
@@ -1448,11 +1463,6 @@
       "kept": "Niteharts Festival",
       "mergedFrom": "Niteharts Festival",
       "placeId": "san-diego-ca"
-    },
-    {
-      "kept": "Dead Kennedys with Special Guests",
-      "mergedFrom": "Dead Kennedys with Special Guests",
-      "placeId": "los-angeles-ca"
     },
     {
       "kept": "Death From Above 1979",
@@ -1492,7 +1502,12 @@
     {
       "kept": "Monster Jam",
       "mergedFrom": "Monster Jam",
-      "placeId": "san-francisco-ca"
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "Monster Jam",
@@ -1503,6 +1518,26 @@
       "kept": "Monster Jam",
       "mergedFrom": "Monster Jam",
       "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "Los Angeles Angels vs. New York Yankees",
@@ -1667,12 +1702,12 @@
     {
       "kept": "Athletics vs. Los Angeles Angels",
       "mergedFrom": "Athletics vs. Los Angeles Angels",
-      "placeId": "napa-ca"
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "Athletics vs. Toronto Blue Jays",
       "mergedFrom": "Athletics vs. Toronto Blue Jays",
-      "placeId": "napa-ca"
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "San Francisco Giants vs. St. Louis Cardinals",
@@ -1683,11 +1718,56 @@
       "kept": "San Francisco Giants vs. St. Louis Cardinals",
       "mergedFrom": "San Francisco Giants vs. St. Louis Cardinals",
       "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Tacoma Rainiers",
+      "mergedFrom": "Sacramento River Cats vs. Tacoma Rainiers",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Salt Lake Bees",
+      "mergedFrom": "Sacramento River Cats vs. Salt Lake Bees",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Salt Lake Bees",
+      "mergedFrom": "Sacramento River Cats vs. Salt Lake Bees",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Salt Lake Bees",
+      "mergedFrom": "Sacramento River Cats vs. Salt Lake Bees",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Tacoma Rainiers",
+      "mergedFrom": "Sacramento River Cats vs. Tacoma Rainiers",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Tacoma Rainiers",
+      "mergedFrom": "Sacramento River Cats vs. Tacoma Rainiers",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Reno Aces",
+      "mergedFrom": "Sacramento River Cats vs. Reno Aces",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Reno Aces",
+      "mergedFrom": "Sacramento River Cats vs. Reno Aces",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Sacramento River Cats vs. Reno Aces",
+      "mergedFrom": "Sacramento River Cats vs. Reno Aces",
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "Athletics vs. Minnesota Twins",
       "mergedFrom": "Athletics vs. Minnesota Twins",
-      "placeId": "napa-ca"
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "San Jose Barracuda vs. San Diego Gulls",
@@ -1698,6 +1778,11 @@
       "kept": "San Jose Barracuda vs. Bakersfield Condors",
       "mergedFrom": "San Jose Barracuda vs. Bakersfield Condors",
       "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Fresno State Bulldogs Football vs. Boise State Broncos Football",
+      "mergedFrom": "Fresno State Bulldogs Womens Volleyball vs. Boise State Broncos Womens Volleyball",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "Orange County SC vs. Pittsburgh Riverhounds SC- Owners Night",
@@ -1733,6 +1818,11 @@
       "kept": "San Francisco Giants vs. Minnesota Twins",
       "mergedFrom": "San Francisco Giants vs. Minnesota Twins",
       "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Stockton Ports vs. Visalia Rawhide",
+      "mergedFrom": "Stockton Ports vs. Visalia Rawhide",
+      "placeId": "sacramento-ca"
     },
     {
       "kept": "Orange County SC vs. Sacramento Republic FC",
@@ -1820,6 +1910,31 @@
       "placeId": "los-angeles-ca"
     },
     {
+      "kept": "Fresno State Bulldogs Womens Volleyball vs. New Mexico State Aggies Volleyball",
+      "mergedFrom": "Fresno State Bulldogs Womens Volleyball vs. UC Irvine Anteaters Womens Volleyball",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "mergedFrom": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "mergedFrom": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "mergedFrom": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "mergedFrom": "Visalia Rawhide vs. Rancho Cucamonga Quakes",
+      "placeId": "fresno-ca"
+    },
+    {
       "kept": "Monster Trucks",
       "mergedFrom": "Monster Trucks",
       "placeId": "napa-ca"
@@ -1870,9 +1985,19 @@
       "placeId": "san-diego-ca"
     },
     {
-      "kept": "Barrett Lake Fishing",
-      "mergedFrom": "Barrett Lake Fishing",
-      "placeId": "san-diego-ca"
+      "kept": "Fresno Grizzlies vs. San Jose Giants",
+      "mergedFrom": "Fresno Grizzlies vs. San Jose Giants",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Fresno Grizzlies vs. San Jose Giants",
+      "mergedFrom": "Fresno Grizzlies vs. San Jose Giants",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Fresno Grizzlies vs. Stockton Ports",
+      "mergedFrom": "Fresno Grizzlies vs. Stockton Ports",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "Barrett Lake Fishing",
@@ -1880,9 +2005,19 @@
       "placeId": "san-diego-ca"
     },
     {
-      "kept": "San Jose Giants vs. Visalia Rawhide",
-      "mergedFrom": "San Jose Giants vs. Visalia Rawhide",
-      "placeId": "san-francisco-ca"
+      "kept": "Barrett Lake Fishing",
+      "mergedFrom": "Barrett Lake Fishing",
+      "placeId": "san-diego-ca"
+    },
+    {
+      "kept": "Fresno Grizzlies vs. Stockton Ports",
+      "mergedFrom": "Fresno Grizzlies vs. Stockton Ports",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Fresno Grizzlies vs. Stockton Ports",
+      "mergedFrom": "Fresno Grizzlies vs. Stockton Ports",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "San Jose Giants vs. Visalia Rawhide",
@@ -1898,6 +2033,61 @@
       "kept": "San Jose Giants vs. Visalia Rawhide",
       "mergedFrom": "San Jose Giants vs. Visalia Rawhide",
       "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Stockton Ports",
+      "mergedFrom": "Stockton Ports",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Stockton Ports",
+      "mergedFrom": "Visalia Rawhide vs. Stockton Ports",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Stockton Ports vs. Visalia Rawhide",
+      "mergedFrom": "Stockton Ports vs. Visalia Rawhide",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "San Jose Giants vs. Visalia Rawhide",
+      "mergedFrom": "San Jose Giants vs. Visalia Rawhide",
+      "placeId": "san-francisco-ca"
+    },
+    {
+      "kept": "Stockton Ports",
+      "mergedFrom": "Stockton Ports",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Stockton Ports",
+      "mergedFrom": "Stockton Ports",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Stockton Ports",
+      "mergedFrom": "Stockton Ports",
+      "placeId": "sacramento-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Stockton Ports",
+      "mergedFrom": "Visalia Rawhide vs. Stockton Ports",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Stockton Ports",
+      "mergedFrom": "Visalia Rawhide vs. Stockton Ports",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Visalia Rawhide vs. Stockton Ports",
+      "mergedFrom": "Visalia Rawhide vs. Stockton Ports",
+      "placeId": "fresno-ca"
+    },
+    {
+      "kept": "Fresno Grizzlies vs. San Jose Giants",
+      "mergedFrom": "Fresno Grizzlies vs. San Jose Giants",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "Stanford Cardinal Womens Volleyball vs. Virginia Tech Hokies Womens Volleyball",
@@ -1923,6 +2113,11 @@
       "kept": "Morgan Jay",
       "mergedFrom": "Morgan Jay",
       "placeId": "los-angeles-ca"
+    },
+    {
+      "kept": "Morgan Jay",
+      "mergedFrom": "Morgan Jay",
+      "placeId": "fresno-ca"
     },
     {
       "kept": "Garth Brooks - Blame It All On My Roots Arena Tour",
@@ -2095,13 +2290,13 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "LCD Soundsystem w/ Feist",
-      "mergedFrom": "LCD Soundsystem w/ Feist",
+      "kept": "Taking Back Sunday",
+      "mergedFrom": "Taking Back Sunday",
       "placeId": "denver-co"
     },
     {
-      "kept": "Taking Back Sunday",
-      "mergedFrom": "Taking Back Sunday",
+      "kept": "LCD Soundsystem w/ Feist",
+      "mergedFrom": "LCD Soundsystem w/ Feist",
       "placeId": "denver-co"
     },
     {
@@ -2145,8 +2340,8 @@
       "placeId": "denver-co"
     },
     {
-      "kept": "Coheed and Cambria: Neverender Rocks",
-      "mergedFrom": "Coheed and Cambria: Neverender Rocks",
+      "kept": "Angine de Poitrine",
+      "mergedFrom": "Angine de Poitrine",
       "placeId": "denver-co"
     },
     {
@@ -2680,11 +2875,6 @@
       "placeId": "newport-ri"
     },
     {
-      "kept": "12 Stones",
-      "mergedFrom": "12 Stones",
-      "placeId": "philadelphia-pa"
-    },
-    {
       "kept": "Wilmington Blue Rocks vs. Hudson Valley Renegades",
       "mergedFrom": "Wilmington Blue Rocks vs. Hudson Valley Renegades",
       "placeId": "philadelphia-pa"
@@ -3095,9 +3285,9 @@
       "placeId": "key-west-fl"
     },
     {
-      "kept": "EDC Orlando",
-      "mergedFrom": "EDC Orlando",
-      "placeId": "orlando-fl"
+      "kept": "Gulf Coast Summer Fest 3-Day Tickets",
+      "mergedFrom": "Gulf Coast Summer Fest - Friday Only",
+      "placeId": "pensacola-fl"
     },
     {
       "kept": "EDC Orlando",
@@ -3105,9 +3295,9 @@
       "placeId": "orlando-fl"
     },
     {
-      "kept": "Lauren Alaina: The Stages Tour",
-      "mergedFrom": "Lauren Alaina",
-      "placeId": "jacksonville-fl"
+      "kept": "EDC Orlando",
+      "mergedFrom": "EDC Orlando",
+      "placeId": "orlando-fl"
     },
     {
       "kept": "Absolute Bands Live featuring Bo Bice",
@@ -3118,6 +3308,11 @@
       "kept": "ICONS: Latin Rhythms",
       "mergedFrom": "ICONS: Latin Rhythms",
       "placeId": "miami-fl"
+    },
+    {
+      "kept": "Lauren Alaina: The Stages Tour",
+      "mergedFrom": "Lauren Alaina",
+      "placeId": "jacksonville-fl"
     },
     {
       "kept": "Juanes North America Tour 2026",
@@ -3138,6 +3333,11 @@
       "kept": "Ziggy Marley and Gov't Mule",
       "mergedFrom": "Ziggy Marley w/ Govt Mule",
       "placeId": "tampa-fl"
+    },
+    {
+      "kept": "Gulf Coast Summer Fest - SUNDAY ONLY",
+      "mergedFrom": "Gulf Coast Summer Fest - SATURDAY ONLY",
+      "placeId": "pensacola-fl"
     },
     {
       "kept": "Black Label Society",
@@ -3390,6 +3590,21 @@
       "placeId": "tampa-fl"
     },
     {
+      "kept": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "placeId": "pensacola-fl"
+    },
+    {
+      "kept": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "placeId": "pensacola-fl"
+    },
+    {
+      "kept": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Biloxi Shuckers",
+      "placeId": "pensacola-fl"
+    },
+    {
       "kept": "Jacksonville Jumbo Shrimp vs. Syracuse Mets",
       "mergedFrom": "Jacksonville Jumbo Shrimp vs. Syracuse Mets",
       "placeId": "jacksonville-fl"
@@ -3398,6 +3613,11 @@
       "kept": "Jacksonville Jumbo Shrimp vs. Syracuse Mets",
       "mergedFrom": "Jacksonville Jumbo Shrimp vs. Syracuse Mets",
       "placeId": "jacksonville-fl"
+    },
+    {
+      "kept": "Dunedin Blue Jays vs. Tampa Tarpons",
+      "mergedFrom": "Dunedin Blue Jays vs. Tampa Tarpons",
+      "placeId": "tampa-fl"
     },
     {
       "kept": "Dunedin Blue Jays vs. Tampa Tarpons",
@@ -3460,6 +3680,16 @@
       "placeId": "tampa-fl"
     },
     {
+      "kept": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "placeId": "pensacola-fl"
+    },
+    {
+      "kept": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "placeId": "pensacola-fl"
+    },
+    {
       "kept": "Clearwater Threshers vs. Dunedin Blue Jays",
       "mergedFrom": "Clearwater Threshers vs. Dunedin Blue Jays",
       "placeId": "tampa-fl"
@@ -3493,6 +3723,11 @@
       "kept": "Clearwater Threshers vs. Fort Myers Mighty Mussels",
       "mergedFrom": "Clearwater Threshers vs. Fort Myers Mighty Mussels",
       "placeId": "tampa-fl"
+    },
+    {
+      "kept": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "mergedFrom": "Pensacola Blue Wahoos vs. Knoxville Smokies",
+      "placeId": "pensacola-fl"
     },
     {
       "kept": "Jacksonville Jumbo Shrimp vs. Gwinnett Stripers",
@@ -4430,11 +4665,6 @@
       "placeId": "chicago-il"
     },
     {
-      "kept": "Palladium Ent. Pres. Brit Floyd The Moon, The Wall & Beyond",
-      "mergedFrom": "Palladium Ent. Pres. Brit Floyd The Moon, The Wall, And Beyond",
-      "placeId": "chicago-il"
-    },
-    {
       "kept": "CHIODOS: IT'S NOT YOU, IT'S ME TOUR",
       "mergedFrom": "CHIODOS: IT'S NOT YOU, IT'S ME TOUR",
       "placeId": "chicago-il"
@@ -4505,6 +4735,11 @@
       "placeId": "chicago-il"
     },
     {
+      "kept": "Quicksand & Bane",
+      "mergedFrom": "Quicksand w/ Bane",
+      "placeId": "chicago-il"
+    },
+    {
       "kept": "Citizen with Anxious, Hotline TNT, and Rocket",
       "mergedFrom": "Citizen with Hotline TNT, Anxious, and Rocket",
       "placeId": "chicago-il"
@@ -4517,11 +4752,6 @@
     {
       "kept": "Songwriter Circle Celebrating LGBTQIA+: Evanston Folk Festival Aftershow presented by Bluegrass Situation",
       "mergedFrom": "Hurray for the Riff Raff w. Free Range: Evanston Folk Festival Aftershow presented by Bluegrass Situation",
-      "placeId": "chicago-il"
-    },
-    {
-      "kept": "Quicksand & Bane",
-      "mergedFrom": "Quicksand w/ Bane",
       "placeId": "chicago-il"
     },
     {
@@ -8265,13 +8495,13 @@
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "Carly Pearce w/ Belle Frantz",
-      "mergedFrom": "Carly Pearce w/ Belle Frantz",
+      "kept": "Basement (18 and Over with Valid Government ID)",
+      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
       "placeId": "minneapolis-mn"
     },
     {
-      "kept": "Basement (18 and Over with Valid Government ID)",
-      "mergedFrom": "The Damned (18 and Over with Valid Government ID)",
+      "kept": "Carly Pearce w/ Belle Frantz",
+      "mergedFrom": "Carly Pearce w/ Belle Frantz",
       "placeId": "minneapolis-mn"
     },
     {
@@ -10210,11 +10440,6 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Backstreet Boys at Sphere - Suite Reservation",
-      "mergedFrom": "Backstreet Boys at Sphere - Suite Reservation",
-      "placeId": "las-vegas-nv"
-    },
-    {
       "kept": "Carin Leon at Sphere - Suite Reservation",
       "mergedFrom": "Carin Leon at Sphere - Suite Reservation",
       "placeId": "las-vegas-nv"
@@ -10285,6 +10510,11 @@
       "placeId": "las-vegas-nv"
     },
     {
+      "kept": "SiriusXM Presents An Intimate Evening with SANTANA Greatest Hits Live",
+      "mergedFrom": "SiriusXM Presents An Intimate Evening with SANTANA Greatest Hits Live",
+      "placeId": "las-vegas-nv"
+    },
+    {
       "kept": "Marc Anthony - Vegas... My Way!",
       "mergedFrom": "Marc Anthony - Vegas... My Way!",
       "placeId": "las-vegas-nv"
@@ -10327,11 +10557,6 @@
     {
       "kept": "J.Cole: The Fall-Off Tour",
       "mergedFrom": "J.Cole: The Fall-Off Tour",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "SiriusXM Presents An Intimate Evening with SANTANA Greatest Hits Live",
-      "mergedFrom": "SiriusXM Presents An Intimate Evening with SANTANA Greatest Hits Live",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10405,18 +10630,18 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Earth, Wind & Fire",
-      "mergedFrom": "Earth, Wind & Fire",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Earth, Wind & Fire",
-      "mergedFrom": "Earth, Wind & Fire",
-      "placeId": "las-vegas-nv"
-    },
-    {
       "kept": "Breaking Benjamin",
       "mergedFrom": "Breaking Benjamin",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Earth, Wind & Fire",
+      "mergedFrom": "Earth, Wind & Fire",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Earth, Wind & Fire",
+      "mergedFrom": "Earth, Wind & Fire",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10427,11 +10652,6 @@
     {
       "kept": "Godsmack: Rise of Rock | Official Caesars Ticket + Hotel Packages",
       "mergedFrom": "Los Ángeles Azules | Official Caesars Ticket + Hotel Packages",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Godsmack: Rise of Rock | Official Caesars Ticket + Hotel Packages",
-      "mergedFrom": "Zoé | Official Caesars Ticket + Hotel Packages",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10457,6 +10677,11 @@
     {
       "kept": "Kelly Clarkson: Studio Sessions - The Las Vegas Residency",
       "mergedFrom": "Kelly Clarkson: Studio Sessions - The Las Vegas Residency",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Billy Idol: Hot In The City",
+      "mergedFrom": "Billy Idol: Hot In The City",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10520,13 +10745,13 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Barry Manilow",
-      "mergedFrom": "Barry Manilow",
+      "kept": "Boyz II Men",
+      "mergedFrom": "Boyz II Men",
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Boyz II Men",
-      "mergedFrom": "Boyz II Men",
+      "kept": "Barry Manilow",
+      "mergedFrom": "Barry Manilow",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10560,13 +10785,13 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Ricky Martin | Official Fontainebleau Ticket + Hotel Packages",
-      "mergedFrom": "Ricky Martin | Official Fontainebleau Ticket + Hotel Packages",
+      "kept": "Matute",
+      "mergedFrom": "Matute",
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Matute",
-      "mergedFrom": "Matute",
+      "kept": "Ricky Martin | Official Fontainebleau Ticket + Hotel Packages",
+      "mergedFrom": "Ricky Martin | Official Fontainebleau Ticket + Hotel Packages",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10585,13 +10810,13 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Five Finger Death Punch",
-      "mergedFrom": "Five Finger Death Punch",
+      "kept": "Alejandro Fernandez: de Rey a Rey",
+      "mergedFrom": "Alejandro Fernández: de Rey a Rey",
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Alejandro Fernandez: de Rey a Rey",
-      "mergedFrom": "Alejandro Fernández: de Rey a Rey",
+      "kept": "Five Finger Death Punch",
+      "mergedFrom": "Five Finger Death Punch",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10690,21 +10915,6 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
       "kept": "Soul of Motown",
       "mergedFrom": "Soul of Motown",
       "placeId": "las-vegas-nv"
@@ -10815,13 +11025,8 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
+      "kept": "Soul of Motown",
+      "mergedFrom": "Soul of Motown",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10855,23 +11060,18 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
+      "kept": "The King Comes Home",
+      "mergedFrom": "The King Comes Home",
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
+      "kept": "The King Comes Home",
+      "mergedFrom": "The King Comes Home",
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Soul of Motown",
-      "mergedFrom": "Soul of Motown",
+      "kept": "The King Comes Home",
+      "mergedFrom": "The King Comes Home",
       "placeId": "las-vegas-nv"
     },
     {
@@ -10915,11 +11115,6 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Donny",
-      "mergedFrom": "Donny",
-      "placeId": "las-vegas-nv"
-    },
-    {
       "kept": "The King Comes Home",
       "mergedFrom": "The King Comes Home",
       "placeId": "las-vegas-nv"
@@ -10935,6 +11130,11 @@
       "placeId": "las-vegas-nv"
     },
     {
+      "kept": "The King Comes Home",
+      "mergedFrom": "The King Comes Home",
+      "placeId": "las-vegas-nv"
+    },
+    {
       "kept": "Donny",
       "mergedFrom": "Donny",
       "placeId": "las-vegas-nv"
@@ -10960,23 +11160,8 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "The King Comes Home",
-      "mergedFrom": "The King Comes Home",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "The King Comes Home",
-      "mergedFrom": "The King Comes Home",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "The King Comes Home",
-      "mergedFrom": "The King Comes Home",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "The King Comes Home",
-      "mergedFrom": "The King Comes Home",
+      "kept": "Donny",
+      "mergedFrom": "Donny",
       "placeId": "las-vegas-nv"
     },
     {
@@ -11225,6 +11410,61 @@
       "placeId": "las-vegas-nv"
     },
     {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
       "kept": "Elías Medina",
       "mergedFrom": "Elías Medina",
       "placeId": "las-vegas-nv"
@@ -11240,63 +11480,23 @@
       "placeId": "las-vegas-nv"
     },
     {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
-      "kept": "Piano Man",
-      "mergedFrom": "Piano Man",
-      "placeId": "las-vegas-nv"
-    },
-    {
       "kept": "GARY PUCKETT AND THE UNION GAP",
       "mergedFrom": "GARY PUCKETT AND THE UNION GAP",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Piano Man",
+      "mergedFrom": "Piano Man",
       "placeId": "las-vegas-nv"
     },
     {
@@ -11715,6 +11915,16 @@
       "placeId": "las-vegas-nv"
     },
     {
+      "kept": "Jabbawockeez",
+      "mergedFrom": "Jabbawockeez",
+      "placeId": "las-vegas-nv"
+    },
+    {
+      "kept": "Jabbawockeez",
+      "mergedFrom": "Jabbawockeez",
+      "placeId": "las-vegas-nv"
+    },
+    {
       "kept": "Henderson Silver Knights vs. Tucson Roadrunners",
       "mergedFrom": "Henderson Silver Knights vs. Tucson Roadrunners",
       "placeId": "las-vegas-nv"
@@ -11940,11 +12150,6 @@
       "placeId": "new-york-ny"
     },
     {
-      "kept": "Get the Led Out",
-      "mergedFrom": "Get the Led Out",
-      "placeId": "new-york-ny"
-    },
-    {
       "kept": "Taylor Simon King- Celebrating the 3 American Troubadours",
       "mergedFrom": "A Tribute to Taylor Simon King - 3 American Troubadours",
       "placeId": "new-york-ny"
@@ -11972,6 +12177,11 @@
     {
       "kept": "Sea.Hear.Now Festival",
       "mergedFrom": "Sea.Hear.Now Festival",
+      "placeId": "new-york-ny"
+    },
+    {
+      "kept": "Ben Harper & The Innocent Criminals",
+      "mergedFrom": "Ben Harper & The Innocent Criminals",
       "placeId": "new-york-ny"
     },
     {
@@ -12012,52 +12222,47 @@
     {
       "kept": "Reverend Horton Heat and Messer Chups Performing On Arties Outdoor End",
       "mergedFrom": "Messer Chups Performing with Reverend Horton Heat On Arties Outdoor E",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Reverend Horton Heat and Messer Chups Performing On Arties Outdoor End",
       "mergedFrom": "Chris Greiner Performing On the Reverend Horton Heat Event At Arties B",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Texas Hippie Coaliton Performing On Arties End of the Summer Blast In",
       "mergedFrom": "Ten Ton Mojo Performing with Texas Hippie Coalition On Arties Bar and",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Texas Hippie Coaliton Performing On Arties End of the Summer Blast In",
       "mergedFrom": "Intoxication Performing with Texas Hippie Coalition At Arties Bar and",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Texas Hippie Coaliton Performing On Arties End of the Summer Blast In",
       "mergedFrom": "George Becker Performing with Texas Hippie Coalition At Arties Bar and",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Fading Radiance Performing with Smile Empty Soul and Revis At Arties B",
       "mergedFrom": "Corevalay Performing with Smile Empty Soul At Arties Bar and Grill In",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "The Martyr Performing with a Skylit Drive Performing At Arties Bar an",
       "mergedFrom": "Silence Is Survival Performing with a Skylit Drive At Arties Bar and G",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "The Martyr Performing with a Skylit Drive Performing At Arties Bar an",
       "mergedFrom": "The Phoenix Within Performing with a Skylit Drive At Arties Bar and GR",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Odd Men Out Performing On the 12 Stones Show At Arties Bar and Grill I",
       "mergedFrom": "Brenden Starr Performing On the 12 Stones Show Part of Arties Bar and",
-      "placeId": "philadelphia-pa"
-    },
-    {
-      "kept": "New Jersey Symphony Orchestra - Beethoven???s ???Emperor??? & Schubert???s ???Great???",
-      "mergedFrom": "New Jersey Symphony Orchestra presents Beethoven and Schubert",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "New Jersey Symphony Orchestra - Rick Steves??? Europe: A Symphonic Journey",
@@ -12087,87 +12292,87 @@
     {
       "kept": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
       "mergedFrom": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
       "mergedFrom": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
       "mergedFrom": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
       "mergedFrom": "Jersey Shore BlueClaws vs. Hudson Valley Renegades",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. Akron RubberDucks",
       "mergedFrom": "Somerset Patriots vs. Akron RubberDucks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. New Hampshire Fisher Cats",
       "mergedFrom": "Somerset Patriots vs. New Hampshire Fisher Cats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. New Hampshire Fisher Cats",
       "mergedFrom": "Somerset Patriots vs. New Hampshire Fisher Cats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
       "mergedFrom": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
       "mergedFrom": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. Akron RubberDucks",
       "mergedFrom": "Somerset Patriots vs. Akron RubberDucks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. Hartford Yard Goats",
       "mergedFrom": "Somerset Patriots vs. Hartford Yard Goats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. Hartford Yard Goats",
       "mergedFrom": "Somerset Patriots vs. Hartford Yard Goats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "MotoAmerica",
       "mergedFrom": "MotoAmerica",
-      "placeId": "philadelphia-pa"
+      "placeId": "dover-de"
     },
     {
       "kept": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
       "mergedFrom": "Jersey Shore BlueClaws vs. Wilmington Blue Rocks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Trenton Thunder vs. State College Spikes",
       "mergedFrom": "Trenton Thunder vs. State College Spikes",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Trenton Thunder vs. State College Spikes",
       "mergedFrom": "Trenton Thunder vs. State College Spikes",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Trenton Thunder vs. Aberdeen Ironbirds",
       "mergedFrom": "Trenton Thunder vs. Aberdeen Ironbirds",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "New Jersey Jackals vs. New York Boulders",
@@ -12197,12 +12402,12 @@
     {
       "kept": "Trenton Thunder vs. West Virginia Black Bears",
       "mergedFrom": "Trenton Thunder vs. West Virginia Black Bears",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Trenton Thunder vs. West Virginia Black Bears",
       "mergedFrom": "Trenton Thunder vs. West Virginia Black Bears",
-      "placeId": "philadelphia-pa"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "New Jersey Jackals vs. Sussex County Miners",
@@ -12217,7 +12422,7 @@
     {
       "kept": "Somerset Patriots vs. Akron RubberDucks",
       "mergedFrom": "Somerset Patriots vs. Akron RubberDucks",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "New Jersey Jackals vs. Ottawa Titans",
@@ -12232,12 +12437,12 @@
     {
       "kept": "Somerset Patriots vs. Hartford Yard Goats",
       "mergedFrom": "Somerset Patriots vs. Hartford Yard Goats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Somerset Patriots vs. Hartford Yard Goats",
       "mergedFrom": "Somerset Patriots vs. Hartford Yard Goats",
-      "placeId": "new-york-ny"
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "Rutgers Scarlet Knights Womens Volleyball vs. Minnesota Gophers Womens Volleyball",
@@ -12715,13 +12920,13 @@
       "placeId": "new-york-ny"
     },
     {
-      "kept": "King Gizzard and the Lizard Wizard",
-      "mergedFrom": "King Gizzard and the Lizard Wizard",
+      "kept": "Pennywise",
+      "mergedFrom": "Pennywise",
       "placeId": "new-york-ny"
     },
     {
-      "kept": "Pennywise",
-      "mergedFrom": "Pennywise",
+      "kept": "King Gizzard and the Lizard Wizard",
+      "mergedFrom": "King Gizzard and the Lizard Wizard",
       "placeId": "new-york-ny"
     },
     {
@@ -13865,11 +14070,6 @@
       "placeId": "new-york-ny"
     },
     {
-      "kept": "Men's/Women's First Round",
-      "mergedFrom": "Men's/Women's First Round",
-      "placeId": "new-york-ny"
-    },
-    {
       "kept": "Men's Singles Final",
       "mergedFrom": "Men's Doubles Final/Women's Singles Final",
       "placeId": "new-york-ny"
@@ -14390,14 +14590,14 @@
       "placeId": "asheville-nc"
     },
     {
-      "kept": "Buckcherry",
-      "mergedFrom": "Buckcherry",
-      "placeId": "asheville-nc"
-    },
-    {
       "kept": "The Gringos",
       "mergedFrom": "The Gringos",
       "placeId": "charlotte-nc"
+    },
+    {
+      "kept": "Buckcherry",
+      "mergedFrom": "Buckcherry",
+      "placeId": "asheville-nc"
     },
     {
       "kept": "The Bouncing Souls (18+ Event)",
@@ -14840,6 +15040,151 @@
       "placeId": "charlotte-nc"
     },
     {
+      "kept": "Olivia Rodrigo: The Unraveled Tour",
+      "mergedFrom": "Olivia Rodrigo: The Unraveled Tour",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Lost Lands",
+      "mergedFrom": "Lost Lands",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Lost Lands",
+      "mergedFrom": "Lost Lands",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "BOA Central OH Regional pres by Yamaha & Sweetwater - Day Pass",
+      "mergedFrom": "BOA Central OH Regional pres by Yamaha & Sweetwater - Prelim Pass",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "BOA Central OH Regional pres by Yamaha & Sweetwater - Day Pass",
+      "mergedFrom": "BOA Central OH Regional pres by Yamaha & Sweetwater - Finals Pass",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "GorillaT: The Inner Mind Tour (Columbus, OH)",
+      "mergedFrom": "GorillaT: The Inner Mind Tour",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "American Aquarium",
+      "mergedFrom": "American Aquarium",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "DENNETT - Back to the Roadhouse Tour 2026 - PITTSBURGH, PA",
+      "mergedFrom": "DENNETT - Back to the Roadhouse Tour 2026 - COLUMBUS, OH",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "DENNETT - Back to the Roadhouse Tour 2026 - PITTSBURGH, PA",
+      "mergedFrom": "DENNETT - Back to the Roadhouse Tour 2026",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Hot Wheels Monster Trucks Live Glow-N-Fire",
+      "mergedFrom": "Hot Wheels Monster Trucks Live Glow-N-Fire",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Hot Wheels Monster Trucks Live Glow-N-Fire",
+      "mergedFrom": "Hot Wheels Monster Trucks Live Glow-N-Fire",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. Omaha Storm Chasers",
+      "mergedFrom": "Columbus Clippers vs. Omaha Storm Chasers",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. Omaha Storm Chasers",
+      "mergedFrom": "Columbus Clippers vs. Omaha Storm Chasers",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. Iowa Cubs",
+      "mergedFrom": "Columbus Clippers vs. Iowa Cubs",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. Iowa Cubs",
+      "mergedFrom": "Columbus Clippers vs. Iowa Cubs",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. Iowa Cubs",
+      "mergedFrom": "Columbus Clippers vs. Iowa Cubs",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Columbus Clippers vs. St. Paul Saints",
+      "mergedFrom": "Columbus Clippers vs. St. Paul Saints",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Ohio State Buckeyes Women's Volleyball vs. Indiana University Women's Volleyball",
+      "mergedFrom": "Ohio State Buckeyes Women's Hockey vs. Colgate University Women's Hockey",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Ohio State Buckeyes Women's Volleyball vs. Indiana University Women's Volleyball",
+      "mergedFrom": "Ohio State Buckeyes Women's Hockey vs. Colgate University Women's Hockey",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Sports Imports Classic (Winthrop vs SIU & Ohio St vs YSU)",
+      "mergedFrom": "Sports Imports Classic (Winthrop vs YSU & Ohio St vs SIU)",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Sports Imports Classic (Winthrop vs SIU & Ohio St vs YSU)",
+      "mergedFrom": "Sports Imports Classic (SIU vs YSU & Ohio St vs Winthrop)",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Jim Stone Challenge (NKU vs Bowling Green & Ohio St vs Fresno St)",
+      "mergedFrom": "Jim Stone Challenge (Fresno St vs Bowling Green & Ohio St vs NKU)",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Ohio State Buckeyes Women's Hockey vs. University of Wisconsin Badgers Womens Hockey",
+      "mergedFrom": "Ohio State Buckeyes Women's Hockey vs. University of Wisconsin Badgers Womens Hockey",
+      "placeId": "columbus-oh"
+    },
+    {
+      "kept": "Ohio State Buckeyes Women's Hockey vs. Bemidji State University Beavers Womens Hockey",
+      "mergedFrom": "Ohio State Buckeyes Women's Hockey vs. Bemidji State University Beavers Womens Hockey",
+      "placeId": "columbus-oh"
+    },
+    {
       "kept": "THE KEHLANI WORLD TOUR: North America",
       "mergedFrom": "THE KEHLANI WORLD TOUR: North America",
       "placeId": "oklahoma-city-ok"
@@ -14907,11 +15252,6 @@
     {
       "kept": "Oklahoma Sooners Football vs. Kentucky Wildcats Football",
       "mergedFrom": "Oklahoma Sooners Women Volleyball vs. Kentucky Wildcats Womens Volleyball",
-      "placeId": "oklahoma-city-ok"
-    },
-    {
-      "kept": "Oklahoma City Comets vs. Albuquerque Isotopes",
-      "mergedFrom": "Oklahoma City Comets vs. Albuquerque Isotopes",
       "placeId": "oklahoma-city-ok"
     },
     {
@@ -15135,13 +15475,13 @@
       "placeId": "portland-or"
     },
     {
-      "kept": "Eslabon Armado ??? Amor Nocturno",
-      "mergedFrom": "Eslabon Armado - Amor Nocturno",
+      "kept": "Malcolm Todd: Do That Again Tour",
+      "mergedFrom": "Malcolm Todd: Do That Again Tour",
       "placeId": "portland-or"
     },
     {
-      "kept": "Malcolm Todd: Do That Again Tour",
-      "mergedFrom": "Malcolm Todd: Do That Again Tour",
+      "kept": "Eslabon Armado ??? Amor Nocturno",
+      "mergedFrom": "Eslabon Armado - Amor Nocturno",
       "placeId": "portland-or"
     },
     {
@@ -15353,6 +15693,11 @@
       "kept": "Knocked Loose & Denzel Curry",
       "mergedFrom": "Knocked Loose & Denzel Curry",
       "placeId": "philadelphia-pa"
+    },
+    {
+      "kept": "Blues Traveler and Gin Blossoms with Spin Doctors",
+      "mergedFrom": "Blues Traveler w/ Gin Blossoms",
+      "placeId": "mcguire-nj"
     },
     {
       "kept": "UB40 - All Ages (under 16 with adult)",
@@ -15825,13 +16170,13 @@
       "placeId": "nashville-tn"
     },
     {
-      "kept": "Happy Together 2026",
-      "mergedFrom": "Happy Together 2026",
+      "kept": "Poppy - Constantly Nowhere Tour",
+      "mergedFrom": "Poppy - Constantly Nowhere Tour",
       "placeId": "nashville-tn"
     },
     {
-      "kept": "Poppy - Constantly Nowhere Tour",
-      "mergedFrom": "Poppy - Constantly Nowhere Tour",
+      "kept": "Happy Together 2026",
+      "mergedFrom": "Happy Together 2026",
       "placeId": "nashville-tn"
     },
     {
@@ -15855,13 +16200,18 @@
       "placeId": "nashville-tn"
     },
     {
+      "kept": "Little Feat: The Last Farewell Tour featuring Maggie Rose",
+      "mergedFrom": "Little Feat: The Last Farewell Tour featuring Maggie Rose",
+      "placeId": "nashville-tn"
+    },
+    {
       "kept": "*SOLD OUT* ZACH JOHN KING: GET TO DRINKIN’ TOUR",
       "mergedFrom": "*SOLD OUT* ZACH JOHN KING: GET TO DRINKIN’ TOUR",
       "placeId": "nashville-tn"
     },
     {
-      "kept": "Little Feat: The Last Farewell Tour featuring Maggie Rose",
-      "mergedFrom": "Little Feat: The Last Farewell Tour featuring Maggie Rose",
+      "kept": "Neko Case & Friends",
+      "mergedFrom": "Neko Case & Friends",
       "placeId": "nashville-tn"
     },
     {
@@ -15870,19 +16220,14 @@
       "placeId": "gatlinburg-tn"
     },
     {
-      "kept": "Neko Case & Friends",
-      "mergedFrom": "Neko Case & Friends",
-      "placeId": "nashville-tn"
+      "kept": "The Band CAMINO",
+      "mergedFrom": "The Band CAMINO",
+      "placeId": "memphis-tn"
     },
     {
       "kept": "Buddy Guy 90",
       "mergedFrom": "Buddy Guy 90",
       "placeId": "nashville-tn"
-    },
-    {
-      "kept": "The Band CAMINO",
-      "mergedFrom": "The Band CAMINO",
-      "placeId": "memphis-tn"
     },
     {
       "kept": "Big Thief Somersault Slide 360 Tour",
@@ -16620,19 +16965,19 @@
       "placeId": "fort-worth-tx"
     },
     {
+      "kept": "Frank Turner - Lost Evenings IX",
+      "mergedFrom": "Frank Turner - Lost Evenings IX",
+      "placeId": "dallas-tx"
+    },
+    {
+      "kept": "Frank Turner - Lost Evenings IX",
+      "mergedFrom": "Frank Turner - Lost Evenings IX",
+      "placeId": "dallas-tx"
+    },
+    {
       "kept": "BTS WORLD TOUR 'ARIRANG' IN ARLINGTON",
       "mergedFrom": "BTS WORLD TOUR 'ARIRANG' IN ARLINGTON",
       "placeId": "fort-worth-tx"
-    },
-    {
-      "kept": "Frank Turner - Lost Evenings IX",
-      "mergedFrom": "Frank Turner - Lost Evenings IX",
-      "placeId": "dallas-tx"
-    },
-    {
-      "kept": "Frank Turner - Lost Evenings IX",
-      "mergedFrom": "Frank Turner - Lost Evenings IX",
-      "placeId": "dallas-tx"
     },
     {
       "kept": "Grupo Duelo - GRAVEDAD TOUR 2026",
@@ -16730,13 +17075,13 @@
       "placeId": "dallas-tx"
     },
     {
-      "kept": "Kany Garcia: Puerta Abierta Tour",
-      "mergedFrom": "Kany Garcia: Puerta Abierta Tour",
+      "kept": "MANA: VIVIR SIN AIRE TOUR",
+      "mergedFrom": "MANÁ: VIVIR SIN AIRE TOUR",
       "placeId": "houston-tx"
     },
     {
-      "kept": "MANA: VIVIR SIN AIRE TOUR",
-      "mergedFrom": "MANÁ: VIVIR SIN AIRE TOUR",
+      "kept": "Kany Garcia: Puerta Abierta Tour",
+      "mergedFrom": "Kany Garcia: Puerta Abierta Tour",
       "placeId": "houston-tx"
     },
     {
@@ -17613,6 +17958,136 @@
       "kept": "The Wailin Jennys",
       "mergedFrom": "The Wailin Jennys",
       "placeId": "washington-dc"
+    },
+    {
+      "kept": "Pat McGee & Friends",
+      "mergedFrom": "Pat McGee & Friends at Elevation 27",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "PHOEBUS JAZZ FESTIVAL (3rd Annual)",
+      "mergedFrom": "PHOEBUS JAZZ FESTIVAL (3rd Annual) 2-DAY TICKET",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "PHOEBUS JAZZ FESTIVAL (3rd Annual)",
+      "mergedFrom": "PHOEBUS JAZZ FESTIVAL (3rd Annual)",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Monster Jam",
+      "mergedFrom": "Monster Jam",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Reading Royals",
+      "mergedFrom": "Norfolk Admirals vs. Reading Royals",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "mergedFrom": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "mergedFrom": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "mergedFrom": "Norfolk Admirals vs. Trois-Rivieres Lions",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trois-Rivières Lions",
+      "mergedFrom": "Norfolk Admirals vs. Trois-Rivieres Lions",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "mergedFrom": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "mergedFrom": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "mergedFrom": "Norfolk Admirals vs. Greensboro Gargoyles",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trenton Ironhawks",
+      "mergedFrom": "Norfolk Admirals vs. Trenton Ironhawks",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trenton Ironhawks",
+      "mergedFrom": "Norfolk Admirals vs. Trenton Ironhawks",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Admirals vs. Trenton Ironhawks",
+      "mergedFrom": "Norfolk Admirals vs. Trenton Ironhawks",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Gwinnett Stripers",
+      "mergedFrom": "Norfolk Tides vs. Gwinnett Stripers",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Gwinnett Stripers",
+      "mergedFrom": "Norfolk Tides vs. Gwinnett Stripers",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Nashville Sounds",
+      "mergedFrom": "Norfolk Tides vs. Nashville Sounds",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Nashville Sounds",
+      "mergedFrom": "Norfolk Tides vs. Nashville Sounds",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Nashville Sounds",
+      "mergedFrom": "Norfolk Tides vs. Nashville Sounds",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Charlotte Knights",
+      "mergedFrom": "Norfolk Tides vs. Charlotte Knights",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "mergedFrom": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "mergedFrom": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "mergedFrom": "Norfolk Tides vs. Jacksonville Jumbo Shrimp",
+      "placeId": "virginia-beach-va"
+    },
+    {
+      "kept": "Norfolk Tides vs. Charlotte Knights",
+      "mergedFrom": "Norfolk Tides vs. Charlotte Knights",
+      "placeId": "virginia-beach-va"
     },
     {
       "kept": "Kacey Musgraves - Middle of Nowhere Tour ",
