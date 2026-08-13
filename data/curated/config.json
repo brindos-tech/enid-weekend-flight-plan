@@ -1,10 +1,28 @@
 {
-  "origin": {
-    "icao": "KWDG",
-    "name": "Enid Woodring Regional",
-    "lat": 36.3792,
-    "lon": -97.7906
-  },
+  "origins": [
+    {
+      "id": "vance",
+      "icao": "KEND",
+      "name": "Vance AFB",
+      "lat": 36.3392,
+      "lon": -97.9166
+    },
+    {
+      "id": "columbus",
+      "icao": "KCBM",
+      "name": "Columbus AFB",
+      "lat": 33.2836,
+      "lon": -88.4437
+    },
+    {
+      "id": "laughlin",
+      "icao": "KDLF",
+      "name": "Laughlin AFB",
+      "lat": 29.3600,
+      "lon": -100.7782
+    }
+  ],
+  "defaultOriginId": "vance",
   "aircraft": {
     "type": "T-6",
     "cruiseKts": 300,

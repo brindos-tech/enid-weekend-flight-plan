@@ -111,6 +111,7 @@ let lastResult = null;
 
 export function applyFiltersMemoized(places, events, state, config) {
   const hash = JSON.stringify({
+    originId: state.originId,
     rangeNm: state.rangeNm,
     westOnly: state.westOnly,
     categories: Array.from(state.categories).sort(),

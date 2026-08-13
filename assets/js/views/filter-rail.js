@@ -9,6 +9,8 @@ const ACTIVITIES = [
 ];
 
 export function createFilterRail({ store, config }) {
+  const originChips = document.getElementById("originChips");
+  const rangeOriginLabel = document.getElementById("rangeOriginLabel");
   const rangeSlider = document.getElementById("rangeSlider");
   const rangeValue = document.getElementById("rangeValue");
   const rangeCounts = document.getElementById("rangeCounts");
@@ -35,10 +37,20 @@ export function createFilterRail({ store, config }) {
     .join("");
   rangeMarks.innerHTML = marksHtml;
 
+  originChips.innerHTML = config.origins
+    .map((o) => `<button class="chip" data-origin="${o.id}">${o.name} (${o.icao})</button>`)
+    .join("");
+
   categoryChips.innerHTML = CATEGORIES.map((c) => `<button class="chip" data-cat="${c}">${c}</button>`).join("");
   activityChips.innerHTML = ACTIVITIES.map(
     (a) => `<button class="chip" data-act="${a.key}">${a.label}</button>`
   ).join("");
+
+  originChips.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-origin]");
+    if (!btn) return;
+    store.setState({ originId: btn.dataset.origin });
+  });
 
   rangeSlider.addEventListener("input", () => {
     store.setState({ rangeNm: Number(rangeSlider.value) });
@@ -77,6 +89,11 @@ export function createFilterRail({ store, config }) {
   });
 
   function syncFromState(state) {
+    originChips.querySelectorAll("[data-origin]").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.origin === state.originId);
+    });
+    const origin = config.origins.find((o) => o.id === state.originId) || config.origins[0];
+    rangeOriginLabel.textContent = origin.icao;
     rangeSlider.value = state.rangeNm;
     rangeValue.textContent = state.rangeNm;
     westToggle.checked = state.westOnly;

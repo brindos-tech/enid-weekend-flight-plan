@@ -10,17 +10,17 @@ function resolveVar(cssVar) {
   return getComputedStyle(document.documentElement).getPropertyValue(cssVar.match(/--[\w-]+/)[0]).trim();
 }
 
-export function createMapView({ config }) {
+export function createMapView({ config, origin }) {
   const mapEl = document.getElementById("mapWrap");
   const legendEl = document.getElementById("mapLegend");
   const riverDeltaEl = document.getElementById("riverDelta");
 
-  // SVG renderer (the default), not canvas: at ~47 places, real DOM nodes
+  // SVG renderer (the default), not canvas: at ~87 places, real DOM nodes
   // per pin cost nothing measurable, and it's the only way a pin can be
   // keyboard-focused or reached by a screen reader — canvas-drawn shapes
   // have no DOM node to attach tabindex/keyboard handlers to at all.
   const map = L.map(mapEl, { zoomControl: true }).setView(
-    [config.origin.lat, config.origin.lon],
+    [origin.lat, origin.lon],
     5
   );
 
@@ -42,14 +42,14 @@ export function createMapView({ config }) {
   L.control.layers({ Map: dark, Satellite: satellite }, {}, { position: "topright" }).addTo(map);
 
   // Origin marker
-  L.circleMarker([config.origin.lat, config.origin.lon], {
+  const originMarker = L.circleMarker([origin.lat, origin.lon], {
     radius: 6, color: "#fff", fillColor: "#fff", fillOpacity: 1, weight: 2,
   })
-    .bindTooltip(`${config.origin.name} (${config.origin.icao})`, { className: "map-tooltip" })
+    .bindTooltip(`${origin.name} (${origin.icao})`, { className: "map-tooltip" })
     .addTo(map);
 
   // Range ring
-  let rangeCircle = L.circle([config.origin.lat, config.origin.lon], {
+  let rangeCircle = L.circle([origin.lat, origin.lon], {
     radius: config.defaults.rangeNm * 1852,
     color: "#ff8a3d", weight: 1.5, dashArray: "6,6", fill: false, opacity: 0.6,
   }).addTo(map);
@@ -64,6 +64,16 @@ export function createMapView({ config }) {
 
   function updateRange(rangeNm) {
     rangeCircle.setRadius(rangeNm * 1852);
+  }
+
+  // Switching departure base moves the range ring's center — a gentle pan
+  // to the new origin (keeping the current zoom) so the ring's new position
+  // doesn't just silently jump off-screen unnoticed.
+  function setOrigin(newOrigin) {
+    originMarker.setLatLng([newOrigin.lat, newOrigin.lon]);
+    originMarker.setTooltipContent(`${newOrigin.name} (${newOrigin.icao})`);
+    rangeCircle.setLatLng([newOrigin.lat, newOrigin.lon]);
+    map.flyTo([newOrigin.lat, newOrigin.lon], map.getZoom(), { duration: 0.6 });
   }
 
   function setRiverVisible(westOnly) {
@@ -149,6 +159,7 @@ export function createMapView({ config }) {
   return {
     render,
     updateRange,
+    setOrigin,
     setRiverVisible,
     setRiverDelta,
     invalidateSize: () => map.invalidateSize(),

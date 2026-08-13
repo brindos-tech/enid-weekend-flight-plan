@@ -3005,5 +3005,279 @@
       }
     ],
     "links": {}
+  },
+  {
+    "id": "pensacola-fl",
+    "name": "Pensacola",
+    "state": "FL",
+    "lat": 30.4213,
+    "lon": -87.2169,
+    "kinds": [
+      "city",
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 3,
+      "weird": 2
+    },
+    "blurb": "Naval aviation's home town \u2014 the Blue Angels fly out of NAS Pensacola \u2014 plus genuinely great white-sand beaches on the Gulf.",
+    "airports": [
+      {
+        "icao": "KPNS",
+        "name": "Pensacola Intl",
+        "lat": 30.4734,
+        "lon": -87.1866,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "has GA services alongside airline traffic"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "shreveport-la",
+    "name": "Shreveport",
+    "state": "LA",
+    "lat": 32.5252,
+    "lon": -93.7502,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Barksdale AFB's home town, with a Red River downtown and a genuine live-music and casino scene.",
+    "airports": [
+      {
+        "icao": "KDTN",
+        "name": "Shreveport Downtown",
+        "lat": 32.5405,
+        "lon": -93.7458,
+        "driveMiles": 2,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "columbus-oh",
+    "name": "Columbus",
+    "state": "OH",
+    "lat": 39.9612,
+    "lon": -82.9988,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "A genuinely good college-town food and brewery scene layered onto a real state-capital downtown.",
+    "airports": [
+      {
+        "icao": "KOSU",
+        "name": "Ohio State University Airport",
+        "lat": 40.0806,
+        "lon": -83.073,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "virginia-beach-va",
+    "name": "Virginia Beach",
+    "state": "VA",
+    "lat": 36.8529,
+    "lon": -75.978,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "NAS Oceana's home town \u2014 an active Navy jet base right behind the boardwalk \u2014 plus miles of Atlantic beach.",
+    "airports": [
+      {
+        "icao": "KCPK",
+        "name": "Chesapeake Regional",
+        "lat": 36.6675,
+        "lon": -76.3011,
+        "driveMiles": 25,
+        "driveMinutes": 35,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "Oceana itself is military-only; this is the nearest civil GA field"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "fresno-ca",
+    "name": "Fresno",
+    "state": "CA",
+    "lat": 36.7378,
+    "lon": -119.7871,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Central Valley hub close to Naval Air Station Lemoore, with Yosemite and Sequoia both a reasonable drive away.",
+    "airports": [
+      {
+        "icao": "KFCH",
+        "name": "Fresno Chandler Executive",
+        "lat": 36.7397,
+        "lon": -119.8189,
+        "driveMiles": 2,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "sacramento-ca",
+    "name": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lon": -121.4944,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "California's capital, close to Beale AFB, with a downtown farm-to-fork food scene and easy reach into the Sierra foothills.",
+    "airports": [
+      {
+        "icao": "KMCC",
+        "name": "Sacramento McClellan",
+        "lat": 38.6668,
+        "lon": -121.4011,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "former McClellan AFB, now civil"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "dover-de",
+    "name": "Dover",
+    "state": "DE",
+    "lat": 39.1582,
+    "lon": -75.5244,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Dover AFB's home town \u2014 a small state-capital downtown on the Delaware Bay side of the peninsula.",
+    "airports": [
+      {
+        "icao": "33N",
+        "name": "Delaware Airpark",
+        "lat": 39.2192,
+        "lon": -75.6134,
+        "driveMiles": 7,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "mcguire-nj",
+    "name": "Trenton",
+    "state": "NJ",
+    "lat": 40.2171,
+    "lon": -74.7429,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Close to Joint Base McGuire-Dix-Lakehurst, with a compact state-capital downtown along the Delaware River.",
+    "airports": [
+      {
+        "icao": "KTTN",
+        "name": "Trenton-Mercer",
+        "lat": 40.2767,
+        "lon": -74.8135,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
   }
 ]

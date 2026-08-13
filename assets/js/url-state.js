@@ -6,6 +6,7 @@ export function stateToHash(state) {
   params.set("v", state.view);
   params.set("from", toDateKey(state.dateRange.start));
   params.set("to", toDateKey(state.dateRange.end));
+  params.set("origin", state.originId);
   params.set("r", String(state.rangeNm));
   params.set("west", state.westOnly ? "1" : "0");
   if (state.categories.size) params.set("cat", Array.from(state.categories).join(","));
@@ -26,6 +27,7 @@ export function hashToState(hash, defaults) {
   if (params.has("to")) {
     patch.dateRange = { ...(patch.dateRange || defaults.dateRange), end: parseDate(params.get("to")) };
   }
+  if (params.has("origin")) patch.originId = params.get("origin");
   if (params.has("r")) patch.rangeNm = Number(params.get("r"));
   if (params.has("west")) patch.westOnly = params.get("west") === "1";
   if (params.has("cat")) patch.categories = new Set(params.get("cat").split(",").filter(Boolean));

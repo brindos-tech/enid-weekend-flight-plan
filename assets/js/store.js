@@ -6,6 +6,7 @@ function defaultState(config, today) {
   return {
     today,
     dateRange: { start: today, end: horizonEnd },
+    originId: config.defaultOriginId,
     rangeNm: config.defaults.rangeNm,
     westOnly: config.defaults.westOfMississippiOnly,
     categories: new Set(),

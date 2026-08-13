@@ -32,24 +32,31 @@ async function boot() {
   ]);
 
   // ---- derive place fields (computed, never authored — see ARCHITECTURE.md §5) ----
-  const vanceFields = rawPlaces.flatMap((p) => p.airports.filter((a) => a.vanceApproved));
-  const places = rawPlaces.map((p) => {
-    const primaryAirport = p.airports[0];
-    const distanceNm = greatCircleNm(config.origin, p);
-    const legs = legsRequired(distanceNm, config.aircraft.legRangeNm);
-    const route = legs > 1 ? planRoute(config.origin, p, vanceFields, config.aircraft.legRangeNm, config.aircraft.reserveNm) : null;
-    return {
-      ...p,
-      distanceNm,
-      flightMinutes: flightMinutes(distanceNm, config.aircraft.cruiseKts),
-      legs,
-      route,
-      isWest: isWestOfMississippi(p, config.mississippi),
-    };
-  });
+  // Distance/flight-time/route all depend on which base the range is drawn
+  // from, so this has to be re-run (not computed once at boot) whenever the
+  // selected origin changes — see the originId check in render() below.
+  const originsById = new Map(config.origins.map((o) => [o.id, o]));
+  const fuelStopFields = rawPlaces.flatMap((p) => p.airports.filter((a) => a.vanceApproved));
+  function deriveFields(origin) {
+    return rawPlaces.map((p) => {
+      const distanceNm = greatCircleNm(origin, p);
+      const legs = legsRequired(distanceNm, config.aircraft.legRangeNm);
+      const route = legs > 1 ? planRoute(origin, p, fuelStopFields, config.aircraft.legRangeNm, config.aircraft.reserveNm) : null;
+      return {
+        ...p,
+        distanceNm,
+        flightMinutes: flightMinutes(distanceNm, config.aircraft.cruiseKts),
+        legs,
+        route,
+        isWest: isWestOfMississippi(p, config.mississippi),
+      };
+    });
+  }
 
   const today = new Date(2026, 7, 10); // 2026-08-10 — the date this build was generated for
   const store = createStore(config, today);
+  let currentOriginId = store.getState().originId;
+  let places = deriveFields(originsById.get(currentOriginId));
 
   // ---- freshness header ----
   const freshnessText = document.getElementById("freshnessText");
@@ -64,7 +71,7 @@ async function boot() {
   }
 
   // ---- views ----
-  const mapView = createMapView({ config });
+  const mapView = createMapView({ config, origin: originsById.get(currentOriginId) });
   const filterRail = createFilterRail({ store, config });
   const scrubber = createScrubber({ store, config, allEvents: events });
   const detailPanel = createDetailPanel({ store, meta, config });
@@ -134,6 +141,13 @@ async function boot() {
   // ---- main render loop ----
   function render() {
     const state = store.getState();
+
+    if (state.originId !== currentOriginId) {
+      currentOriginId = state.originId;
+      places = deriveFields(originsById.get(currentOriginId));
+      mapView.setOrigin(originsById.get(currentOriginId));
+    }
+
     const filtered = applyFiltersMemoized(places, events, state, config);
     filtered.state = state;
 
