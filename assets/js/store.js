@@ -11,7 +11,6 @@ function defaultState(config, today) {
     westOnly: config.defaults.westOfMississippiOnly,
     categories: new Set(),
     activities: new Set(),
-    favoritesOnly: false,
     minScale: null, // null = no floor; show everything in range
     search: "",
     view: "map",

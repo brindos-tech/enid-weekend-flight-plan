@@ -17,7 +17,6 @@ export function createFilterRail({ store, config }) {
   const rangeMarks = document.getElementById("rangeMarks");
   const westToggle = document.getElementById("westToggle");
   const westDelta = document.getElementById("westDelta");
-  const favToggle = document.getElementById("favToggle");
   const categoryChips = document.getElementById("categoryChips");
   const activityChips = document.getElementById("activityChips");
   const railReset = document.getElementById("railReset");
@@ -60,10 +59,6 @@ export function createFilterRail({ store, config }) {
     store.setState({ westOnly: westToggle.checked });
   });
 
-  favToggle.addEventListener("change", () => {
-    store.setState({ favoritesOnly: favToggle.checked });
-  });
-
   categoryChips.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-cat]");
     if (!btn) return;
@@ -97,7 +92,6 @@ export function createFilterRail({ store, config }) {
     rangeSlider.value = state.rangeNm;
     rangeValue.textContent = state.rangeNm;
     westToggle.checked = state.westOnly;
-    favToggle.checked = state.favoritesOnly;
     categoryChips.querySelectorAll("[data-cat]").forEach((btn) => {
       btn.classList.toggle("active", state.categories.has(btn.dataset.cat));
     });

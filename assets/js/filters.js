@@ -46,7 +46,6 @@ export function applyFilters(places, events, state, config) {
     if (!eventOverlapsRange(ev, state.dateRange.start, state.dateRange.end)) return false;
     if (state.categories.size > 0 && !state.categories.has(ev.category)) return false;
     if (minScaleRank >= 0 && scaleOrder[ev.scale] < minScaleRank) return false;
-    if (state.favoritesOnly && !ev.isFavoriteArtist) return false;
     if (!passesVisibilityGate(ev, spanDays)) return false;
     return true;
   });
@@ -116,7 +115,6 @@ export function applyFiltersMemoized(places, events, state, config) {
     westOnly: state.westOnly,
     categories: Array.from(state.categories).sort(),
     activities: Array.from(state.activities).sort(),
-    favoritesOnly: state.favoritesOnly,
     minScale: state.minScale,
     search: state.search,
     start: state.dateRange.start.getTime(),

@@ -3279,5 +3279,993 @@
       }
     ],
     "links": {}
+  },
+  {
+    "id": "fayetteville-nc",
+    "name": "Fayetteville",
+    "state": "NC",
+    "lat": 35.0527,
+    "lon": -78.8784,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Fort Liberty's home town \u2014 one of the largest military installations in the world (XVIII Airborne Corps, Special Forces).",
+    "airports": [
+      {
+        "icao": "KFAY",
+        "name": "Fayetteville Regional",
+        "lat": 34.9912,
+        "lon": -78.8803,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "columbus-ga",
+    "name": "Columbus",
+    "state": "GA",
+    "lat": 32.461,
+    "lon": -84.9877,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Fort Moore's home town \u2014 Army infantry and Airborne/Ranger training \u2014 with a genuinely fun whitewater rafting run right through downtown.",
+    "airports": [
+      {
+        "icao": "KCSG",
+        "name": "Columbus Metropolitan",
+        "lat": 32.5163,
+        "lon": -84.9391,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "killeen-tx",
+    "name": "Killeen",
+    "state": "TX",
+    "lat": 31.1171,
+    "lon": -97.7278,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Fort Cavazos's home town \u2014 one of the largest Army posts in the country by population.",
+    "airports": [
+      {
+        "icao": "KGRK",
+        "name": "Killeen-Fort Cavazos Regional",
+        "lat": 31.0672,
+        "lon": -97.8286,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "joint-use with Fort Cavazos"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "clarksville-tn",
+    "name": "Clarksville",
+    "state": "TN",
+    "lat": 36.5298,
+    "lon": -87.3595,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Campbell's home town \u2014 the 101st Airborne \u2014 with an easy drive into Nashville when you want more going on.",
+    "airports": [
+      {
+        "icao": "KCKV",
+        "name": "Clarksville Regional / Outlaw Field",
+        "lat": 36.6019,
+        "lon": -87.4164,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "lawton-ok",
+    "name": "Lawton",
+    "state": "OK",
+    "lat": 34.6036,
+    "lon": -98.3959,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Sill's home town \u2014 Army Field Artillery \u2014 and the closest thing to a fellow OK military town from Vance.",
+    "airports": [
+      {
+        "icao": "KLAW",
+        "name": "Lawton-Fort Sill Regional",
+        "lat": 34.5677,
+        "lon": -98.4166,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "joint-use with Fort Sill"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "junction-city-ks",
+    "name": "Junction City",
+    "state": "KS",
+    "lat": 39.0281,
+    "lon": -96.8317,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Riley's home town, with Manhattan (KSU) close enough for a real college-town night out.",
+    "airports": [
+      {
+        "icao": "KMHK",
+        "name": "Manhattan Regional",
+        "lat": 39.1409,
+        "lon": -96.6708,
+        "driveMiles": 18,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "watertown-ny",
+    "name": "Watertown",
+    "state": "NY",
+    "lat": 43.9748,
+    "lon": -75.9108,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Fort Drum's home town \u2014 the 10th Mountain Division \u2014 a long way from Enid but genuinely close to the Thousand Islands and the Adirondacks.",
+    "airports": [
+      {
+        "icao": "KART",
+        "name": "Watertown Intl",
+        "lat": 43.9919,
+        "lon": -76.0216,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "columbia-sc",
+    "name": "Columbia",
+    "state": "SC",
+    "lat": 34.0007,
+    "lon": -81.0348,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Jackson's home town \u2014 the Army's largest basic training post \u2014 with a real state-capital downtown to go with it.",
+    "airports": [
+      {
+        "icao": "KCAE",
+        "name": "Columbia Metropolitan",
+        "lat": 33.9388,
+        "lon": -81.1195,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "augusta-ga",
+    "name": "Augusta",
+    "state": "GA",
+    "lat": 33.4735,
+    "lon": -82.0105,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Fort Eisenhower's home town (Army Cyber Command) \u2014 and, one week a year, the Masters.",
+    "airports": [
+      {
+        "icao": "KAGS",
+        "name": "Augusta Regional",
+        "lat": 33.3699,
+        "lon": -81.9645,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "radcliff-ky",
+    "name": "Radcliff",
+    "state": "KY",
+    "lat": 37.8506,
+    "lon": -85.9491,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Knox's home town \u2014 yes, that Fort Knox \u2014 with Louisville a reasonable drive north for a real night out.",
+    "airports": [
+      {
+        "icao": "KEKX",
+        "name": "Addington Field",
+        "lat": 37.6889,
+        "lon": -85.9377,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "huntsville-al",
+    "name": "Huntsville",
+    "state": "AL",
+    "lat": 34.7304,
+    "lon": -86.5861,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 3
+    },
+    "blurb": "Redstone Arsenal's home town \u2014 Army missile defense and NASA's rocket-development heart \u2014 with a genuinely good and fast-growing food and brewery scene to match.",
+    "airports": [
+      {
+        "icao": "KMDQ",
+        "name": "Huntsville Executive / Tom Sharp Jr Field",
+        "lat": 34.8637,
+        "lon": -86.5544,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "leesville-la",
+    "name": "Leesville",
+    "state": "LA",
+    "lat": 31.1435,
+    "lon": -93.2621,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Fort Johnson's home town \u2014 home of the Army's Joint Readiness Training Center \u2014 genuinely remote, closest real airport is in Alexandria.",
+    "airports": [
+      {
+        "icao": "KESF",
+        "name": "England Airpark",
+        "lat": 31.3052,
+        "lon": -92.5451,
+        "driveMiles": 35,
+        "driveMinutes": 45,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "former England AFB, now civil"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "tacoma-wa",
+    "name": "Tacoma",
+    "state": "WA",
+    "lat": 47.2529,
+    "lon": -122.4443,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 2
+    },
+    "blurb": "Joint Base Lewis-McChord's home town \u2014 Army and Air Force sharing one of the busiest bases in the country \u2014 with Mt. Rainier at your back door and Seattle a short hop north.",
+    "airports": [
+      {
+        "icao": "KTIW",
+        "name": "Tacoma Narrows",
+        "lat": 47.2679,
+        "lon": -122.5782,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "altus-ok",
+    "name": "Altus",
+    "state": "OK",
+    "lat": 34.6379,
+    "lon": -99.334,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Another Oklahoma Air Force town \u2014 Altus flies the C-17 and KC-46 schoolhouse \u2014 small, quiet, and about as no-frills as this list gets.",
+    "airports": [
+      {
+        "icao": "KLTS",
+        "name": "Altus AFB",
+        "lat": 34.6675,
+        "lon": -99.2668,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": true,
+        "pprRequired": true,
+        "notes": "active-duty field, PPR required for transients"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "wichita-falls-tx",
+    "name": "Wichita Falls",
+    "state": "TX",
+    "lat": 33.9137,
+    "lon": -98.4934,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Sheppard AFB's home town \u2014 undergraduate pilot training for the Air Force and NATO's Euro-NATO Joint Jet Pilot Training program both fly out of here.",
+    "airports": [
+      {
+        "icao": "KSPS",
+        "name": "Wichita Falls Regional",
+        "lat": 33.9888,
+        "lon": -98.4919,
+        "driveMiles": 6,
+        "driveMinutes": 12,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "abilene-tx",
+    "name": "Abilene",
+    "state": "TX",
+    "lat": 32.4487,
+    "lon": -99.7331,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Dyess AFB's home town \u2014 B-1 bombers, and soon B-21s \u2014 with a real West Texas downtown around it.",
+    "airports": [
+      {
+        "icao": "KABI",
+        "name": "Abilene Regional",
+        "lat": 32.4113,
+        "lon": -99.6819,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "san-angelo-tx",
+    "name": "San Angelo",
+    "state": "TX",
+    "lat": 31.4638,
+    "lon": -100.437,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Goodfellow AFB's home town \u2014 intelligence and fire-protection training \u2014 with a genuinely nice riverwalk downtown.",
+    "airports": [
+      {
+        "icao": "KSJT",
+        "name": "San Angelo Regional / Mathis Field",
+        "lat": 31.3577,
+        "lon": -100.4962,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "biloxi-ms",
+    "name": "Biloxi",
+    "state": "MS",
+    "lat": 30.396,
+    "lon": -88.8853,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 4,
+      "nightlife": 4,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Keesler AFB's home town \u2014 Air Force technical training on the Mississippi Gulf Coast, casinos and beaches included.",
+    "airports": [
+      {
+        "icao": "KGPT",
+        "name": "Gulfport-Biloxi Intl",
+        "lat": 30.4073,
+        "lon": -89.0701,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "panama-city-fl",
+    "name": "Panama City",
+    "state": "FL",
+    "lat": 30.1588,
+    "lon": -85.6602,
+    "kinds": [
+      "fun"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 2,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Tyndall AFB's home town \u2014 F-22s over some of the whitest sand beaches on the Gulf.",
+    "airports": [
+      {
+        "icao": "KECP",
+        "name": "Northwest Florida Beaches Intl",
+        "lat": 30.3421,
+        "lon": -85.7956,
+        "driveMiles": 18,
+        "driveMinutes": 25,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "valdosta-ga",
+    "name": "Valdosta",
+    "state": "GA",
+    "lat": 30.8327,
+    "lon": -83.2785,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Moody AFB's home town \u2014 A-10s and combat rescue \u2014 a straightforward South Georgia stop.",
+    "airports": [
+      {
+        "icao": "KVLD",
+        "name": "Valdosta Regional",
+        "lat": 30.7825,
+        "lon": -83.2767,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "warner-robins-ga",
+    "name": "Warner Robins",
+    "state": "GA",
+    "lat": 32.613,
+    "lon": -83.6241,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 1,
+      "weird": 1
+    },
+    "blurb": "Robins AFB's home town \u2014 Air Force Materiel Command's depot maintenance hub \u2014 with Macon close enough for real food and music.",
+    "airports": [
+      {
+        "icao": "KMCN",
+        "name": "Middle Georgia Regional",
+        "lat": 32.6928,
+        "lon": -83.6492,
+        "driveMiles": 8,
+        "driveMinutes": 15,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "montgomery-al",
+    "name": "Montgomery",
+    "state": "AL",
+    "lat": 32.3792,
+    "lon": -86.3077,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Maxwell AFB's home town \u2014 Air University, where every Air Force officer eventually passes through \u2014 layered onto genuinely important civil rights history downtown.",
+    "airports": [
+      {
+        "icao": "KMGM",
+        "name": "Montgomery Regional",
+        "lat": 32.3006,
+        "lon": -86.3939,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "minot-nd",
+    "name": "Minot",
+    "state": "ND",
+    "lat": 48.233,
+    "lon": -101.2957,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Minot AFB's home town \u2014 B-52s and Minuteman III missile fields \u2014 about as far north as this list reaches.",
+    "airports": [
+      {
+        "icao": "KMOT",
+        "name": "Minot Intl",
+        "lat": 48.2594,
+        "lon": -101.2803,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "great-falls-mt",
+    "name": "Great Falls",
+    "state": "MT",
+    "lat": 47.5053,
+    "lon": -111.3008,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 2,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Malmstrom AFB's home town \u2014 another Minuteman III missile wing \u2014 right on the Missouri River with genuinely good fishing and hiking around it.",
+    "airports": [
+      {
+        "icao": "KGTF",
+        "name": "Great Falls Intl",
+        "lat": 47.482,
+        "lon": -111.3705,
+        "driveMiles": 5,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": "shared civil/military field with Malmstrom"
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "knob-noster-mo",
+    "name": "Knob Noster",
+    "state": "MO",
+    "lat": 38.7614,
+    "lon": -93.5541,
+    "kinds": [
+      "boutique"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 1,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Whiteman AFB's home town \u2014 the B-2 stealth bomber's only base \u2014 small and quiet, closest real airport is in Warrensburg.",
+    "airports": [
+      {
+        "icao": "KSZL",
+        "name": "Skyhaven Airport",
+        "lat": 38.7636,
+        "lon": -93.7458,
+        "driveMiles": 12,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "norfolk-va",
+    "name": "Norfolk",
+    "state": "VA",
+    "lat": 36.8508,
+    "lon": -76.2859,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 2,
+      "weird": 2
+    },
+    "blurb": "Naval Station Norfolk is the largest naval base in the world \u2014 a real downtown and a genuinely good Navy history museum built around it.",
+    "airports": [
+      {
+        "icao": "KPVG",
+        "name": "Hampton Roads Executive",
+        "lat": 36.7825,
+        "lon": -76.4079,
+        "driveMiles": 12,
+        "driveMinutes": 20,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "hampton-va",
+    "name": "Hampton",
+    "state": "VA",
+    "lat": 37.0299,
+    "lon": -76.3452,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 3,
+      "weird": 1
+    },
+    "blurb": "Joint Base Langley-Eustis's home town \u2014 F-22s at Langley, Army logistics at Eustis \u2014 right on the Chesapeake.",
+    "airports": [
+      {
+        "icao": "KPHF",
+        "name": "Newport News-Williamsburg Intl",
+        "lat": 37.1319,
+        "lon": -76.493,
+        "driveMiles": 10,
+        "driveMinutes": 18,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "jacksonville-nc",
+    "name": "Jacksonville",
+    "state": "NC",
+    "lat": 34.7541,
+    "lon": -77.4302,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Camp Lejeune's home town \u2014 one of the Marine Corps' largest bases \u2014 with the New River and the Crystal Coast close by.",
+    "airports": [
+      {
+        "icao": "KOAJ",
+        "name": "Albert J Ellis",
+        "lat": 34.8291,
+        "lon": -77.6122,
+        "driveMiles": 15,
+        "driveMinutes": 22,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "oceanside-ca",
+    "name": "Oceanside",
+    "state": "CA",
+    "lat": 33.1959,
+    "lon": -117.3795,
+    "kinds": [
+      "city",
+      "fun"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 3,
+      "nightlife": 3,
+      "outdoors": 4,
+      "weird": 1
+    },
+    "blurb": "Camp Pendleton's home town \u2014 a real Marine Corps base with a genuinely good beach town built around it, San Diego a short hop south.",
+    "airports": [
+      {
+        "icao": "KOKB",
+        "name": "Oceanside Municipal",
+        "lat": 33.2177,
+        "lon": -117.3536,
+        "driveMiles": 3,
+        "driveMinutes": 8,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
   }
 ]

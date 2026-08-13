@@ -11,7 +11,6 @@ export function stateToHash(state) {
   params.set("west", state.westOnly ? "1" : "0");
   if (state.categories.size) params.set("cat", Array.from(state.categories).join(","));
   if (state.activities.size) params.set("act", Array.from(state.activities).join(","));
-  if (state.favoritesOnly) params.set("fav", "1");
   if (state.search) params.set("q", state.search);
   if (state.selectedPlaceId) params.set("place", state.selectedPlaceId);
   return `#/${params.toString()}`;
@@ -32,7 +31,6 @@ export function hashToState(hash, defaults) {
   if (params.has("west")) patch.westOnly = params.get("west") === "1";
   if (params.has("cat")) patch.categories = new Set(params.get("cat").split(",").filter(Boolean));
   if (params.has("act")) patch.activities = new Set(params.get("act").split(",").filter(Boolean));
-  if (params.has("fav")) patch.favoritesOnly = params.get("fav") === "1";
   if (params.has("q")) patch.search = params.get("q");
   if (params.has("place")) patch.selectedPlaceId = params.get("place");
 
