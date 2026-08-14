@@ -185,7 +185,8 @@
   .app-body { grid-template-columns: 1fr; }
   .filter-rail {
     position: fixed;
-    left: 0; right: 0; bottom: var(--tabbar-height);
+    left: 0; right: 0;
+    bottom: calc(var(--tabbar-height-mobile) + env(safe-area-inset-bottom, 0px));
     max-height: 60vh;
     border-right: none;
     border-top: 1px solid var(--border);
@@ -274,20 +275,41 @@
     /* iOS home-indicator clearance, so the last row of tabs stays tappable */
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
-  .tab-bar button { min-height: 56px; font-size: 0.86em; }
+  .tab-bar button { min-height: var(--tabbar-height-mobile); font-size: 0.86em; }
 
   .main-area { grid-template-rows: 1fr auto; }
   .detail-panel {
-    top: auto; left: 0; right: 0; bottom: 0;
+    /* fixed, not absolute: as a bottom sheet it has to stay pinned to the
+       viewport, not to a container that can sit below the fold. */
+    position: fixed;
+    top: auto; left: 0; right: 0;
+    bottom: calc(var(--tabbar-height-mobile) + env(safe-area-inset-bottom, 0px));
     width: auto;
     /* a fixed height (not max-height) so #detailContent's inset:0 has a
        real box to fill — see the #detailContent comment above for why it
-       needs to be the scrolling element instead of .detail-panel itself. */
-    height: 75vh;
+       needs to be the scrolling element instead of .detail-panel itself.
+       58vh leaves enough map visible above the sheet to keep your bearings;
+       at the old 75vh it read as a full-screen takeover. */
+    height: 58vh;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     transform: translateY(110%);
   }
   .detail-panel.open { transform: translateY(0); }
+
+  /* Tap-anywhere dismiss. The sheet covers most of the screen, so the
+     gesture people reach for first is tapping the bit of map still
+     showing — without this that tap does nothing. */
+  .detail-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1150;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  .detail-backdrop.open { opacity: 1; pointer-events: auto; }
 
   .rail-toggle-btn { display: inline-flex !important; }
 }
@@ -296,5 +318,5 @@
   .rail-toggle-btn { display: none !important; }
   /* The rail is a permanent sidebar here — it never opens as a sheet, so
      it has nothing to dismiss and no backdrop to dismiss it with. */
-  .rail-backdrop, .rail-mobile-header { display: none !important; }
+  .rail-backdrop, .rail-mobile-header, .detail-backdrop { display: none !important; }
 }

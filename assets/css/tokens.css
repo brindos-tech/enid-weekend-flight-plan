@@ -44,6 +44,10 @@
   --scrubber-height: 88px;
   --header-height: 60px;
   --tabbar-height: 52px;
+  /* Phones get taller tabs for a real tap target. Anything that has to sit
+     *above* the tab bar (filter sheet, detail sheet) offsets by this, so
+     the three stay in agreement by construction. */
+  --tabbar-height-mobile: 56px;
 }
 
 /* Both schemes share the same dark palette by design — the map/data reads
