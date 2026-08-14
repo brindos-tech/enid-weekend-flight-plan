@@ -5,7 +5,7 @@ const ACTIVITIES = [
   { key: "food", label: "Food" },
   { key: "nightlife", label: "Nightlife" },
   { key: "outdoors", label: "Outdoors" },
-  { key: "weird", label: "Weird" },
+  { key: "weird", label: "Boutique" },
 ];
 
 export function createFilterRail({ store, config }) {
@@ -31,7 +31,7 @@ export function createFilterRail({ store, config }) {
     .map((nm) => {
       const pct = ((nm - config.rangeSlider.min) / (config.rangeSlider.max - config.rangeSlider.min)) * 100;
       const isLeg = nm === config.aircraft.legRangeNm;
-      return `<span class="${isLeg ? "leg-boundary" : ""}" style="left:${pct}%">${nm}${isLeg ? `<br><small>fuel stop</small>` : ""}</span>`;
+      return `<span class="${isLeg ? "leg-boundary" : ""}" style="left:${pct}%">${nm}</span>`;
     })
     .join("");
   rangeMarks.innerHTML = marksHtml;

@@ -35,6 +35,21 @@ const ACTIVITY_CATEGORIES = {
   weird: [],
 };
 
+// The Boutique tab (the "weird" activity key) is meant for small towns with
+// real character — not just any place that clears a nonzero curated score.
+// Without a gate here, both big cities that simply don't rate high on
+// quirkiness (Dallas, Tulsa, ...) and the bare-minimum military-hometown
+// entries (added so nearby recreation is browsable for an assignment, not
+// as real getaways — e.g. Altus OK, Radcliff KY) clutter the list. Require
+// the "boutique" kind tag plus real texture on at least three activity
+// axes, so a place needs more going for it than a flat floor profile (or
+// one or two middling scores) to count as worth the trip.
+function isWorthABoutiqueVisit(place) {
+  if (!place.kinds?.includes("boutique")) return false;
+  const richAxes = Object.values(place.activities || {}).filter((v) => v >= 2).length;
+  return richAxes >= 3;
+}
+
 /**
  * Rank places for a given activity key within the currently-visible event
  * set. Returns [{place, score, topEvent}] sorted descending.
@@ -43,6 +58,7 @@ export function rankPlacesByActivity(places, eventsByPlace, activityKey, scoring
   const relevantCategories = new Set(ACTIVITY_CATEGORIES[activityKey] ?? []);
   const results = [];
   for (const place of places) {
+    if (activityKey === "weird" && !isWorthABoutiqueVisit(place)) continue;
     const baseScore = (place.activities?.[activityKey] ?? 0) * 2;
     const events = (eventsByPlace.get(place.id) || []).filter((ev) => relevantCategories.has(ev.category));
     let eventBonus = 0;
