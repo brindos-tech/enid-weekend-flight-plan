@@ -149,6 +149,14 @@ button.feed-row, button.place-card, button.weekend-card, button.show-row {
 }
 .rail-reset:hover { border-color: var(--accent); color: var(--text); }
 
+.rail-easter-egg {
+  text-align: center;
+  font-size: 0.7em;
+  color: var(--muted);
+  opacity: 0.6;
+  margin-top: 14px;
+}
+
 /* -------- generic view container -------- */
 .view-inner { max-width: 1100px; margin: 0 auto; padding: 24px 20px 40px; }
 .view-inner h2 { font-size: 1.3em; margin: 0 0 4px; }

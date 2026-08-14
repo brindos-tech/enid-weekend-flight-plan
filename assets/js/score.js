@@ -44,7 +44,7 @@ const ACTIVITY_CATEGORIES = {
 // the "boutique" kind tag plus real texture on at least three activity
 // axes, so a place needs more going for it than a flat floor profile (or
 // one or two middling scores) to count as worth the trip.
-function isWorthABoutiqueVisit(place) {
+export function isWorthABoutiqueVisit(place) {
   if (!place.kinds?.includes("boutique")) return false;
   const richAxes = Object.values(place.activities || {}).filter((v) => v >= 2).length;
   return richAxes >= 3;
