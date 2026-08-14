@@ -10,21 +10,55 @@ const PRESETS = [
 export function createScrubber({ store, config, allEvents }) {
   const wrap = document.getElementById("scrubberWrap");
   wrap.innerHTML = `
-    <div class="scrubber-presets" style="display:flex;gap:6px;flex-wrap:wrap;">
-      ${PRESETS.map((p, i) => `<button class="chip" data-preset="${i}">${p.label}</button>`).join("")}
-      <button class="chip" data-preset="custom">Custom</button>
+    <button type="button" class="scrubber-summary" id="scrubberSummary" aria-controls="scrubberBody" aria-expanded="false">
+      <span id="scrubberSummaryLabel"></span>
+      <span class="scrubber-summary-hint">Change</span>
+    </button>
+    <div class="scrubber-body" id="scrubberBody">
+      <div class="scrubber-presets" style="display:flex;gap:6px;flex-wrap:wrap;">
+        ${PRESETS.map((p, i) => `<button class="chip" data-preset="${i}">${p.label}</button>`).join("")}
+        <button class="chip" data-preset="custom">Custom</button>
+      </div>
+      <div class="scrubber-track" style="position:relative;height:34px;">
+        <canvas id="densityCanvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+        <div id="brushLabel" style="position:absolute;top:-2px;right:0;font-size:0.72em;color:var(--muted);"></div>
+      </div>
+      <input type="range" id="scrubStart" min="0" max="1" value="0" style="width:100%;">
     </div>
-    <div class="scrubber-track" style="position:relative;height:34px;">
-      <canvas id="densityCanvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
-      <div id="brushLabel" style="position:absolute;top:-2px;right:0;font-size:0.72em;color:var(--muted);"></div>
-    </div>
-    <input type="range" id="scrubStart" min="0" max="1" value="0" style="width:100%;">
   `;
 
   const canvas = document.getElementById("densityCanvas");
   const brushLabel = document.getElementById("brushLabel");
   const presetRow = wrap.querySelector(".scrubber-presets");
   const scrubStart = document.getElementById("scrubStart");
+  const summaryBtn = document.getElementById("scrubberSummary");
+  const summaryLabel = document.getElementById("scrubberSummaryLabel");
+
+  // On phones this strip eats scarce vertical space that the map wants, and
+  // once a horizon is picked it's reference material rather than a control.
+  // Collapse it to a one-line summary of the chosen range; tapping that
+  // brings the presets and density histogram back. Matches the CSS
+  // breakpoint — the collapse rules live inside the same media query, so a
+  // stale .collapsed class is inert on desktop.
+  const isNarrow = window.matchMedia("(max-width: 860px)");
+
+  function setCollapsed(collapsed) {
+    wrap.classList.toggle("collapsed", collapsed);
+    summaryBtn.setAttribute("aria-expanded", String(!collapsed));
+    // The density canvas measures 0px wide while it's display:none, so any
+    // draw that happened during collapse produced nothing. Redraw once it
+    // has real layout back, or it reappears blank.
+    if (!collapsed) {
+      requestAnimationFrame(() => {
+        const { dateRange } = store.getState();
+        drawDensity(dateRange.start, dateRange.end);
+      });
+    }
+  }
+
+  summaryBtn.addEventListener("click", () => {
+    setCollapsed(!wrap.classList.contains("collapsed"));
+  });
 
   const today = store.getState().today;
   const horizonStart = addDays(today, -14);
@@ -94,7 +128,9 @@ export function createScrubber({ store, config, allEvents }) {
     const start = addDays(horizonStart, startOffsetDays);
     const end = addDays(start, spanDays);
     store.setState({ dateRange: { start, end } });
-    brushLabel.textContent = `${formatDateShort(start)} – ${formatDateShort(end)}`;
+    const label = `${formatDateShort(start)} – ${formatDateShort(end)}`;
+    brushLabel.textContent = label;
+    summaryLabel.textContent = label;
     drawDensity(start, end);
   }
 
@@ -105,6 +141,7 @@ export function createScrubber({ store, config, allEvents }) {
     if (!btn) return;
     presetRow.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
     btn.classList.add("active");
+    // "Custom" means the user wants the slider, so leave the strip open.
     if (btn.dataset.preset === "custom") return;
     const preset = PRESETS[Number(btn.dataset.preset)];
     currentSpan = preset.days;
@@ -112,6 +149,7 @@ export function createScrubber({ store, config, allEvents }) {
     scrubStart.max = String(Math.max(0, totalDays - currentSpan));
     scrubStart.value = String(startOffset);
     applyRange(startOffset, currentSpan);
+    if (isNarrow.matches) setCollapsed(true);
   });
 
   scrubStart.max = String(Math.max(0, totalDays - currentSpan));
@@ -128,6 +166,9 @@ export function createScrubber({ store, config, allEvents }) {
   scrubStart.value = String(initStartOffset);
   scrubStart.max = String(Math.max(0, totalDays - currentSpan));
   applyRange(initStartOffset, currentSpan);
+  // A default horizon is already applied on load, so on phones start folded
+  // away — the summary line still says which range is active.
+  setCollapsed(isNarrow.matches);
 
   window.addEventListener("resize", () => {
     const s = store.getState();
