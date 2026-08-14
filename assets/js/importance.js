@@ -7,15 +7,12 @@
 // Spotify artists; for sports, whether either team is a pro franchise or an
 // SEC school.
 //
-// Two independent gates read isHighlightEvent:
-//   - score.js's eventScore always requires a highlight before an event
-//     contributes anything to a place/weekend's ranking, so a random
-//     non-favorite concert or small-college game can never win a
-//     "suggested city" slot, regardless of the selected date window.
-//   - filters.js additionally hides non-highlight events entirely once the
-//     selected date window is wide enough that browsing needs curation, not
-//     just ranking (see passesVisibilityGate) — inside ~2 weeks, smaller
-//     college games and non-favorite concerts stay visible for browsing.
+// score.js's eventScore reads isHighlightEvent and always requires a
+// highlight before an event contributes anything to a place/weekend's
+// ranking, so a random non-favorite concert or small-college game can never
+// win a "suggested city" slot — but it still shows up for browsing in the
+// Feed and elsewhere; the Feed shows everything in range/window and leaves
+// narrowing it down to the user's own filters (category, min scale, search).
 
 const PRO_TEAMS = [
   // NFL
@@ -86,24 +83,3 @@ export function isHighlightEvent(event) {
   return true; // art/food/outdoors/fair/rodeo/holiday: low volume, always fine
 }
 
-// A non-favorite concert at a flagship/major-scale venue (the rare case
-// where Ticketmaster actually reports venue capacity — see
-// scripts/fetch-ticketmaster.js) is worth browsing even though it can't win
-// a ranking slot: this is what keeps something like RÜFÜS DU SOL visible
-// for the Artists view's "Notable Shows" list and elsewhere, without it
-// ever becoming a "suggested city" pick (that still requires a favorite
-// artist — see isHighlightEvent/eventScore).
-export function isNotableEvent(event) {
-  return event.category === "concert" && (event.scale === "flagship" || event.scale === "major");
-}
-
-// Beyond this many days out, only highlight/notable events stay visible at
-// all. Inside it, everything the other filters already allow stays visible
-// (smaller college games, non-favorite concerts) for browsing — they just
-// still can't win a ranking slot, per eventScore's use of isHighlightEvent.
-const VISIBILITY_HORIZON_DAYS = 14;
-
-export function passesVisibilityGate(event, spanDays) {
-  if (spanDays <= VISIBILITY_HORIZON_DAYS) return true;
-  return isHighlightEvent(event) || isNotableEvent(event);
-}
