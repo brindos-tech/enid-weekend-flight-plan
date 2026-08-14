@@ -1,6 +1,6 @@
-# The Enid Runway
+# XC GPT
 
-A rolling situational-awareness site for weekend flight planning out of Enid, OK — not a booking checklist. Map-first, date-scrubbable, filtered by range and activity. See [ARCHITECTURE.md](ARCHITECTURE.md) for the full design.
+A rolling situational-awareness site for weekend cross-country flight planning — not a booking checklist. Map-first, date-scrubbable, filtered by range and activity, with departure bases at Vance (Enid, OK), Columbus, and Laughlin AFB. See [ARCHITECTURE.md](ARCHITECTURE.md) for the full design.
 
 ## Running it locally
 

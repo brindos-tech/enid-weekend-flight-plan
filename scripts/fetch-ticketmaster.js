@@ -10,9 +10,10 @@
 //      inside the daily budget alongside the artist pass.
 //
 // Nationwide on purpose — the range slider goes up to ~2200nm (coast to
-// coast from Enid), and a place only ever shows events if it's within 40nm
-// of one of the curated entries in places.json, so widening this footprint
-// only matters together with adding curated destinations to match.
+// coast from any of the departure bases), and a place only ever shows
+// events if it's within 40nm of one of the curated entries in
+// places.json, so widening this footprint only matters together with
+// adding curated destinations to match.
 //
 // Requires env var TICKETMASTER_API_KEY (repo secret, CI-only).
 
