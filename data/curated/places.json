@@ -3777,15 +3777,15 @@
     "airports": [
       {
         "icao": "KSPS",
-        "name": "Wichita Falls Regional",
+        "name": "Sheppard AFB / Wichita Falls Municipal",
         "lat": 33.9888,
         "lon": -98.4919,
         "driveMiles": 6,
         "driveMinutes": 12,
         "vanceApproved": true,
-        "military": false,
+        "military": true,
         "pprRequired": false,
-        "notes": ""
+        "notes": "joint-use: Sheppard AFB shares the field with the civilian terminal"
       }
     ],
     "links": {}

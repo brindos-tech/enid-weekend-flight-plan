@@ -13,6 +13,15 @@ const HIGHLIGHT_CAP = 5;
 const ICING_TEMP_F = 34;
 const ICING_PRECIP_PCT = 40;
 
+// `military` and `pprRequired` are separate facts and have to be read
+// separately: a joint-use field like KSPS is military *and* has an open
+// civilian ramp, so collapsing the two into a flat "military, PPR" would
+// tell a pilot to arrange prior permission they don't actually need.
+function airportAccessNote(airport) {
+  if (!airport.military) return "";
+  return airport.pprRequired ? " — military, PPR required" : " — joint civil-military";
+}
+
 function buildWeatherSection(weather) {
   if (!weather || !weather.dates || weather.dates.length === 0) return "";
 
@@ -109,7 +118,7 @@ export function createDetailPanel({ store, meta, config }) {
     const airportsHtml = place.airports
       .map(
         (a) =>
-          `<div class="dp-airport">${a.icao} ${a.name}${a.military ? " — military, PPR" : ""}${a.driveMiles ? ` · ${a.driveMiles}mi / ${a.driveMinutes}min drive` : ""}</div>`
+          `<div class="dp-airport">${a.icao} ${a.name}${airportAccessNote(a)}${a.driveMiles ? ` · ${a.driveMiles}mi / ${a.driveMinutes}min drive` : ""}</div>`
       )
       .join("");
 
