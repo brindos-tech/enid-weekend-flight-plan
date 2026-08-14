@@ -4267,5 +4267,141 @@
       }
     ],
     "links": {}
+  },
+  {
+    "id": "buffalo-ny",
+    "name": "Buffalo",
+    "state": "NY",
+    "lat": 42.8864,
+    "lon": -78.8784,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 2,
+      "food": 4,
+      "nightlife": 2,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Buffalo wings at the source, Niagara Falls 25 minutes north, and a genuinely revitalized Canalside waterfront. Bills home games are the draw.",
+    "airports": [
+      {
+        "icao": "KBQR",
+        "name": "Buffalo-Lancaster Regional",
+        "lat": 42.9221,
+        "lon": -78.612,
+        "driveMiles": 12,
+        "driveMinutes": 22,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "cincinnati-oh",
+    "name": "Cincinnati",
+    "state": "OH",
+    "lat": 39.1031,
+    "lon": -84.512,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 2,
+      "art": 3,
+      "food": 4,
+      "nightlife": 3,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Over-the-Rhine's historic district anchors a real food and brewery scene, plus Cincinnati chili if you're brave. Bengals home games are the draw.",
+    "airports": [
+      {
+        "icao": "KLUK",
+        "name": "Cincinnati Municipal / Lunken Field",
+        "lat": 39.103,
+        "lon": -84.4176,
+        "driveMiles": 4,
+        "driveMinutes": 10,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "cleveland-oh",
+    "name": "Cleveland",
+    "state": "OH",
+    "lat": 41.4993,
+    "lon": -81.6944,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 3,
+      "art": 3,
+      "food": 3,
+      "nightlife": 2,
+      "outdoors": 1,
+      "weird": 2
+    },
+    "blurb": "Rock and Roll Hall of Fame, Playhouse Square's theater district, and a lakefront downtown with a real food scene at West Side Market. Browns home games are the draw.",
+    "airports": [
+      {
+        "icao": "KBKL",
+        "name": "Burke Lakefront",
+        "lat": 41.5175,
+        "lon": -81.6833,
+        "driveMiles": 1,
+        "driveMinutes": 5,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
+  },
+  {
+    "id": "green-bay-wi",
+    "name": "Green Bay",
+    "state": "WI",
+    "lat": 44.5133,
+    "lon": -88.0133,
+    "kinds": [
+      "city"
+    ],
+    "activities": {
+      "live-music": 1,
+      "art": 1,
+      "food": 2,
+      "nightlife": 1,
+      "outdoors": 2,
+      "weird": 1
+    },
+    "blurb": "Lambeau Field and the Titletown District are basically the whole draw — small downtown, Bay Beach amusement park on the water for the day before kickoff.",
+    "airports": [
+      {
+        "icao": "KGRB",
+        "name": "Green Bay-Austin Straubel Intl",
+        "lat": 44.4846,
+        "lon": -88.1297,
+        "driveMiles": 7,
+        "driveMinutes": 14,
+        "vanceApproved": true,
+        "military": false,
+        "pprRequired": false,
+        "notes": ""
+      }
+    ],
+    "links": {}
   }
 ]
