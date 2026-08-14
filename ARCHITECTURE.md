@@ -563,7 +563,8 @@ becomes a full-height sheet.
 - Mississippi polyline styled per toggle state.
 - Cluster below zoom 5.
 - Click pin → detail panel. Hover → tooltip with name, flight time, top event.
-- Keep v1's Map/Satellite layer control.
+- Single dark basemap — no layer control. (v1 had a Map/Satellite swap; the satellite
+  layer was dropped, so category colors only ever need to work on the dark tiles.)
 
 ### 8.3 Date scrubber
 
@@ -602,8 +603,7 @@ Carry v1's palette forward — it's good, and it's recognizable:
 --accent:#ff8a3d; --accent2:#3ddc97; --accent3:#5b8def; --gold:#e8c15e;
 ```
 
-Category colors must be distinguishable at 6px on a dark map and must not collide with the
-Map/Satellite basemap swap. Verify against the satellite layer, not just the dark tiles.
+Category colors must be distinguishable at 6px on the dark basemap.
 
 ---
 
