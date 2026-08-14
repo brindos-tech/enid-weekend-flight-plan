@@ -30,7 +30,7 @@
     "reserveNm": 50
   },
   "defaults": {
-    "rangeNm": 800,
+    "rangeNm": 600,
     "westOfMississippiOnly": false,
     "horizonDays": 45,
     "minScale": "notable"
