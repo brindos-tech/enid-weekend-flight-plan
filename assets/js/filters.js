@@ -16,8 +16,17 @@ function matchesSearch(text, query) {
 }
 
 export function applyFilters(places, events, state, config) {
+  const origin = config.origins.find((o) => o.id === state.originId);
+
   // 1-3: place gates
   const visiblePlaces = places.filter((place) => {
+    // A place served by the selected departure base is where you already
+    // are, not a trip — Sheppard/Wichita Falls is the first origin that also
+    // exists as a destination. Matched on ICAO rather than a distance
+    // threshold so it stays exact: Wichita Falls is a legitimate 96 nm
+    // destination from Vance and only stops being one when Sheppard is the
+    // selected base.
+    if (origin && place.airports?.some((a) => a.icao === origin.icao)) return false;
     if (place.distanceNm > state.rangeNm) return false;
     if (state.westOnly && !place.isWest) return false;
     if (state.activities.size > 0) {

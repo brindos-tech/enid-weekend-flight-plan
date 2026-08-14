@@ -275,7 +275,15 @@
     /* iOS home-indicator clearance, so the last row of tabs stays tappable */
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
-  .tab-bar button { min-height: var(--tabbar-height-mobile); font-size: 0.86em; }
+  /* Five labels have to fit a phone's width without the bar turning into a
+     horizontal scroller — "Weekend Recs" alone is wider than two of the
+     others, so the padding gets tightened here rather than letting the last
+     tab sit half off-screen. Height is untouched: the tap target stays. */
+  .tab-bar button {
+    min-height: var(--tabbar-height-mobile);
+    font-size: 0.78em;
+    padding: 0 5px;
+  }
 
   .main-area { grid-template-rows: 1fr auto; }
   .detail-panel {
