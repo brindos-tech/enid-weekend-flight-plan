@@ -24,22 +24,10 @@ export function createMapView({ config, origin }) {
     5
   );
 
-  const dark = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "&copy; OpenStreetMap",
     maxZoom: 12,
   }).addTo(map);
-
-  const satTiles = L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    { maxZoom: 13, attribution: "Esri" }
-  );
-  const satLabels = L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-    { maxZoom: 13 }
-  );
-  const satellite = L.layerGroup([satTiles, satLabels]);
-
-  L.control.layers({ Map: dark, Satellite: satellite }, {}, { position: "topright" }).addTo(map);
 
   // Origin marker
   const originMarker = L.circleMarker([origin.lat, origin.lon], {

@@ -11,7 +11,7 @@
   --gold: #e8c15e;
   --danger: #e65a5a;
 
-  /* category colors — tuned for visibility on both dark tiles and satellite imagery */
+  /* category colors — tuned for visibility on the dark basemap */
   --cat-concert: #5b8def;
   --cat-festival: #ff8a3d;
   --cat-rodeo: #c9713f;
