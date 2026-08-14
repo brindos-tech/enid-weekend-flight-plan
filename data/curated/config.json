@@ -20,6 +20,13 @@
       "name": "Laughlin AFB",
       "lat": 29.3600,
       "lon": -100.7782
+    },
+    {
+      "id": "sheppard",
+      "icao": "KSPS",
+      "name": "Sheppard AFB",
+      "lat": 33.9888,
+      "lon": -98.4919
     }
   ],
   "defaultOriginId": "vance",
