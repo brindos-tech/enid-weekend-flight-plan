@@ -17,7 +17,7 @@ export function renderWeekends(container, filtered, { places, config, overrides 
 
   if (fridays.length === 0) {
     container.innerHTML = `
-      <h2>Weekends</h2>
+      <h2>Weekend Recs</h2>
       <p class="view-sub">Derived from the events currently in view — widen the date window to see weekends.</p>
       <div class="empty-state">No full weekend falls inside the current date window.</div>
     `;
@@ -82,7 +82,7 @@ export function renderWeekends(container, filtered, { places, config, overrides 
     .join("");
 
   container.innerHTML = `
-    <h2>Weekends</h2>
+    <h2>Weekend Recs</h2>
     <p class="view-sub">One best-match pick plus up to two backups, ranked automatically from events in view.</p>
     <div class="weekend-list">${cardsHtml}</div>
   `;
