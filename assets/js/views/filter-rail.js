@@ -22,6 +22,8 @@ export function createFilterRail({ store, config }) {
   const railReset = document.getElementById("railReset");
   const railToggleBtn = document.getElementById("railToggle");
   const filterRail = document.getElementById("filterRail");
+  const railClose = document.getElementById("railClose");
+  const railBackdrop = document.getElementById("railBackdrop");
 
   rangeSlider.min = config.rangeSlider.min;
   rangeSlider.max = config.rangeSlider.max;
@@ -79,8 +81,24 @@ export function createFilterRail({ store, config }) {
 
   railReset.addEventListener("click", () => store.reset());
 
+  // On mobile the rail opens as a fixed sheet over the page. The header's
+  // toggle button is the only thing that closes it, and the header sits in
+  // normal flow — scroll down and it leaves the viewport while the fixed
+  // sheet stays, stranding the user with no way out. Give the sheet its own
+  // close button, a tap-anywhere backdrop, and Escape.
+  function setRailOpen(open) {
+    filterRail.classList.toggle("open", open);
+    railBackdrop.classList.toggle("open", open);
+    railToggleBtn.setAttribute("aria-expanded", String(open));
+  }
+
   railToggleBtn.addEventListener("click", () => {
-    filterRail.classList.toggle("open");
+    setRailOpen(!filterRail.classList.contains("open"));
+  });
+  railClose.addEventListener("click", () => setRailOpen(false));
+  railBackdrop.addEventListener("click", () => setRailOpen(false));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && filterRail.classList.contains("open")) setRailOpen(false);
   });
 
   function syncFromState(state) {

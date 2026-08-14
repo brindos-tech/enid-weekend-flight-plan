@@ -151,6 +151,11 @@
   border: none;
   color: var(--muted);
   padding: 0 12px;
+  /* Desktop sizes this row via the .app grid track, but the mobile media
+     query below switches that track to `auto` — without a min-height the
+     buttons collapse to bare text height (~17px), far under a usable tap
+     target. */
+  min-height: 44px;
   font-size: 0.82em;
   font-weight: 600;
   white-space: nowrap;
@@ -182,6 +187,61 @@
   }
   .filter-rail.open { transform: translateY(0); }
 
+  /* Tap-dismiss for the filter sheet, and a visual cue that it's modal.
+     Kept interactive only while open so it never swallows taps otherwise. */
+  .rail-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 499;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  .rail-backdrop.open { opacity: 1; pointer-events: auto; }
+
+  /* No top padding on the sheet: sticky `top: 0` pins to the content-box
+     edge, so any padding-top would leave a strip above the pinned header
+     where scrolled content shows through. The header supplies its own
+     spacing instead. */
+  .filter-rail { padding-top: 0; }
+  .rail-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    /* bleed to the rail's side edges, cancelling its 16px x-padding */
+    margin: 0 -16px 12px;
+    padding: 4px 8px 4px 16px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  .rail-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.6em;
+    line-height: 1;
+  }
+
+  .tab-bar {
+    /* iOS home-indicator clearance, so the last row of tabs stays tappable */
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .tab-bar button { min-height: 56px; font-size: 0.86em; }
+
   .main-area { grid-template-rows: 1fr auto; }
   .detail-panel {
     top: auto; left: 0; right: 0; bottom: 0;
@@ -200,4 +260,7 @@
 
 @media (min-width: 861px) {
   .rail-toggle-btn { display: none !important; }
+  /* The rail is a permanent sidebar here — it never opens as a sheet, so
+     it has nothing to dismiss and no backdrop to dismiss it with. */
+  .rail-backdrop, .rail-mobile-header { display: none !important; }
 }

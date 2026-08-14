@@ -16,7 +16,7 @@
 <div class="app">
 
   <header class="app-header">
-    <button class="rail-toggle-btn" id="railToggle" style="display:none;">☰ Filters</button>
+    <button class="rail-toggle-btn" id="railToggle" style="display:none;" aria-controls="filterRail" aria-expanded="false">☰ Filters</button>
     <h1>XC GPT <span class="accent">&#9992;</span></h1>
     <div class="header-search">
       <input type="text" id="globalSearch" placeholder="Search places, events, artists&hellip;" autocomplete="off">
@@ -29,7 +29,19 @@
 
   <div class="app-body">
 
+    <div class="rail-backdrop" id="railBackdrop"></div>
+
     <aside class="filter-rail" id="filterRail">
+      <!-- Mobile-only: the rail opens as a fixed sheet, and the header's
+           toggle button scrolls out of reach with the rest of the page,
+           so the sheet needs its own close control. Sticky, not absolute —
+           the rail is the scrolling element (see .filter-rail overflow-y),
+           and an absolute button would scroll away with the content. -->
+      <div class="rail-mobile-header">
+        <span>Filters</span>
+        <button class="rail-close" id="railClose" aria-label="Close filters">&times;</button>
+      </div>
+
       <div class="rail-section">
         <h3>Departure Base</h3>
         <div class="chip-row" id="originChips"></div>
