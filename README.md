@@ -24,6 +24,14 @@ Two scheduled workflows regenerate `data/generated/`:
 - **`.github/workflows/refresh-daily.yml`** — pulls Ticketmaster events, weather, expands `recurring.json`, merges, validates, commits.
 - **`.github/workflows/refresh-weekly.yml`** — syncs Spotify top artists, resolves new Ticketmaster attraction IDs, rebuilds, checks link health.
 
+A third publishes the site:
+
+- **`.github/workflows/deploy-pages.yml`** — on every push to `main`, assembles `index.html` + `assets/` + `data/` and runs `scripts/stamp-version.js` to append `?v=<short-sha>` to every local CSS/JS reference *and* to the relative imports inside each ES module, then deploys to Pages.
+
+  This exists because Pages serves everything with `Cache-Control: max-age=600` and gives you no way to override it, so a just-merged change could take ~10 minutes to appear — indistinguishable from a broken deploy. Stamping the whole module graph (not just the `main.js` entry point — a query string there doesn't propagate into its own `import "./store.js"` statements) makes each deploy a fresh set of URLs, so changes land immediately.
+
+  **This requires Settings → Pages → Source = "GitHub Actions".** Left on "Deploy from a branch", this workflow fails at the deploy step while the old branch-based deploy keeps publishing unstamped assets.
+
 Add these repo secrets (Settings → Secrets and variables → Actions):
 
 | Secret | Used by |
