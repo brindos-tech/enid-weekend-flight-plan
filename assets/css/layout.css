@@ -138,6 +138,16 @@
   min-width: 0;
 }
 
+.scrubber-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+/* Desktop has room for the strip permanently; the summary is the phone-only
+   collapsed affordance. */
+.scrubber-summary { display: none; }
+
 /* -------- bottom tab bar -------- */
 .tab-bar {
   display: flex;
@@ -235,6 +245,30 @@
     font-size: 1.6em;
     line-height: 1;
   }
+
+  /* Once a horizon is chosen the strip is reference, not a control — fold it
+     down to a single tappable line so the map keeps the space. */
+  .scrubber-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 44px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.84em;
+    font-weight: 600;
+    text-align: left;
+  }
+  .scrubber-summary-hint { color: var(--muted); font-weight: 400; font-size: 0.9em; }
+  .scrubber-summary-hint::after { content: " \25BE"; }
+  .scrubber-wrap.collapsed .scrubber-summary-hint::after { content: " \25B4"; }
+  .scrubber-wrap.collapsed .scrubber-body { display: none; }
+  .scrubber-wrap.collapsed { padding-top: 2px; padding-bottom: 2px; }
 
   .tab-bar {
     /* iOS home-indicator clearance, so the last row of tabs stays tappable */

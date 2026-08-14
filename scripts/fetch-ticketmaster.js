@@ -32,13 +32,43 @@ const FOOTPRINT_STATES = [
   "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA",
   "WV", "WI", "WY",
 ];
-const CLASSIFICATIONS = ["music", "sports", "arts&theatre"];
+// Query values must be spelled the way Ticketmaster spells its own
+// classifications — this is a name match, not an enum. "arts&theatre"
+// (no spaces) does not match the real segment, "Arts & Theatre".
+const CLASSIFICATIONS = ["music", "sports", "arts & theatre"];
 
 const limiter = createRateLimiter(2);
 
-function classificationToCategory(classificationName) {
-  const map = { music: "concert", sports: "sports", "arts&theatre": "art" };
-  return map[classificationName] || "misc";
+// Keyed by segment name with punctuation and spacing stripped, because the
+// API returns "Arts & Theatre" and an exact-string map keyed "arts&theatre"
+// matched none of them: every arts event fell through to "misc" and main()
+// then dropped the lot. That silently cost the entire arts catalogue —
+// the generated feed carried 0 Ticketmaster art events against ~15.5k
+// concerts — so normalise before lookup and shout about anything unmapped
+// (see unmappedSegments below) rather than discarding it quietly.
+const SEGMENT_CATEGORY = {
+  music: "concert",
+  sports: "sports",
+  artstheatre: "art",
+  artstheater: "art", // US spelling, in case the segment is ever renamed
+};
+
+function normalizeSegment(name) {
+  return (name || "").toLowerCase().replace(/[^a-z]/g, "");
+}
+
+// segment name -> how many events fell through unmapped, for the summary
+// main() prints. A future segment rename should be obvious in the log
+// instead of quietly deleting a whole category again.
+const unmappedSegments = new Map();
+
+function classificationToCategory(segmentName) {
+  const mapped = SEGMENT_CATEGORY[normalizeSegment(segmentName)];
+  if (!mapped) {
+    const key = segmentName || "(no segment)";
+    unmappedSegments.set(key, (unmappedSegments.get(key) || 0) + 1);
+  }
+  return mapped || "misc";
 }
 
 // Venue capacity (used for the flagship/major/notable/local scale badge) is
@@ -66,7 +96,7 @@ function mapTicketmasterEvent(tmEvent, { placeId, attractionId } = {}) {
     startTime: dateInfo?.dateTime || null,
     placeId: placeId || null,
     venue: venue ? { name: venue.name, lat: Number(venue.location?.latitude), lon: Number(venue.location?.longitude) } : null,
-    category: classificationToCategory(tmEvent.classifications?.[0]?.segment?.name?.toLowerCase()),
+    category: classificationToCategory(tmEvent.classifications?.[0]?.segment?.name),
     subcategory: tmEvent.classifications?.[0]?.genre?.name || null,
     scale: estimateScale(tmEvent),
     attendance: null,
@@ -195,6 +225,21 @@ async function main() {
   // Ticketmaster's data to filter on further.
   const combined = deduped.filter((ev) => ev.category !== "misc");
   console.log(`Deduped to ${deduped.length} events, dropped ${deduped.length - combined.length} uncategorized ("misc") listings.`);
+
+  // Anything here was thrown away. A segment we *expect* to keep showing up
+  // in this list means SEGMENT_CATEGORY has drifted out of date — that is
+  // exactly how the arts catalogue went missing.
+  if (unmappedSegments.size) {
+    const breakdown = Array.from(unmappedSegments.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, n]) => `${name} (${n})`)
+      .join(", ");
+    console.log(`Unmapped segments seen (pre-dedup): ${breakdown}`);
+  }
+
+  const kept = {};
+  for (const ev of combined) kept[ev.category] = (kept[ev.category] || 0) + 1;
+  console.log(`Kept by category: ${Object.entries(kept).map(([c, n]) => `${c} ${n}`).join(", ")}`);
 
   await mkdir(CACHE_DIR, { recursive: true });
   await writeFile(path.join(CACHE_DIR, "ticketmaster.json"), JSON.stringify(combined, null, 2));
