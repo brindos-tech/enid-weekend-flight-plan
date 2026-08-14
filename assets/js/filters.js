@@ -1,7 +1,7 @@
 // The single filter pipeline. Every view renders from this output — do not
 // let a view filter independently, or views will drift out of sync.
 import { parseDate } from "./format.js";
-import { eventScore } from "./score.js";
+import { eventScore, isWorthABoutiqueVisit } from "./score.js";
 import { isHighlightEvent } from "./importance.js";
 
 function eventOverlapsRange(event, rangeStart, rangeEnd) {
@@ -21,8 +21,15 @@ export function applyFilters(places, events, state, config) {
     if (place.distanceNm > state.rangeNm) return false;
     if (state.westOnly && !place.isWest) return false;
     if (state.activities.size > 0) {
-      const hasActivity = Array.from(state.activities).some(
-        (a) => (place.activities?.[a] ?? 0) >= 3
+      // The Boutique chip (the "weird" activity key) asks a different
+      // question than the other five: not "does this place score high on
+      // an axis" but "is this a small town worth the trip". A big city can
+      // rate 3+ on the quirk axis (Austin, New Orleans, Memphis, Chicago)
+      // without being boutique in any useful sense, and a real boutique
+      // town can rate low on it (Bentonville scores 1). Defer to the same
+      // gate the Places view's Boutique tab uses so the two agree.
+      const hasActivity = Array.from(state.activities).some((a) =>
+        a === "weird" ? isWorthABoutiqueVisit(place) : (place.activities?.[a] ?? 0) >= 3
       );
       if (!hasActivity) return false;
     }
