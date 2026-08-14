@@ -54,6 +54,16 @@ export function createDetailPanel({ store, meta, config }) {
   const panel = document.getElementById("detailPanel");
   const content = document.getElementById("detailContent");
   const closeBtn = document.getElementById("detailClose");
+  const backdrop = document.getElementById("detailBackdrop");
+
+  // Single place that flips the sheet's visibility, so the backdrop can
+  // never be left showing over a closed panel (render() closes it from two
+  // separate branches).
+  function setPanelOpen(open) {
+    panel.classList.toggle("open", open);
+    backdrop.classList.toggle("open", open);
+  }
+
   // Every view (including the map's pins) fully redraws its DOM on each
   // state change, so a raw element reference goes stale the instant
   // store.setState below triggers that redraw — .focus() on it would fire
@@ -66,7 +76,7 @@ export function createDetailPanel({ store, meta, config }) {
   let lastFocusedPlaceId = null;
 
   function closePanel() {
-    panel.classList.remove("open");
+    setPanelOpen(false);
     store.setState({ selectedPlaceId: null, selectedEventId: null });
     const placeId = lastFocusedPlaceId;
     setTimeout(() => {
@@ -80,14 +90,18 @@ export function createDetailPanel({ store, meta, config }) {
   }
 
   closeBtn.addEventListener("click", closePanel);
+  backdrop.addEventListener("click", closePanel);
 
-  panel.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closePanel();
+  // Document-level, not panel-level: as a bottom sheet nothing inside it is
+  // necessarily focused, and a keydown listener on the panel only fires
+  // when focus is already within it.
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("open")) closePanel();
   });
 
   function render(place, eventsForPlace, weather, focusOriginPlaceId) {
     if (!place) {
-      panel.classList.remove("open");
+      setPanelOpen(false);
       return;
     }
     const isNewlyOpening = !panel.classList.contains("open");
@@ -144,7 +158,7 @@ export function createDetailPanel({ store, meta, config }) {
         ${buildWeatherSection(weather)}
       </div>
     `;
-    panel.classList.add("open");
+    setPanelOpen(true);
     if (isNewlyOpening) {
       // move focus into the panel so keyboard/screen-reader users land
       // somewhere sensible, matching the standard dialog-open pattern.
