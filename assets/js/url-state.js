@@ -26,6 +26,17 @@ export function hashToState(hash, defaults) {
   if (params.has("to")) {
     patch.dateRange = { ...(patch.dateRange || defaults.dateRange), end: parseDate(params.get("to")) };
   }
+  // A link's date window is worth restoring — that's the point of a
+  // shareable URL — but only while it still means anything. The hash is
+  // rewritten on every state change, so every bookmark and reopened tab
+  // carries whatever window was current when it was saved; restoring one
+  // that has already fully elapsed just replays a dead range of past
+  // events. Drop it and keep the fresh default. A window still running, or
+  // one deliberately pointed at the future, restores as before.
+  if (patch.dateRange?.end && defaults.today && patch.dateRange.end < defaults.today) {
+    delete patch.dateRange;
+  }
+
   if (params.has("origin")) patch.originId = params.get("origin");
   if (params.has("r")) patch.rangeNm = Number(params.get("r"));
   if (params.has("west")) patch.westOnly = params.get("west") === "1";

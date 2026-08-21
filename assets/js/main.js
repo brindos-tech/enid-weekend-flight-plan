@@ -53,7 +53,19 @@ async function boot() {
     });
   }
 
-  const today = new Date(2026, 7, 10); // 2026-08-10 — the date this build was generated for
+  // The real current date, normalised to local midnight — not the build
+  // date. This was pinned to a literal, which quietly turned the whole app
+  // into a snapshot: "this weekend" and the 30/90-day presets all measure
+  // from here, so they kept pointing at the window that was current when the
+  // build shipped and let events that had already happened stay on screen.
+  //
+  // Midnight is load-bearing, not tidiness. Event dates parse to local
+  // midnight (see parseDate) and the window test is
+  // `evStart <= rangeEnd && evEnd >= rangeStart` — with a mid-afternoon
+  // rangeStart, a single-day event happening *today* would test its own
+  // midnight end against 14:00 and drop out of its own day.
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const store = createStore(config, today);
   let currentOriginId = store.getState().originId;
   let places = deriveFields(originsById.get(currentOriginId));
@@ -62,8 +74,11 @@ async function boot() {
   const freshnessText = document.getElementById("freshnessText");
   const freshnessDot = document.getElementById("freshnessDot");
   if (meta && meta.buildAt) {
-    freshnessText.textContent = `Updated ${formatUpdatedAgo(meta.buildAt, today)}`;
-    const hoursSince = (today - new Date(meta.buildAt)) / 3600000;
+    // `now`, not `today`: freshness is an elapsed-hours measure, and against
+    // a midnight-floored date a build from earlier the same day reads as
+    // negative hours old.
+    freshnessText.textContent = `Updated ${formatUpdatedAgo(meta.buildAt, now)}`;
+    const hoursSince = (now - new Date(meta.buildAt)) / 3600000;
     freshnessDot.className = "source-dot " + (hoursSince < 72 ? "ok" : hoursSince < 168 ? "stale" : "error");
   } else {
     freshnessText.textContent = "Bootstrap data (no CI run yet)";
