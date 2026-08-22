@@ -175,7 +175,38 @@ export function createScrubber({ store, config, allEvents }) {
     drawDensity(s.dateRange.start, s.dateRange.end);
   });
 
-  return {
-    redraw: (state) => drawDensity(state.dateRange.start, state.dateRange.end),
-  };
+  // main.js calls this on every state change, which makes it the one place a
+  // date range set from *outside* this strip gets reflected back into it —
+  // a range restored from the URL, mainly. Without it the label and the
+  // highlighted preset keep advertising whatever was last clicked here while
+  // the app filters by something else entirely.
+  function redraw(state) {
+    const { start, end } = state.dateRange;
+    const label = `${formatDateShort(start)} – ${formatDateShort(end)}`;
+    brushLabel.textContent = label;
+    summaryLabel.textContent = label;
+
+    const spanDays = Math.round((end - start) / 86400000);
+    const startOffset = Math.round((start - horizonStart) / 86400000);
+    currentSpan = spanDays;
+    scrubStart.max = String(Math.max(0, totalDays - spanDays));
+    // Assigning .value programmatically does not fire "input", so this
+    // cannot loop back through applyRange into setState.
+    scrubStart.value = String(startOffset);
+
+    // A preset is only "the" preset when the window also starts today —
+    // otherwise it's a 30-day span someone dragged, which is Custom.
+    const startsToday = startOffset === Math.round((today - horizonStart) / 86400000);
+    const presetIdx = startsToday ? PRESETS.findIndex((p) => p.days === spanDays) : -1;
+    presetRow.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+    const activeChip =
+      presetIdx >= 0
+        ? presetRow.querySelector(`[data-preset="${presetIdx}"]`)
+        : presetRow.querySelector('[data-preset="custom"]');
+    activeChip?.classList.add("active");
+
+    drawDensity(start, end);
+  }
+
+  return { redraw };
 }
